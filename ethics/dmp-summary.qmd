@@ -1,0 +1,14 @@
+---
+title: "Data Management Plan"
+subtitle: "Summary"
+---
+
+**Data types:** AI chat transcripts (session ID), task outputs, exit survey responses, and equity flags (low SES; first-in-family) added by Curtin analytics and delivered de-identified. No PII collected by research team.
+
+**Storage:** Curtin SharePoint/Network drive (restricted access, encryption at rest). Access limited to PI, named co-Is, and RA.
+
+**Processing:** RA codes 100% of transcripts; co-Is code 20-30% calibration per unit; Cohen's kappa computed; kappa < 0.70 triggers scheme refinement.
+
+**Sharing:** De-identified aggregates and anonymised excerpts only; no raw transcripts externalised.
+
+**Retention and destruction:** Retain 5 years post-publication; then secure deletion. Backups per Curtin IT policy.

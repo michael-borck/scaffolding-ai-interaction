@@ -1,0 +1,94 @@
+---
+title: "Task Briefs - Retrieval-Framed Variants"
+---
+
+These tasks are designed to look like factual retrieval exercises but actually require the student to evaluate AI responses that may contain plausible errors. LLMs do not retrieve facts - they interpolate from training data. Tasks framed as retrieval ("What are the requirements for...?", "List the key regulations...") are where AI responses are most likely to be confidently wrong and where students are least likely to push back.
+
+These tasks are not part of the primary study design. They are provided for:
+- Informal piloting during instrument development
+- A planned follow-on study comparing conversational vs retrieval-framed tasks
+- Demonstrating the task framing concept to co-investigators
+
+## Design Rationale
+
+The primary study tasks (see `task_brief_information_systems.md`, `task_brief_supply_chain.md`, `task_brief_marketing.md`) are conversational by design - they require iterative dialogue to develop a recommendation. There is no single right answer.
+
+Retrieval-framed tasks differ in three ways:
+1. **They appear to have a factual answer** - students expect the AI to "know" the answer
+2. **The AI will respond with high confidence** - fluent, structured, authoritative tone
+3. **The response will likely contain errors** - incorrect specifics, outdated information, fabricated details that sound plausible
+
+This is where the nudge hypothesis is strongest: the nudge should interrupt the default acceptance pattern precisely when the AI's confidence is highest and the student's scepticism is lowest.
+
+---
+
+## Information Systems - Retrieval-Framed
+
+### Task: Australian Data Privacy Compliance Audit
+
+You are preparing a compliance checklist for a small Australian fintech company that handles customer financial data. Using the AI tool, identify:
+
+1. **The specific requirements** of the Australian Privacy Act 1988 that apply to a fintech handling customer transaction data. List the Australian Privacy Principles (APPs) most relevant to this business and what each requires in practice.
+2. **The notification obligations** under the Notifiable Data Breaches (NDB) scheme. What are the exact timeframes, who must be notified, and what are the penalties for non-compliance?
+3. **Any additional requirements** specific to financial services data (e.g., APRA prudential standards, ASIC requirements).
+
+**What makes this a retrieval-framed task:** Students will expect the AI to accurately cite specific legislation, timeframes, and penalty amounts. The AI will produce confident, structured responses - but may fabricate specific penalty figures, confuse APP numbers with their requirements, cite repealed provisions, or miss recent amendments. The student who accepts this without verification risks producing a compliance checklist that is plausibly structured but factually wrong.
+
+**Session length:** 45 minutes.
+
+---
+
+## Supply Chain Management - Retrieval-Framed
+
+### Task: International Shipping Regulation Summary
+
+A logistics company is planning to export temperature-controlled pharmaceutical products from Australia to three markets: Singapore, the UK, and the USA. Using the AI tool, compile:
+
+1. **The specific regulatory requirements** for pharmaceutical cold chain exports from Australia. What are the TGA export requirements, and what documentation is needed?
+2. **The import requirements** for each destination country. What certifications, inspections, or pre-approvals are required for temperature-sensitive pharmaceuticals entering Singapore (HSA), the UK (MHRA), and the USA (FDA)?
+3. **The shipping standards** that apply. What are the GDP (Good Distribution Practice) requirements, and which specific temperature monitoring standards must be met?
+
+**What makes this a retrieval-framed task:** Students will expect the AI to correctly name specific regulators, cite specific standards (GDP, WHO guidelines), and describe specific documentation requirements. The AI will produce detailed, authoritative-sounding responses - but may confuse TGA export permits with import requirements, cite outdated WHO technical supplements, fabricate specific temperature tolerance ranges, or describe requirements from the wrong regulatory jurisdiction. A student who delegates this task gets a professionally formatted but potentially dangerous compliance document.
+
+**Session length:** 45 minutes.
+
+---
+
+## Marketing - Retrieval-Framed
+
+### Task: Australian Consumer Law and Advertising Compliance
+
+A direct-to-consumer skincare brand is planning a marketing campaign that includes the following claims: "clinically proven to reduce wrinkles by 40%", "dermatologist recommended", and "Australia's #1 natural skincare brand". Using the AI tool, determine:
+
+1. **Which of these claims are permissible** under Australian Consumer Law (ACL) and the Therapeutic Goods Administration (TGA) advertising requirements? For each claim, identify the specific legal standard that applies and what evidence would be required to substantiate it.
+2. **The penalties** for misleading or deceptive conduct under the ACL. What are the current maximum penalties for corporations and individuals?
+3. **The complaint process.** If a competitor lodges a complaint with Ad Standards or the ACCC, what is the process and what are the possible outcomes?
+
+**What makes this a retrieval-framed task:** Students will expect the AI to correctly cite penalty amounts, name the correct regulatory bodies, and accurately describe the boundary between cosmetic claims (ACL) and therapeutic claims (TGA). The AI will produce confident legal-sounding analysis - but may cite outdated penalty figures, confuse the roles of Ad Standards, the ACCC, and the TGA, misstate the therapeutic/cosmetic boundary, or fabricate case precedents. A student who delegates this task produces advice that sounds legally informed but may be substantively wrong on the specific points that matter most.
+
+**Session length:** 45 minutes.
+
+---
+
+## Analytic Note
+
+If these tasks are used in a follow-on study, the key comparison is:
+
+| | Conversational task | Retrieval-framed task |
+|---|---|---|
+| **Nudge** | Nudge + conversational | Nudge + retrieval |
+| **Control** | Control + conversational | Control + retrieval |
+
+The hypothesis is that the nudge effect (nudge - control difference) will be **larger** for retrieval-framed tasks than for conversational tasks, because retrieval-framed tasks produce the highest-confidence AI responses and the lowest baseline student scepticism.
+
+---
+
+## Document History
+
+| Version | Date | Changes |
+|---------|------|---------|
+| 1.0 | March 2026 | Initial draft - three retrieval-framed variants |
+
+---
+
+*keep-asking project - github.com/michael-borck/keep-asking*

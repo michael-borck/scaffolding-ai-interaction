@@ -1,0 +1,20 @@
+---
+title: "Grant Application"
+subtitle: "Curtin NBF Learning & Teaching Grant 2026"
+format:
+  html: default
+format-links: false
+---
+
+## NBF Grant Application
+
+| Field | Detail |
+|-------|--------|
+| **Amount** | AUD $20,000 |
+| **Period** | Semester 1 2026 - December 2026 |
+| **Reporting** | First half of 2027 |
+| **Equity cohorts** | Low SES students; first-in-family students |
+
+### Document
+
+- [NBF Grant Application 2026](nbf-grant-application.qmd) - Full application (v6.0)

@@ -1,0 +1,34 @@
+---
+title: "Ethics Package"
+subtitle: "HREC Application and Supporting Documents"
+format:
+  html: default
+format-links: false
+---
+
+This section contains the complete HREC application package for the study. All documents target Curtin's low-risk review pathway.
+
+| Document | Description |
+|----------|-------------|
+| [HREC Application](hrec-application.qmd) | Full low-risk HREC application form |
+| [HREC Narrative](hrec-narrative.qmd) | Supporting narrative |
+| [Participant Information Sheet](pis-digital.qmd) | PIS for participants |
+| [Consent Form](consent-digital.qmd) | Digital consent form |
+| [Recruitment Materials](recruitment-materials.qmd) | Email and LMS recruitment text |
+| [Facilitator Script](facilitator-script.qmd) | Lab session opening script |
+| [Data Management Plan](dmp-summary.qmd) | DMP summary |
+| [Risk Matrix](risk-matrix.qmd) | Risk assessment (low risk) |
+
+::: {.callout-note}
+Each document is available as HTML and DOCX. Use the download links on each page.
+:::
+
+::: {.callout-warning}
+## Placeholders to fill before submission
+
+- PI email/phone and Curtin HREC contact details
+- Participating unit codes and names
+- HREC submission date
+- Storage location path
+- RA position description
+:::

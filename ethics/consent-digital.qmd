@@ -1,0 +1,18 @@
+---
+title: "Digital Consent Form"
+---
+
+**Project:** Closing the AI Literacy Gap: Scaffolding Equitable Participation in AI-Integrated Assessment
+
+Please confirm the following:
+
+- [ ] I have read and understood the Participant Information Sheet.
+- [ ] I understand participation is voluntary and will not affect my grades.
+- [ ] I understand that my student number is collected at session login for the sole purpose of linking equity indicators (e.g., low SES, first-in-family status) to my session data. My student number will be permanently deleted after this linkage is complete. The research team will only analyse de-identified data.
+- [ ] I consent to logging of my AI conversation (tagged with a session code, not my name or student number) and to completing a brief exit survey via Qualtrics.
+- [ ] I consent to the use of de-identified data in publications and teaching resources.
+- [ ] I understand I may withdraw at any time before data de-identification by contacting the research team and quoting my session code.
+
+**Type your full name:** __________
+
+**Date:** (auto-captured)

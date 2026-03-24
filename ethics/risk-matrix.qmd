@@ -1,0 +1,11 @@
+---
+title: "Risk Assessment Matrix"
+subtitle: "Low Risk"
+---
+
+| Risk | Likelihood | Consequence | Level | Mitigation |
+|------|-----------|-------------|-------|------------|
+| Mild performance anxiety | Possible | Minor | Low | Voluntary, non-assessed; option to pause/withdraw; supportive facilitation |
+| Privacy breach | Rare | Moderate | Low | No PII; session codes only; secure storage; minimal dataset |
+| Perceived coercion | Possible | Minor | Low | Clear messaging; alternative activity; consent outside assessment context |
+| Distress due to AI errors | Rare | Minor | Low | Facilitator support; debrief; ability to stop |

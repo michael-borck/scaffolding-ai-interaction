@@ -1,0 +1,83 @@
+---
+title: "HREC Narrative"
+---
+
+**Project Title:** Closing the AI Literacy Gap: Scaffolding Equitable Participation in AI-Integrated Assessment
+
+**Principal Investigator:** Michael Borck, Lecturer, School of Marketing and Management (SoMM)
+
+**Co-Investigators:**
+
+- Dr Marcela Moraes (SoMM) - confirmation pending
+- Dr Torsten Reiners (SoMM) - confirmation pending
+- [Additional colleague - TBC]
+
+**Participating Units:**
+
+- [Unit 1 - e.g., ISYS6020]
+- [Unit 2 - Marketing Unit]
+- [Unit 3 - Supply Chain Unit]
+- [Optional 4th Unit - TBC]
+
+---
+
+## Plain Language Summary
+
+This study evaluates whether a simple conversational nudge improves how students interact with AI during structured lab sessions. Students complete a short, discipline-relevant task using a supplied AI chat tool. Half of students (randomised) see a one-line reminder appended to the AI's replies: "Does that match what you expected? If something seems off, tell me what seems wrong." The other half do not. We compare interaction quality, task outcomes, and confidence. Student numbers are collected at session login for equity flag linkage only; a de-identification script removes them after matching, and the linkage table is permanently destroyed. The research team analyses only de-identified data (session codes and equity flags). Participation is voluntary, does not affect grades, and students may withdraw at any time before data aggregation. Findings will support equitable AI-integrated assessment at Curtin.
+
+---
+
+## Aims and Significance
+
+- Determine whether a minimal conversational nudge increases critical, iterative AI interaction.
+- Examine whether benefits are uniform or differential for low SES and first-in-family students using de-identified matched data.
+
+**Significance:** Provides low-cost, scalable in-class scaffolding to address structural disparities in AI literacy and supports Curtin's NBF reporting.
+
+---
+
+## Methods
+
+**Design:** Randomised controlled lab sessions within 3 or more units; assignment to Nudge vs Control. All sessions use a frontier-class AI model via API.
+
+**Setting and Procedure:** 45-60 minute on-campus sessions using Curtin lab computers; iterative AI task; automatic transcript logging (session IDs); 10-minute digital exit survey.
+
+**Recruitment:** LMS/email invitations with plain-language PIS; participation voluntary; alternative activity available; no effect on grades.
+
+**Participants:** Enrolled students (18+) in participating units; exclude under-18s and non-consenting students.
+
+**Sample:** ~60-120 students total; power analysis to be finalised post unit confirmations.
+
+**Data:** Student numbers collected at login for equity linkage only (destroyed after de-identification). AI transcripts (session code), task outputs, Qualtrics exit survey responses. Equity flags matched via temporary linkage table, then de-identified.
+
+**Analysis:** Linear mixed-effects models (condition as fixed effect, unit as random intercept); effect sizes; equity-disaggregated subgroup analysis with interaction terms; confidence calibration within-unit only. RA codes 100% of transcripts (Turn 2 onward); co-Is code 20-30% per unit; Cohen's kappa with kappa < 0.70 triggering refinement.
+
+---
+
+## Risks and Mitigation (Low-Risk Justification)
+
+Physical risks: none. Psychological discomfort: minimal; mitigations include voluntariness, option to pause/withdraw, supportive facilitation. Power dynamics: neutral recruitment, alternatives to participation. Privacy: student numbers collected at login for equity linkage only; stored in a restricted temporary linkage table; destroyed after de-identification script runs. Research data uses session codes only. Data stored on Curtin systems with restricted access.
+
+---
+
+## Consent (Digital Only)
+
+Digital consent via Qualtrics (Curtin institutional licence) prior to sessions. No deception. Withdrawal permitted any time before data aggregation using session codes.
+
+---
+
+## Privacy, Confidentiality and Data Security
+
+Student numbers held in temporary linkage table only; destroyed after equity flag matching. All research data uses session codes. Storage on Curtin network/SharePoint with role-based access and encryption at rest. Retention: 5 years post-publication; secure deletion thereafter. No raw transcripts shared externally.
+
+---
+
+## Use of AI / External Services
+
+**Frontier model via API:** prompts/responses transmitted without PII (session codes only); provider training opt-out enabled where available.
+
+---
+
+## Funding, Conflicts, Monitoring and Timeline
+
+**Funding:** NBF Learning & Teaching Grant 2026 (AUD $20,000). No conflicts declared. Monitoring: PI reviews logs after sessions; adverse events reported to HREC. Timeline: Apr-Dec 2026 data collection and dissemination; reporting in 2027.

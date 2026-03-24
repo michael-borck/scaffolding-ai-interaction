@@ -1,0 +1,33 @@
+---
+title: "Research Instruments"
+subtitle: "Coding Scheme, Survey, Task Briefs, and Nudge Variants"
+format:
+  html: default
+format-links: false
+---
+
+## Measurement Instruments
+
+| Document | Description |
+|----------|-------------|
+| [Coding Scheme](coding-scheme.qmd) | Transcript coding scheme (v2.0) - FU, CH, EX dimensions, dual scoring, mixed-effects analysis spec |
+| [Exit Survey](exit-survey.qmd) | Qualtrics exit survey (v2.0) - confidence calibration, self-reported interaction style, prior AI experience |
+| [Nudge Variants](nudge-variants.qmd) | Pool of 10 nudge variants randomly selected per turn |
+
+## Task Briefs - Conversational (Primary)
+
+These tasks require iterative dialogue to develop a recommendation. No single right answer.
+
+| Document | Discipline | Co-I |
+|----------|-----------|------|
+| [Information Systems](task-brief-information-systems.qmd) | IS | Michael Borck |
+| [Supply Chain Management](task-brief-supply-chain.qmd) | SCM | Torsten Reiners (TBC) |
+| [Marketing](task-brief-marketing.qmd) | Marketing | Marcela Moraes (TBC) |
+
+## Task Briefs - Retrieval-Framed (Follow-on)
+
+These tasks appear to require factual retrieval, where AI responses are most likely to be confidently wrong. Designed for a planned follow-on study.
+
+| Document | Description |
+|----------|-------------|
+| [Retrieval-Framed Variants](task-brief-retrieval-framed.qmd) | One variant per discipline - privacy compliance, shipping regulations, advertising law |

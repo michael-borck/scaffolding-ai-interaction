@@ -1,0 +1,73 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Closing the AI Literacy Gap"
+
+  navbar:
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Chat Tool"
+        menu:
+          - text: "Session (random assignment)"
+            href: https://chat.locolabo.org/session
+            target: _blank
+          - text: "Session A (facilitator)"
+            href: https://chat.locolabo.org/session/a
+            target: _blank
+          - text: "Session B (facilitator)"
+            href: https://chat.locolabo.org/session/b
+            target: _blank
+    right:
+      - icon: github
+        href: https://github.com/michael-borck/closing-the-gap
+        target: _blank
+
+  sidebar:
+    - title: "Project"
+      style: "docked"
+      contents:
+        - index.qmd
+        - methodology.qmd
+        - literature-review.qmd
+        - paper-outline.qmd
+
+    - title: "Grant"
+      contents:
+        - grant/index.qmd
+        - grant/nbf-grant-application.qmd
+
+    - title: "Ethics"
+      contents:
+        - ethics/index.qmd
+        - ethics/hrec-application.qmd
+        - ethics/hrec-narrative.qmd
+        - ethics/pis-digital.qmd
+        - ethics/consent-digital.qmd
+        - ethics/recruitment-materials.qmd
+        - ethics/facilitator-script.qmd
+        - ethics/dmp-summary.qmd
+        - ethics/risk-matrix.qmd
+
+    - title: "Instruments"
+      contents:
+        - instruments/index.qmd
+        - instruments/coding-scheme.qmd
+        - instruments/exit-survey.qmd
+        - instruments/nudge-variants.qmd
+        - instruments/task-brief-information-systems.qmd
+        - instruments/task-brief-marketing.qmd
+        - instruments/task-brief-supply-chain.qmd
+        - instruments/task-brief-retrieval-framed.qmd
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+    css: styles.css
+  docx: default
+
+format-links: [docx]

@@ -1,0 +1,10 @@
+---
+title: "Facilitator Script"
+subtitle: "Lab Session"
+---
+
+Welcome and thanks for joining. Today's session explores how interacting with AI conversationally might improve results. Participation is voluntary, not assessed, and you can stop at any time. We don't collect names or student numbers; your session is identified only by a code. Please avoid entering any personal or sensitive information into the chat. At the end there's a short survey. If anything feels uncomfortable, raise your hand and we'll pause. Any questions before we begin?
+
+## Session Flow
+
+*(Then provide task brief; remind Nudge condition students that they may see a line appended to the AI's replies.)*

@@ -1,0 +1,43 @@
+---
+title: "Participant Information Sheet"
+---
+
+**Project Title:** Closing the AI Literacy Gap: Scaffolding Equitable Participation in AI-Integrated Assessment
+
+**Investigators:** Michael Borck (PI); Marcela Moraes (Co-I); Torsten Reiners (Co-I); [TBC]
+
+**Participating Unit:** [Unit Placeholder]
+
+---
+
+## What is this study about?
+
+We are studying how students interact with AI during short tasks and whether a one-line reminder increases critical engagement.
+
+## What will I be asked to do?
+
+- Attend a 45-60 minute lab session in a Curtin computer lab.
+- Complete a short, course-relevant task using a university-provided AI tool (no personal accounts).
+- You may see a one-line reminder appended to the AI's replies.
+- Complete a brief digital exit survey (approximately 10 minutes).
+
+## Are there any risks?
+
+Risks are minimal (e.g., mild performance pressure). You may skip questions or stop at any time. Participation does not affect grades.
+
+## Are there any benefits?
+
+You may improve your AI interaction skills; findings will inform fair AI-integrated assessment at Curtin.
+
+## Privacy and confidentiality
+
+Your student number is collected when you log into the session. This is used only to link equity indicators (such as low SES or first-in-family status) to your session data. Your student number is then permanently deleted. Your conversation, task output, and survey responses are tagged with a random session code only - your name and student number do not appear in the research data. The research team analyses only the de-identified dataset.
+
+## Voluntary participation and withdrawal
+
+Participation is voluntary and will not affect your studies. You may withdraw at any time before data de-identification by contacting the research team and quoting your session code. Once the de-identification process has been completed and the linkage between student numbers and session codes has been destroyed, withdrawal is no longer possible as individual records cannot be identified.
+
+## Contacts
+
+- For study questions: [PI email/phone]
+- For ethics concerns: [Curtin HREC email/phone]

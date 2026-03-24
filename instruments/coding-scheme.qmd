@@ -1,0 +1,331 @@
+---
+title: "Coding Scheme"
+subtitle: "Version 2.0, March 2026"
+---
+
+This document defines the coding scheme for student-AI conversation transcripts collected during lab sessions. The scheme operates at two levels: automated measures computed directly from transcript logs, and human-coded behavioural measures applied by a trained Research Assistant (RA) and calibrated by co-investigators.
+
+The scheme codes **how students interact with the AI**, not what they say about the topic. All behavioural dimensions are domain-agnostic and can be applied without disciplinary knowledge of Information Systems, Supply Chain Management, or Marketing.
+
+---
+
+## Unit of Analysis
+
+The primary unit of analysis is the **individual student turn** - a single message sent by the student to the AI.
+
+**Turn 1 exclusion:** The student's first turn (the opening query) is excluded from behavioural coding. Turn 1 cannot be a follow-up, challenge, or extension because there is no prior AI response to react to. Including it would systematically inflate delegation rates and deflate engagement scores, especially for shorter conversations. Turn 1 is still counted in automated measures (turn count, word count) but is not coded on behavioural dimensions.
+
+Coding begins at **Turn 2** (the student's first response after receiving an AI reply). Session-level behavioural measures are computed from Turn 2 onward.
+
+---
+
+## Part 1: Automated Measures
+
+These measures are computed directly from the transcript log using scripts. No human coding is required.
+
+| Measure | Definition | Notes |
+|---------|-----------|-------|
+| `turns_total` | Total number of student turns in the conversation | Direct count from log (includes Turn 1) |
+| `turns_coded` | Number of turns coded on behavioural dimensions | `turns_total - 1` (excludes Turn 1) |
+| `words_total_student` | Total words across all student turns | Computed from transcript text |
+| `words_mean_student` | Average words per student turn | `words_total_student / turns_total` |
+| `words_mean_ai` | Average words per AI response | Computed from transcript text |
+| `flesch_score_student` | Flesch reading ease score across all student turns | Higher score = simpler language; lower = more complex |
+| `question_marks_total` | Total question marks across all student turns | Crude proxy for follow-up questioning |
+| `question_marks_proportion` | Proportion of turns containing at least one question mark | `turns_with_question / turns_total` |
+| `duration_minutes` | Total session duration in minutes | From first to last timestamp if captured |
+| `response_latency_mean` | Mean time between AI response and student reply in seconds | Requires timestamp logging; proxy for reflection time |
+
+**Script location:** `scripts/compute_auto_measures.py`
+
+---
+
+## Part 2: Human-Coded Behavioural Dimensions
+
+### Coded by: Research Assistant (RA)
+### Coverage: 100% of transcripts, Turn 2 onward
+
+The RA applies three binary codes to every student turn from Turn 2 onward. Each code is Yes (1) or No (0).
+
+---
+
+### Dimension 1: Follow-Up (FU)
+
+**Definition:** Did the student ask a question or request that continues the conversation rather than ending it?
+
+**Code Yes (1) if:**
+- The turn contains an explicit question directed at the AI
+- The turn requests clarification, elaboration, or more detail
+- The turn asks the AI to reconsider or try again
+
+**Code No (0) if:**
+- The turn is a simple acknowledgement ("Thanks", "Got it", "Okay")
+- The turn submits a new unrelated query without building on the previous response
+- The turn is the final message in the conversation with no question
+
+**Examples:**
+
+| Turn | Code | Reason |
+|------|------|--------|
+| "Can you explain why that approach would work better than the alternative?" | 1 | Explicit follow-up question |
+| "What are the risks of that strategy?" | 1 | Continues the conversation |
+| "Thanks, that is helpful." | 0 | Acknowledgement, no follow-up |
+| "Okay write me a summary of that." | 0 | New directive, not a follow-up |
+
+---
+
+### Dimension 2: Challenge (CH)
+
+**Definition:** Did the student explicitly push back on, express doubt about, or correct the AI response?
+
+**Code Yes (1) if:**
+- The turn expresses disagreement with the AI's response
+- The turn flags something as incorrect, incomplete, or implausible
+- The turn asks the AI to justify or defend its response
+- The turn notes a contradiction between the AI response and prior information
+
+**Code No (0) if:**
+- The turn accepts the AI response without question
+- The turn asks for more information without expressing doubt
+- The turn rephrases the question without pushing back
+
+**Examples:**
+
+| Turn | Code | Reason |
+|------|------|--------|
+| "I don't think that's right - the case study said the timeline was six months, not three." | 1 | Explicit correction |
+| "That seems too simple. What are you not accounting for?" | 1 | Expresses doubt |
+| "Can you tell me more about that?" | 0 | Request for more, no pushback |
+| "Interesting, and what about the cost side?" | 0 | Extension without challenge |
+
+---
+
+### Dimension 3: Extension (EX)
+
+**Definition:** Did the student introduce new information, a new constraint, or a new angle not already present in the AI response?
+
+**Code Yes (1) if:**
+- The turn introduces a fact, constraint, or consideration not mentioned by the AI
+- The turn reframes the problem from a different perspective
+- The turn connects the AI response to an external concept or context
+- The turn adds a specific detail from the task brief that the AI did not reference
+
+**Code No (0) if:**
+- The turn only references information already in the AI response
+- The turn asks for elaboration on something the AI already said
+- The turn is purely a follow-up with no new content
+
+**Examples:**
+
+| Turn | Code | Reason |
+|------|------|--------|
+| "What if the supplier is also a key customer - how does that change the analysis?" | 1 | New angle not in AI response |
+| "The case said there is a 90-day lead time. Does that affect your recommendation?" | 1 | Introduces specific detail from task brief |
+| "Can you expand on the second point?" | 0 | Elaboration only, no new content |
+| "What are the advantages of option A?" | 0 | References AI content, no new information |
+
+---
+
+### Delegation (Derived in Analysis)
+
+Delegation is not coded by the RA. It is derived automatically during analysis:
+
+**A turn is a delegation turn if:** FU = 0 AND CH = 0 AND EX = 0
+
+This derivation is deterministic and requires no judgement calls. Deriving it rather than coding it eliminates the possibility of contradictory data (e.g., a turn coded as delegation but also coded as having a follow-up). The RA's task is simpler and the data is cleaner.
+
+The delegation flag and all delegation-based session measures (`proportion_delegation`, `delegation_streak_max`) are computed by the analysis script from the three coded dimensions.
+
+---
+
+### Turn-Level Scoring
+
+Two scoring approaches are applied to each coded turn. Both are reported.
+
+**Unweighted score (equal dimensions):**
+
+`turn_score_raw = FU + CH + EX`
+
+| Score | Interpretation |
+|-------|---------------|
+| 0 | Delegation - student accepted response without engagement |
+| 1 | Minimal engagement - one dimension present |
+| 2 | Moderate engagement - two dimensions present |
+| 3 | Full engagement - follow-up, challenge, and extension all present |
+
+**Weighted score (challenge-emphasised):**
+
+`turn_score_weighted = FU + (2 x CH) + EX`
+
+| Score | Interpretation |
+|-------|---------------|
+| 0 | Delegation |
+| 1 | Follow-up or extension only |
+| 2 | Challenge alone, or follow-up + extension |
+| 3 | Challenge + one other dimension |
+| 4 | All three dimensions present |
+
+**Rationale for dual scoring:** The nudge explicitly invites pushback ("If something seems off, tell me what seems wrong"), making Challenge the dimension most directly targeted by the intervention. The weighted score tests whether the nudge effect is stronger when Challenge is given greater analytical weight. If the unweighted and weighted analyses converge, this confirms the finding is robust to scoring assumptions. If they diverge, it reveals whether the nudge primarily drives challenge behaviour (weighted effect larger) or broader engagement (similar effect sizes). Both outcomes are informative and both are reported.
+
+---
+
+## Part 3: Session-Level Rollup
+
+Computed from turn-level codes after RA coding is complete. **All behavioural measures exclude Turn 1.**
+
+| Measure | Definition | Formula |
+|---------|-----------|---------|
+| `mean_turn_score_raw` | Average unweighted turn score | Mean of `turn_score_raw` (Turn 2+) |
+| `mean_turn_score_weighted` | Average weighted turn score | Mean of `turn_score_weighted` (Turn 2+) |
+| `proportion_delegation` | Proportion of coded turns that are delegation | Derived: turns where FU=0, CH=0, EX=0 / `turns_coded` |
+| `proportion_followup` | Proportion of coded turns with follow-up | `FU_turns / turns_coded` |
+| `proportion_challenge` | Proportion of coded turns with challenge | `CH_turns / turns_coded` |
+| `proportion_extension` | Proportion of coded turns with extension | `EX_turns / turns_coded` |
+| `peak_turn_score_raw` | Highest unweighted score in the session | Max of `turn_score_raw` |
+| `delegation_streak_max` | Longest consecutive run of delegation turns | Sequence analysis on derived delegation flag (Turn 2+) |
+
+The `proportion_challenge` measure is expected to be the most sensitive indicator of the nudge effect, since the nudge explicitly invites pushback.
+
+---
+
+## Part 4: Task Completion Score
+
+### Coded by: Co-investigators (own unit transcripts only)
+### Coverage: 100% of transcripts within each co-investigator's unit
+
+This score requires disciplinary knowledge and is not coded by the RA.
+
+**Scale: 1 to 5**
+
+| Score | Anchor |
+|-------|--------|
+| 1 | Student produced minimal output. Little evidence of engagement with the task requirements. Output largely repeats AI responses verbatim. |
+| 2 | Student identified some relevant issues but analysis is incomplete or superficial. Limited evidence of independent reasoning beyond AI output. |
+| 3 | Student addressed the main task requirements. Some evidence of critical evaluation. Output goes somewhat beyond AI responses but key gaps remain. |
+| 4 | Student produced solid analysis addressing most task requirements. Clear evidence of critical thinking. Output integrates AI responses with student reasoning. |
+| 5 | Student produced comprehensive, well-reasoned analysis. Strong evidence of critical evaluation and independent judgment. AI responses clearly interrogated and contextualised rather than accepted wholesale. |
+
+**Important:** Task completion scores are not comparable across units. A score of 4 in Information Systems does not represent the same absolute quality as a score of 4 in Marketing. The confidence calibration analysis (comparing self-reported confidence against task score) must be conducted **within unit**, not pooled across units. Cross-unit comparisons use the behavioural dimensions (FU, CH, EX) which are domain-agnostic.
+
+**Note:** Each co-investigator should add 2-3 discipline-specific examples at each score level before coding their unit's transcripts. These examples form the local calibration standard and should be documented in `instruments/task_brief_[discipline].md`.
+
+---
+
+## Part 5: Inter-Rater Reliability
+
+### Process
+
+1. RA codes 100% of transcripts on dimensions FU, CH, and EX (Turn 2 onward)
+2. Each co-investigator independently codes a 20-30% stratified sample from their own unit on the same dimensions
+3. Cohen's kappa is calculated per unit between RA codes and co-investigator codes
+4. Lead investigator reviews all divergences
+5. Divergences on behavioural dimensions below 0.70 kappa trigger scheme revision and recalibration
+6. Divergences on contextual grounds (domain knowledge explaining the difference) are documented and reported as a finding rather than an error
+
+### Kappa Thresholds
+
+| Kappa | Interpretation | Action |
+|-------|---------------|--------|
+| < 0.50 | Poor agreement | Stop, revise scheme, recode |
+| 0.50-0.69 | Moderate agreement | Review divergences, minor revision |
+| 0.70-0.79 | Acceptable agreement | Proceed, note limitations |
+| 0.80-0.89 | Good agreement | Proceed |
+| >= 0.90 | Excellent agreement | Proceed |
+
+### Calibration Sample Selection
+
+The calibration sample should be stratified to include:
+- Equal proportions from nudge and control conditions
+- A spread across early, mid, and late sessions
+- Examples of both short (under 5 turns) and longer (over 15 turns) conversations
+
+---
+
+## Part 6: Coding Procedure
+
+### Before coding begins
+- RA attends a 1-hour briefing session with lead investigator
+- RA independently codes 10 practice transcripts from existing CloudCore data (Turn 2 onward only)
+- Lead investigator reviews practice codes and clarifies any ambiguous cases
+- RA codes a further 10 practice transcripts independently
+- Agreement check: if kappa on practice set is below 0.70, further calibration before proceeding to live data
+
+### During coding
+- RA skips Turn 1 and begins coding at Turn 2
+- RA codes each turn in order, top to bottom
+- RA does not revise earlier codes after reading later turns (each turn is coded in isolation)
+- RA flags any turn that is genuinely ambiguous using a comment field
+- Flagged turns are reviewed by lead investigator before final dataset is locked
+
+### After coding
+- Lead investigator checks flagged turns
+- Analysis script derives delegation flags and computes both unweighted and weighted scores
+- Co-investigators complete calibration sample coding
+- Kappa calculated and documented
+- Final coded dataset locked and version-controlled in `data/processed/`
+
+---
+
+## Part 7: Statistical Analysis
+
+### Primary analysis
+
+The primary analysis uses a **linear mixed-effects model** to account for the nested structure of the data (students nested within units):
+
+```
+outcome ~ condition + (1 | unit)
+```
+
+Where:
+- `outcome` is the session-level measure (e.g., `mean_turn_score_raw`, `proportion_challenge`)
+- `condition` is the fixed effect (Nudge vs Control)
+- `(1 | unit)` is a random intercept for unit, accounting for the fact that students within the same unit share a task, a co-investigator, a discipline context, and potentially similar baseline characteristics
+
+**Why mixed-effects rather than simple ANOVA:** Students are not independent across units. A student in Information Systems completes a different task, in a different discipline, with a different facilitator than a student in Marketing. Simple ANOVA treats all students as exchangeable and underestimates standard errors, inflating the risk of a false positive. The mixed-effects model partitions the variance: the fixed effect of condition (nudge vs control) is estimated after accounting for between-unit differences.
+
+**Covariates:** Prior AI experience (Q10 from exit survey) is included as a fixed-effect covariate if nudge and control groups differ on this baseline measure:
+
+```
+outcome ~ condition + prior_ai_experience + (1 | unit)
+```
+
+### Equity-disaggregated analysis
+
+The equity analysis adds SES flag and first-in-family status as fixed effects and tests interactions:
+
+```
+outcome ~ condition * equity_flag + (1 | unit)
+```
+
+A significant interaction indicates the nudge effect differs between equity and non-equity cohorts (differential benefit). A non-significant interaction with a significant main effect indicates uniform benefit. Both findings are reported.
+
+### Confidence calibration analysis
+
+The comparison of self-reported confidence (Q2) against task completion score is conducted **within unit only**. The task completion rubric requires discipline-specific judgement and scores are not comparable across units. Within each unit:
+
+- Spearman correlation between Q2 and task score
+- Comparison of the confidence-performance gap between nudge and control groups
+- Identification of the "overconfident delegator" pattern: high confidence + low task score + high proportion_delegation
+
+### Reporting
+
+All analyses are reported with:
+- Effect sizes (Cohen's d for group comparisons; marginal R-squared for mixed models)
+- 95% confidence intervals
+- Both unweighted and weighted scoring results
+- Equity-disaggregated results regardless of significance
+
+**Implementation:** Analysis will use R with the `lme4` package for mixed-effects models, or Python with `statsmodels` mixed linear models.
+
+---
+
+## Document History
+
+| Version | Date | Changes |
+|---------|------|---------|
+| 1.0 | March 2026 | Initial draft |
+| 2.0 | March 2026 | Dropped DL as coded dimension (now derived). Added weighted scoring. Excluded Turn 1 from behavioural coding. Added mixed-effects analysis specification. Added within-unit constraint for confidence calibration. |
+
+---
+
+*keep-asking project - github.com/michael-borck/keep-asking*

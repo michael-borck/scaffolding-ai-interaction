@@ -1,0 +1,70 @@
+---
+title: "Closing the AI Literacy Gap"
+subtitle: "Scaffolding Equitable Participation in AI-Integrated Assessment"
+format:
+  html: default
+format-links: false
+---
+
+## Project Overview
+
+Australian universities are embedding AI tools in assessment, but the skills required to use those tools effectively are not equally distributed. Students from low socioeconomic backgrounds and those who are first in their family to attend university have fewer informal support networks to develop productive AI interaction habits before they arrive. Without structured scaffolding, this access gap becomes a participation and attainment gap.
+
+This project implements and evaluates a low-cost, scalable intervention: a **conversational nudge** appended to AI responses during structured lab sessions. The nudge makes the conversational path structurally easier, reducing the risk of uncritical acceptance at the point where it matters most. The equity analysis asks whether the benefit is uniform or differential - whether students who had fewer prior scaffolding opportunities gain more from the intervention.
+
+The intervention is grounded in the [Conversation, Not Delegation](https://www.amazon.com.au/dp/B0F1Y9FL81) framework (Borck, 2026): the quality of AI-assisted work depends on whether the student is directing the AI through active conversation or passively accepting its output.
+
+**Funding:** Curtin NBF Learning & Teaching Grant 2026 - AUD $20,000
+
+## Project Team
+
+| Role | Name | Discipline | Unit |
+|------|------|-----------|------|
+| Lead | Michael Borck | Information Systems | ISYS6020 |
+| Co-I | Dr Marcela Moraes (TBC) | Marketing | [TBC] |
+| Co-I | Dr Torsten Reiners (TBC) | Supply Chain Management | [TBC] |
+| Co-I | [TBC] | [TBC] | [TBC] |
+| RA | To be recruited | - | - |
+
+## Timeline
+
+| Period | Phase | Status |
+|--------|-------|--------|
+| **March 2026** | Foundation: HREC, confirm co-Is, configure interface | **Current** |
+| April 2026 | Instrument development, pilot, power analysis | |
+| May-June 2026 | Data collection: lab sessions across 3+ units | |
+| July-Aug 2026 | Coding, reliability checks, analysis | |
+| Sep-Oct 2026 | ACIS 2026 paper draft, resource pack | |
+| Nov-Dec 2026 | Submission, reporting, scope follow-on study | |
+
+## Quick Links
+
+**Study Design**
+
+- [Methodology](methodology.qmd) - research design, measures, analysis plan
+- [Paper Outline](paper-outline.qmd) - ACIS 2026 target structure
+- [Literature Review](literature-review.qmd) - thematic review, working document
+
+**Documents**
+
+- [Grant Application](grant/nbf-grant-application.qmd) - NBF grant (v6.0)
+- [Ethics Package](ethics/index.qmd) - HREC application and supporting documents
+- [Research Instruments](instruments/index.qmd) - coding scheme, survey, task briefs, nudge variants
+
+**Tools**
+
+- [Chat Interface](https://chat.locolabo.org/session){target="_blank"} - lab session AI chat tool
+- [keep-asking](https://github.com/michael-borck/keep-asking){target="_blank"} - research programme
+- [keep-asking-app](https://github.com/michael-borck/keep-asking-app){target="_blank"} - chat tool source
+
+::: {.callout-warning}
+## Items requiring confirmation before submission
+
+- [ ] Co-investigator units and contributions (Marcela, Torsten)
+- [ ] HREC submission date
+- [ ] Equity cohort percentages from Curtin SIMS (% low SES, % first-in-family)
+- [ ] Power analysis (pending cohort sizes)
+- [ ] ACIS 2026 deadline and location
+- [ ] Aboriginal and Torres Strait Islander section - active decision to include or remove
+- [ ] Talk to Business and Law RDA (Dr Joanne McEwan)
+:::

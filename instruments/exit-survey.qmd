@@ -1,0 +1,241 @@
+---
+title: "Exit Survey"
+subtitle: "Version 2.0, March 2026"
+---
+
+The exit survey is administered at the end of each lab session via Qualtrics (Curtin institutional licence). Estimated completion time: 8-10 minutes.
+
+## Why the Exit Survey is Needed
+
+The transcript data tells us **what students did**. The exit survey tells us three things transcripts cannot:
+
+1. **Confidence calibration** - Do students who delegated to the AI believe their output is good? Comparing self-reported confidence (Q2) against task completion scores tests whether passive delegation produces unwarranted confidence in incorrect outputs. This is central to the misinformation risk argument: the harm of delegation is not just weaker output, but weaker output the student believes is strong.
+
+2. **Self-report vs observed behaviour gap** - Do students know how they interacted? Comparing self-reported interaction style (Q5, Q6) against coded transcript behaviour reveals metacognitive awareness gaps. A student who reports "I challenged the AI throughout" but whose transcript shows predominantly delegation turns lacks awareness of their own AI interaction patterns. This gap is a finding in itself and an argument for structured scaffolding.
+
+3. **Baseline covariates** - Prior AI experience (Q9, Q10) and formal AI instruction (Q11) provide covariates for the primary analysis. If random assignment produces groups that differ on prior experience, these allow statistical adjustment.
+
+4. **Condition awareness** - Did nudge-group students notice the nudge (Q8a)? This distinguishes between automatic behavioural cueing and conscious reflection as the mechanism of action.
+
+Without the survey, the study can show the nudge changed behaviour but cannot explain *why* or test whether the behavioural change was accompanied by appropriate confidence calibration.
+
+---
+
+## Administration
+
+- Facilitator displays the Qualtrics link on the main screen at the end of the task
+- Students complete the survey independently and silently on the lab computer
+- Facilitator confirms all students have submitted before dismissing the session
+- RA downloads responses after each session and links to transcript data via session code
+
+---
+
+## Survey Instrument
+
+---
+
+### Section 1: Your Session Code
+
+**Q1.**
+Please enter the session code shown on your screen.
+
+`[Text field]`
+
+*This code links your survey responses to your conversation transcript. It does not identify you personally.*
+
+---
+
+### Section 2: Your Task
+
+**Q2.**
+How confident are you that your final task output today was accurate and well-reasoned?
+
+`1 - Not confident at all`
+`2 - Slightly confident`
+`3 - Moderately confident`
+`4 - Quite confident`
+`5 - Very confident`
+
+---
+
+**Q3.**
+How satisfied are you with the quality of your final task output?
+
+`1 - Very unsatisfied`
+`2 - Unsatisfied`
+`3 - Neutral`
+`4 - Satisfied`
+`5 - Very satisfied`
+
+---
+
+**Q4.**
+At any point during the session, did something the AI said seem wrong, incomplete, or surprising to you?
+
+`Yes`
+`No`
+`Not sure`
+
+**Q4a.** *(Shown only if Q4 = Yes)*
+Briefly describe what seemed wrong or surprising.
+
+`[Text field - optional]`
+
+---
+
+### Section 3: How You Worked with the AI
+
+**Q5.**
+Which of the following best describes how you worked with the AI tool today?
+
+`I mostly accepted what the AI said and used it to build my response`
+`I sometimes pushed back or asked follow-up questions, but mostly accepted the responses`
+`I regularly pushed back, questioned, or extended the AI responses`
+`I treated the AI as a thinking partner throughout - challenging it and building on its responses`
+
+---
+
+**Q6.**
+How much did you feel like you were directing the conversation with the AI, versus following where it led?
+
+`1 - The AI mostly led, I followed`
+`2 - The AI led more than I did`
+`3 - About equal`
+`4 - I led more than the AI`
+`5 - I directed the conversation throughout`
+
+---
+
+**Q7.**
+Did you feel the AI tool was helpful for completing the task today?
+
+`1 - Not helpful at all`
+`2 - Slightly helpful`
+`3 - Moderately helpful`
+`4 - Quite helpful`
+`5 - Extremely helpful`
+
+---
+
+**Q8.**
+Did anything about the AI tool's responses make you want to ask a follow-up question or push back?
+
+`Yes, frequently`
+`Yes, occasionally`
+`No, the responses seemed complete and I accepted them`
+`No, I was unsure how to push back even if I wanted to`
+
+---
+
+**Q8a.**
+Did you notice anything unusual or different about the way the AI responded today (for example, any extra text or prompts in the responses)?
+
+`Yes`
+`No`
+`Not sure`
+
+**Q8b.** *(Shown only if Q8a = Yes)*
+Briefly describe what you noticed.
+
+`[Text field - optional]`
+
+---
+
+### Section 4: Your Prior AI Experience
+
+*These questions help us understand the range of prior experience in the study. There are no right or wrong answers.*
+
+**Q9.**
+How often do you use AI tools (such as ChatGPT, Claude, Gemini, or similar) for study or work?
+
+`Never`
+`Occasionally (a few times a month)`
+`Regularly (a few times a week)`
+`Daily`
+
+---
+
+**Q10.**
+Before today, how would you describe your typical approach when using an AI tool for a task?
+
+`I usually accept the first response and use it directly`
+`I sometimes ask follow-up questions but mostly accept responses`
+`I regularly ask follow-up questions and push back on responses`
+`I treat AI as a thinking partner - I always challenge and refine its responses`
+
+---
+
+**Q11.**
+Have you received any formal instruction on how to use AI tools effectively (for example, in a class, workshop, or training session)?
+
+`Yes`
+`No`
+`Not sure`
+
+---
+
+### Section 5: About You
+
+*These questions are used only for statistical purposes to describe the study sample. Responses cannot be linked to your identity.*
+
+**Q12.**
+What is your current year of study?
+
+`First year`
+`Second year`
+`Third year`
+`Fourth year or above`
+`Postgraduate coursework`
+`Postgraduate research`
+
+---
+
+**Q13.**
+What is your primary discipline or field of study?
+
+`[Dropdown: list of Curtin discipline areas]`
+
+---
+
+**Q14.**
+Is there anything else you would like to tell us about your experience today?
+
+`[Text field - optional]`
+
+---
+
+## Analytic Notes
+
+**Confidence calibration analysis (within-unit only)**
+
+Q2 (confidence) is compared against the task completion score for the same student, **within each unit separately**. Task completion scores require discipline-specific judgement and are not comparable across units (a score of 4 in IS does not equal a score of 4 in Marketing). Within each unit: Spearman correlation between Q2 and task score; comparison of the confidence-performance gap between nudge and control groups; identification of the "overconfident delegator" pattern (high confidence + low task score + high proportion_delegation from transcript coding).
+
+**Self-reported versus observed interaction style**
+
+Q5 and Q6 (self-reported interaction style) are compared against the RA-coded behavioural dimensions for the same conversation. Divergences between self-report and observed behaviour are analytically interesting - a student who reports directing the conversation but whose transcript shows predominantly delegation turns may lack metacognitive awareness of their own AI interaction patterns.
+
+**Q4 (noticing errors) and the nudge effect**
+
+Q4 is the most direct self-report measure of whether the nudge is producing the intended friction. Nudge group students who report noticing something wrong and correcting it are exhibiting exactly the behaviour the intervention is designed to produce. This question should be analysed first when reviewing preliminary results.
+
+**Q8a (condition awareness) and mechanism interpretation**
+
+Q8a checks whether students in the nudge group consciously noticed the appended text. If nudged students show improved interaction behaviour *without* reporting awareness of the nudge, this supports an automatic behavioural cueing mechanism. If they noticed it and report it changed their behaviour, the mechanism is conscious reflection. Both are interesting; the distinction matters for generalisability and for designing future nudge variants.
+
+**Q10 as a baseline covariate**
+
+Q10 (prior AI approach) is included as a covariate in the mixed-effects model if nudge and control groups differ on this baseline measure. See coding_scheme.md Part 7 for the full model specification.
+
+---
+
+## Document History
+
+| Version | Date | Changes |
+|---------|------|---------|
+| 1.0 | March 2026 | Initial draft |
+| 1.1 | March 2026 | Added Q8a/Q8b condition-awareness check |
+| 2.0 | March 2026 | Added rationale for why survey is needed. Updated confidence calibration to within-unit only. Aligned covariate notes with mixed-effects model in coding scheme. Specified Qualtrics. |
+
+---
+
+*keep-asking project - github.com/michael-borck/keep-asking*

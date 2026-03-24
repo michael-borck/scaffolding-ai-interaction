@@ -1,0 +1,116 @@
+---
+title: "ACIS 2026 Paper Outline"
+subtitle: "Working Document"
+---
+
+## Target Venue
+
+Australasian Conference on Information Systems (ACIS) 2026
+
+::: {.callout-warning}
+Deadline and location TBC. Adjust travel budget line if held in Perth.
+:::
+
+## Working Title
+
+**"Does a Conversational Nudge Close the AI Literacy Gap? A Controlled Study of Scaffolded AI Interaction in Higher Education Assessment"**
+
+## Authors
+
+Michael Borck, Marcela Moraes, Torsten Reiners [, additional co-I TBC]
+
+---
+
+## 1. Introduction
+
+- AI tools in HE assessment are creating a new form of structural disadvantage
+- The skills required to use AI effectively are not equally distributed
+- Passive delegation vs active conversation: not the same thing, not the same outcomes
+- The equity dimension: students with fewer informal support networks are more dependent on in-class scaffolding
+- **Research questions:**
+  1. Does a minimal conversational nudge improve AI interaction quality and task outcomes?
+  2. Is the effect uniform across student cohorts, or differential by SES and first-in-family status?
+
+## 2. Literature Review
+
+- AI in higher education assessment (Kasneci et al., 2023; Stojanov et al., 2024; Mollick & Mollick, 2023)
+- The delegation problem: passive AI use may produce worse outcomes than no AI use
+- Scaffolding and ZPD (Vygotsky, 1978)
+- Conversational framework for learning (Laurillard, 2002)
+- Nudge theory applied to learning environments (Thaler & Sunstein, 2008)
+- Guided vs unguided LLM use (Frontiers in Psychology, 2025)
+- Equity and digital literacy gaps in higher education
+- See [Literature Review](literature-review.qmd) for expanded treatment
+
+## 3. Theoretical Framework
+
+- **Conversation, Not Delegation** (Borck, 2026) as the organising framework
+- Scaffolding theory grounding the nudge mechanism
+- Nudge theory grounding the interface design choice
+- The misinformation friction effect: the nudge surfaces errors before they are accepted
+
+## 4. Method
+
+- **Design:** Randomised controlled lab sessions across 3+ units (IS, Marketing, Supply Chain)
+- **Participants:** ~60-120 students; equity cohort flags (low SES, first-in-family) via de-identified linkage
+- **Intervention:** 10-variant nudge pool appended to AI responses; randomly selected per turn
+- **Measures:**
+  - Automated: turn count, word count, response latency
+  - Human-coded: Follow-Up (FU), Challenge (CH), Extension (EX); delegation derived
+  - Task completion: 1-5 rubric scored by co-investigators within unit
+  - Exit survey: confidence calibration, self-reported interaction style, condition awareness
+- **Analysis:** Linear mixed-effects models (condition as fixed effect, unit as random intercept); both unweighted and challenge-weighted scoring; equity interaction terms
+- See [Methodology](methodology.qmd) for full detail
+
+## 5. Results
+
+::: {.callout-note}
+To be completed after data collection (July-August 2026).
+:::
+
+Key results to report:
+
+- Nudge effect on primary measures (proportion_challenge, mean_turn_score)
+- Effect sizes (Cohen's d, marginal R-squared)
+- Equity-disaggregated results (interaction terms)
+- Confidence calibration analysis (within-unit)
+- Condition awareness (Q8a) and mechanism interpretation
+- Unweighted vs weighted scoring comparison
+
+## 6. Discussion
+
+- Interpretation against the Conversation, Not Delegation framework
+- Equity implications: uniform benefit vs differential benefit
+- Misinformation friction effect (if observed in transcripts)
+- Confidence calibration: do delegators overestimate their output quality?
+- Limitations:
+  - Sample size and power
+  - Single-session design (persistence unknown)
+  - Lab setting vs naturalistic AI use
+  - Hawthorne effect (students know they are observed)
+- **Null result scenario:** equally valuable, redirects toward more structural interventions
+
+## 7. Implications for Practice
+
+- Scalable, low-cost intervention for any AI-integrated unit
+- Open-access resource pack (facilitation guide, nudge variants, task design, survey instrument)
+- Contribution to Curtin's Assessment 2030 agenda
+- Evidence base for NBF equity reporting from 2027
+
+## 8. Conclusion
+
+---
+
+## Paper Timeline
+
+| Phase | Period |
+|-------|--------|
+| Data collection | May-June 2026 |
+| Coding and analysis | July-August 2026 |
+| First draft | September 2026 |
+| Co-author review | October 2026 |
+| Submission | November 2026 |
+
+## References
+
+See [Literature Review](literature-review.qmd) for the developing reference list.

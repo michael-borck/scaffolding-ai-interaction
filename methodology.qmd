@@ -1,0 +1,197 @@
+---
+title: "Research Methodology"
+subtitle: "Study Design and Procedures"
+---
+
+## Research Design
+
+Randomised controlled experiment. Individual-level randomisation to nudge vs control condition within structured lab sessions across three or more university units spanning Information Systems, Supply Chain Management, and Marketing.
+
+All sessions use a frontier-class AI model (Claude or GPT-4 class) accessed via API. This is a deliberate design choice: to isolate the effect of the nudge, the underlying model must be capable enough that variation in output quality reflects student interaction rather than model limitations.
+
+## Participants and Recruitment
+
+**Population:** Curtin students enrolled in participating units (ISYS6020 + at least two additional units). Participation is voluntary and does not affect grades.
+
+**Target sample:** ~60-120 participants total (20-30 per session across 3+ units). A power analysis will be finalised once units and cohort sizes are confirmed.
+
+**Recruitment:** Via PI and co-investigators with plain-language invitations on LMS and email. Session timing varied to accommodate students with work or caring commitments. Purposive encouragement of participation from low SES and first-in-family students.
+
+**Inclusion:** Enrolled students in participating units; aged 18+; able to attend scheduled lab sessions.
+
+**Exclusion:** Students under 18; students who do not consent; students without capacity to consent.
+
+## The Intervention
+
+### Session Format
+
+Each session follows a consistent format (45-60 minutes):
+
+1. Student logs in with student number (assigned a random session code)
+2. Student is randomly assigned to nudge or control condition
+3. Student completes a discipline-relevant task using the AI chat interface
+4. Conversations are logged automatically throughout
+5. 10-minute exit survey via Qualtrics on completion
+
+The AI interface is provided and configured by the research team. Students use lab computers; no personal account or device is required.
+
+### The Conversational Nudge
+
+In the nudge condition, a short prompt is appended to every AI response. To reduce habituation, the prompt is randomly selected each turn from a pool of 10 variants. All variants follow the same design principles:
+
+- Invite pushback, not confirmation
+- Domain-agnostic (work across all disciplines)
+- No prior AI experience assumed
+- Make the conversational path easier, not mandatory
+
+Example variants:
+
+> *"Does that match what you expected? If something seems off, tell me what seems wrong."*
+>
+> *"What's the weakest part of that response?"*
+>
+> *"Does that account for the details in your task, or is it a generic answer?"*
+
+The nudge is appended **server-side** after the AI response. The AI model never sees the nudge text - it is not included in the conversation history sent to the API. This ensures the AI's behaviour is identical across conditions.
+
+See [Nudge Variants](instruments/nudge-variants.qmd) for the full pool.
+
+### System Prompt
+
+A system prompt instructs the AI model to answer directly without follow-up suggestions, engagement hooks, or offers to elaborate. This prevents the model's default behaviour from contaminating the control condition (frontier models are trained to keep users engaged, which would create pseudo-nudges in both conditions).
+
+### Task Briefs
+
+Each discipline has a primary conversational task requiring iterative dialogue to develop a recommendation or analysis:
+
+- [Information Systems](instruments/task-brief-information-systems.qmd) - AI demand forecasting recommendation
+- [Supply Chain Management](instruments/task-brief-supply-chain.qmd) - supply chain resilience briefing
+- [Marketing](instruments/task-brief-marketing.qmd) - retail channel strategy assessment
+
+Retrieval-framed task variants are designed for a [planned follow-on study](instruments/task-brief-retrieval-framed.qmd).
+
+## Measures
+
+### Automated Measures
+
+Computed directly from transcript logs via script. No human coding required.
+
+| Measure | Definition |
+|---------|-----------|
+| `turns_total` | Total student turns |
+| `turns_coded` | Turns coded on behavioural dimensions (Turn 2+) |
+| `words_mean_student` | Average words per student turn |
+| `question_marks_proportion` | Proportion of turns with a question mark |
+| `duration_minutes` | Session duration |
+| `response_latency_mean` | Mean time between AI response and student reply |
+
+### Human-Coded Behavioural Dimensions
+
+The RA codes 100% of transcripts from **Turn 2 onward** (Turn 1 is excluded as it cannot be a follow-up, challenge, or extension). Three binary dimensions per turn:
+
+| Dimension | Code | Definition |
+|-----------|------|-----------|
+| Follow-Up (FU) | 0/1 | Did the student ask a question that continues the conversation? |
+| Challenge (CH) | 0/1 | Did the student push back on, doubt, or correct the AI? |
+| Extension (EX) | 0/1 | Did the student introduce new information or a new angle? |
+
+**Delegation** is derived in analysis (FU=0, CH=0, EX=0), not coded separately. This eliminates the possibility of contradictory data.
+
+### Turn-Level Scoring (Dual)
+
+| Score | Formula | Range | Rationale |
+|-------|---------|-------|-----------|
+| Unweighted | FU + CH + EX | 0-3 | Treats all dimensions equally |
+| Challenge-weighted | FU + 2xCH + EX | 0-4 | Emphasises Challenge, the dimension most directly targeted by the nudge |
+
+Both scores are reported. If they converge, the finding is robust to scoring assumptions. If they diverge, it reveals whether the nudge primarily drives challenge behaviour or broader engagement.
+
+### Task Completion Score
+
+Scored by co-investigators on their own unit's transcripts. Scale 1-5 (minimal output to comprehensive analysis). **Not comparable across units** - discipline-specific rubric anchors.
+
+### Exit Survey
+
+Administered via Qualtrics. Captures:
+
+- Confidence calibration (Q2 vs task score - within-unit only)
+- Self-reported vs observed interaction style (Q5/Q6 vs coded transcript)
+- Condition awareness (Q8a - did nudge students notice the nudge?)
+- Prior AI experience (Q9/Q10 - baseline covariate)
+
+See [Exit Survey](instruments/exit-survey.qmd) for the full instrument.
+
+## Data Collection and De-identification
+
+1. Student enters student number at session login. System assigns a random session code and records a temporary linkage.
+2. All research data (transcripts, task outputs, survey) tagged with session code only.
+3. After data collection closes, the linkage table is used to match equity flags (low SES, first-in-family) from Curtin SIMS.
+4. A de-identification script strips student numbers. The linkage table is permanently destroyed. Destruction is logged and auditable.
+5. The research team analyses a fully de-identified dataset.
+
+## Analysis Plan
+
+### Primary Analysis
+
+Linear mixed-effects model accounting for the nested structure (students within units):
+
+```
+outcome ~ condition + (1 | unit)
+```
+
+- `outcome`: session-level measure (e.g., `mean_turn_score_raw`, `proportion_challenge`)
+- `condition`: fixed effect (Nudge vs Control)
+- `(1 | unit)`: random intercept for unit
+
+**Why mixed-effects:** Students are not independent across units. Each unit has a different task, discipline, and facilitator. Simple ANOVA ignores this nesting and underestimates standard errors.
+
+**Covariate:** Prior AI experience (Q10) included as a fixed effect if groups differ at baseline.
+
+### Equity-Disaggregated Analysis
+
+```
+outcome ~ condition * equity_flag + (1 | unit)
+```
+
+A significant interaction indicates the nudge effect differs by equity cohort (differential benefit). A non-significant interaction with a significant main effect indicates uniform benefit. Both findings are reported.
+
+### Confidence Calibration
+
+Conducted **within unit only** (task scores not comparable across disciplines):
+
+- Spearman correlation between self-reported confidence and task score
+- Comparison of the confidence-performance gap between conditions
+- Identification of the "overconfident delegator" pattern
+
+### Inter-Rater Reliability
+
+- RA codes 100% of transcripts on FU, CH, EX
+- Each co-investigator independently codes a 20-30% stratified sample from their unit
+- Cohen's kappa calculated per unit
+- Kappa < 0.70 triggers scheme revision before full analysis
+
+See [Coding Scheme](instruments/coding-scheme.qmd) for the complete specification.
+
+### Reporting
+
+All analyses reported with:
+
+- Effect sizes (Cohen's d; marginal R-squared for mixed models)
+- 95% confidence intervals
+- Both unweighted and weighted scoring results
+- Equity-disaggregated results regardless of significance
+
+**Implementation:** R with `lme4`, or Python with `statsmodels`.
+
+## Ethical Considerations
+
+HREC application submitted under Curtin's low-risk review pathway. See the [Ethics Package](ethics/index.qmd) for the full application and supporting documents.
+
+Key protections:
+
+- Student numbers collected at login for equity linkage only; destroyed after de-identification
+- All research data uses session codes (no names, no student IDs)
+- Participation voluntary, does not affect grades
+- No-penalty alternative activity available
+- Withdrawal possible until de-identification
+- Nudge transparently described in PIS (no deception)

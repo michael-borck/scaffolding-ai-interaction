@@ -1,0 +1,262 @@
+---
+title: "HREC Application"
+subtitle: "Curtin Low-Risk"
+---
+
+| Field | Detail |
+|-------|--------|
+| **Project title** | Closing the AI Literacy Gap: Scaffolding Equitable Participation in AI-Integrated Assessment |
+| **Principal Investigator (PI)** | Michael Borck, Lecturer, School of Marketing and Management (SoMM) |
+| **Co-Investigators** | Dr Marcela Moraes, Lecturer, SoMM - TBC (confirmation pending) |
+| | Dr Torsten Reiners, Senior Lecturer, Supply Chain Management, SoMM - TBC (confirmation pending) |
+| | [Additional colleague - TBC] |
+| **Faculty/School** | Faculty of Business and Law / School of Marketing and Management |
+| **Funding** | Curtin NBF Learning & Teaching Grant 2026 - AUD $20,000 (internal) |
+| **Study sites** | Curtin computer labs (Business & Law), plus any additional school labs confirmed with co-investigators |
+| **Project dates** | Start April 2026 (ethics approval date + onboarding) - December 2026; reporting in 2027 per NBF requirements |
+| **Ethics pathway sought** | Low-risk (no PII collected; minimal risk educational intervention with university students) |
+| **Related grant or prior ethics** | This HREC supports the NBF grant; no prior HREC approvals. CloudCore/keep-asking design precedents available |
+
+---
+
+## 1) Plain Language Summary (100-200 words)
+
+This study evaluates a simple interface prompt ("nudge") that encourages students to challenge and continue the conversation with an AI tool during structured lab sessions. Students from multiple units complete a short, discipline-relevant task using a supplied AI chat interface. Half of students (randomised) will see a one-line nudge appended to each AI reply:
+
+> "Does that match what you expected? If something seems off, tell me what seems wrong."
+
+The other half will not. We will compare interaction quality (e.g., number and nature of follow-ups) and task outcomes across groups. We will also examine equity-disaggregated outcomes (low SES, first-in-family) using de-identified enrolment data matched to session records by Curtin's analytics team. No personal identifiers are collected by the research team; participation is voluntary and does not affect grades. Results will inform equitable AI-integrated assessment at Curtin and will be shared as open resources and a peer-reviewed paper.
+
+---
+
+## 2) Aims and Significance
+
+**Primary aim:** Test whether a minimal conversational nudge increases critical, iterative student-AI interaction and improves task outcomes in structured lab sessions.
+
+**Equity question:** Determine whether benefits are uniform or differential for low SES and first-in-family students.
+
+**Significance:** Addresses structural disadvantage in AI-integrated assessment by providing in-class scaffolding that may substitute for unequal access to informal AI support networks outside class. Produces equity-disaggregated evidence for Curtin's NBF reporting.
+
+---
+
+## 3) Background and Rationale
+
+The project is grounded in the Conversation, Not Delegation framework: students who guide and challenge AI through iterative dialogue learn and perform better than those who passively accept plausible but incorrect outputs. Uncritical delegation risks worse outcomes than no AI use at all. The nudge reduces the cognitive cost of continuing the conversation at the exact point a student might otherwise accept a first reply. Prior work and theory support scaffolding and conversational models of learning; this project operationalises those principles in the interface. Infrastructure and prior design experience (CloudCore, LocoLLM, keep-asking) allow controlled session delivery and automatic conversation logging without personal identifiers.
+
+---
+
+## 4) Methods
+
+### 4.1 Design
+
+Randomised controlled lab sessions within multiple units; individual randomisation to Nudge vs Control. All students receive the same task and AI model settings (per condition).
+
+**Exploratory model comparison:** Some sessions use a local small model (Configuration A) vs a frontier model via API (Configuration B). Model comparison is descriptive only.
+
+### 4.2 Setting and Procedure
+
+1-2 sessions per participating unit (3 or more units across disciplines). Each session uses lab computers provisioned by the team; no personal accounts are required; the environment is zero-cost to students.
+
+Students complete a discipline-relevant task that requires iterative AI interaction; conversations are logged automatically. A 10-minute exit survey follows.
+
+**Nudge wording** (Nudge condition only): "Does that match what you expected? If something seems off, tell me what seems wrong."
+
+### 4.3 Participants and Recruitment
+
+**Population:** Curtin students enrolled in participating units (ISYS6020 + at least two additional units in Marketing and Supply Chain; final list TBC). Participation is voluntary and does not affect grades. Sessions are scheduled at varied times to support students with work/caring commitments.
+
+**Target n:** ~60-120 participants total (20-30 per session across 3 or more units). A power analysis will be finalised once units and cohort sizes are confirmed.
+
+**Recruitment** via PI and co-investigators with plain-language invitations on LMS and email. We will encourage participation from low SES / first-in-family students (equity disaggregation happens at analysis stage; no differential treatment during sessions).
+
+**Inclusion:** Currently enrolled students in participating units; aged 18+; able to attend scheduled lab sessions.
+
+**Exclusion:** Students under 18; students who do not consent or do not attend lab sessions; students without capacity to consent.
+
+### 4.4 Data Collected
+
+- **Student number:** Collected at session login for equity linkage only. Stored in a temporary linkage table separate from research data. Destroyed after de-identification (see Section 8).
+- **Conversation transcripts:** Tagged with session code only (no student number). Logged automatically.
+- **Exit survey** responses via Qualtrics (Curtin institutional licence): self-report of confidence, prior AI experience, demographics.
+- **Task outputs** for rubric scoring.
+- **Equity flags** (low SES, first-in-family): matched to session codes via linkage table, then de-identified. The research team analyses only the de-identified dataset.
+
+### 4.5 Measures
+
+- **Conversation depth:** turn count per session
+- **Follow-up quality:** behavioural coding (specificity, criticality, challenge)
+- **Task completion quality:** rubric scores
+- **Confidence calibration:** self-reported confidence vs performance
+
+**Analyses:** Linear mixed-effects models (condition as fixed effect, unit as random intercept) to account for nesting of students within units; effect sizes; equity-disaggregated subgroup analyses with interaction terms. Confidence calibration conducted within-unit only. Inter-rater reliability (Cohen's kappa) between RA and unit co-investigators on calibration samples; kappa < 0.70 triggers scheme refinement before full analysis.
+
+---
+
+## 5) Risks and Mitigation (Low-Risk Justification)
+
+**Physical risk:** None.
+
+**Psychological risk:** Minimal; students may feel minor performance anxiety. Mitigation: clear voluntariness, short tasks, supportive facilitation, option to skip any question and withdraw at any time without consequence.
+
+**Privacy risk:** Low; student numbers are collected at login for equity linkage only, stored in a temporary linkage table, and destroyed after de-identification. All research data (transcripts, surveys, task outputs) use session codes only. The research team analyses a fully de-identified dataset.
+
+**Academic risk / power relationship:** Participation does not affect unit grades; sessions are optional; non-teaching facilitators assist where feasible; consent taken outside assessment contexts; a no-penalty alternative is available (e.g., self-paced practice task not logged).
+
+**Data security:** University infrastructure; controlled folders; role-based access; encryption at rest; retention and destruction schedule below.
+
+---
+
+## 6) Benefits
+
+**Direct to participants:** Opportunity to learn effective AI interaction habits and receive structured feedback.
+
+**To Curtin:** Equity-disaggregated evidence to inform AI-integrated assessment policy and NBF reporting. Open-access resource pack and ACIS 2026 dissemination.
+
+---
+
+## 7) Consent (Digital Only)
+
+**Type:** Opt-in written consent (digital tick-box or signed paper).
+
+**Process:** Participants receive a Participant Information Sheet (PIS) at least 48 hours prior (via LMS/email). Consent is captured before the session; students may withdraw anytime before data aggregation by quoting their session code.
+
+No deception. No concealment of study aims; the nudge wording is transparently described in PIS.
+
+---
+
+## 8) Privacy, Confidentiality and Data Security
+
+**Data flow and de-identification process:**
+
+1. Student logs into the lab interface using their student number. The system assigns a random session code and records a temporary linkage (student number to session code) in a restricted-access linkage table.
+2. All research data (conversation transcripts, task outputs, Qualtrics exit survey responses) are tagged with the session code only. Student numbers do not appear in research data.
+3. After data collection closes, the PI uses the linkage table to match equity flags (low SES, first-in-family status) from Curtin SIMS to session codes.
+4. A de-identification script strips student numbers from the dataset, retaining only session codes and equity flags. The linkage table is permanently destroyed. Destruction is logged and auditable.
+5. The research team receives and analyses a fully de-identified dataset. No pathway exists to re-identify participants after this step.
+
+**Storage:** Curtin network drive / SharePoint with role-based access for PI, approved co-investigators, and RA; versioning; backups per university policy.
+
+**Retention and destruction:** 5 years post-publication (or per Curtin RDM policy for L&T research), then secure deletion (cryptographic erase) of raw datasets and transcripts; anonymised analysis scripts can be retained in a public repository with no raw transcripts.
+
+---
+
+## 9) Use of AI / External Services
+
+**Frontier model via API:** The team funds API use from the internal grant; the interface does not store personal data; prompts and responses are session-coded only.
+
+**Content filtering:** The interface prevents entering personal health/financial information and reminds students not to include PII.
+
+**Data residency:** No PII; content pertains to course tasks; API calls are limited to session content and excluded from provider training where setting is available.
+
+---
+
+## 10) Incentives
+
+None offered. Sessions are designed to be short and scheduled at varied times to maximise accessibility.
+
+---
+
+## 11) Funding, Conflicts, Monitoring and Timeline
+
+**Funding:** Curtin NBF Learning & Teaching Grant 2026 (internal). Budget supports RA, API costs, instrument development, session delivery, resource production, and ACIS 2026 dissemination.
+
+**COIs:** None declared. The PI's authorship of Conversation, Not Delegation is disclosed as scholarly background; no commercial interest.
+
+**Monitoring:** PI reviews session logs for anomalies weekly during data collection; any adverse incidents (e.g., distress) trigger immediate pause and referral to student support services.
+
+**Complaints:** PIS lists Curtin HREC contact for participants to lodge concerns independent of the research team.
+
+**Protocol deviations:** Documented and reported with corrective actions to HREC if materially affecting risk.
+
+### Timeline
+
+| Period | Activity |
+|--------|----------|
+| March-April 2026 | HREC approval, confirm units/co-Is, finalise instruments, recruit RA |
+| May-June 2026 | Lab sessions and data collection |
+| July-August 2026 | Coding, reliability checks, analysis |
+| Sep-Dec 2026 | Writing, open resources, ACIS submission; progress report drafting |
+| 2027 | NBF final report |
+
+---
+
+## 12) Dissemination
+
+Open-access resource pack (facilitation guide, nudge variants, task design principles, exit survey instrument) on Curtin repository and The AI Exchange. ACIS 2026 paper submission. Equity-disaggregated findings included in NBF reporting.
+
+---
+
+## 13) Vulnerable Populations
+
+The study involves adult university students. Power imbalances are mitigated via voluntariness, non-assessment, neutral facilitation, and alternatives.
+
+Equity cohorts (low SES; first-in-family) are not treated differently in sessions; equity analysis occurs post hoc using de-identified cohort flags to examine whether benefits are uniform or differential.
+
+---
+
+## 14) Publications
+
+**Peer-reviewed:** Targeting ACIS 2026; anonymised transcript excerpts only; no identifiers.
+
+**Open resources:** Facilitation guide, nudge variants, task design principles, exit survey instrument (no raw data).
+
+---
+
+## Appendix: Embedded Drafts
+
+### A. Participant Information Sheet
+
+*(See separate file: ethics/pis_digital.md)*
+
+### B. Consent Form
+
+*(See separate file: ethics/consent_digital.md)*
+
+### C. Recruitment Materials
+
+*(See separate file: ethics/recruitment_materials.md)*
+
+### D. Facilitator Script
+
+*(See separate file: ethics/facilitator_script.md)*
+
+### E. Data Management Plan
+
+*(See separate file: ethics/dmp_summary.md)*
+
+### F. Risk Matrix
+
+*(See separate file: ethics/risk_matrix.md)*
+
+### G. Exit Survey
+
+*(See separate file: instruments/exit_survey.md)*
+
+Administered via Qualtrics. Captures confidence calibration (self-reported confidence vs task performance, analysed within-unit), self-reported interaction style (compared against coded transcript data), prior AI experience (covariate), and condition awareness (whether nudge-group students noticed the nudge).
+
+### H. Coding Scheme (Summary)
+
+*(See separate file: instruments/coding_scheme.md)*
+
+**Three coded dimensions** (binary, Turn 2 onward):
+
+- Follow-Up (FU): did the student ask a follow-up question?
+- Challenge (CH): did the student push back on or correct the AI?
+- Extension (EX): did the student introduce new information or a new angle?
+
+Delegation is derived in analysis (FU=0, CH=0, EX=0), not coded separately. Results reported using both unweighted (FU+CH+EX) and challenge-weighted (FU+2xCH+EX) scoring.
+
+**Reliability:** RA codes 100%; each co-I codes 20-30% from their unit; Cohen's kappa per unit; kappa < 0.70 triggers scheme refinement.
+
+---
+
+## Pre-Submission Checklist
+
+- [ ] Insert HREC submission date and preferred start date
+- [ ] Confirm co-investigator names/roles/units (Marcela, Torsten, plus third if any)
+- [ ] List participating units explicitly (ISYS6020 + [Marketing Unit] + [Supply Chain Unit])
+- [ ] Add Curtin analytics contact for equity flag matching and confirm the de-identification protocol email
+- [ ] Confirm storage location path (e.g., R:\Faculty\ProjectNudge\ or SharePoint site) and access list
+- [ ] Replace placeholders in PIS/Consent/Recruitment with dates, rooms, and contact details
+- [ ] Attach RA position description (brief; includes confidentiality obligations)
+- [ ] Note any model provider settings (opt-out of training if available) in the AI configuration appendix

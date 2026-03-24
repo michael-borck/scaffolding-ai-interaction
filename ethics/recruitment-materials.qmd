@@ -1,0 +1,17 @@
+---
+title: "Recruitment Materials"
+subtitle: "Email and LMS"
+---
+
+**Subject:** Optional AI Lab Session for [Unit Code]
+
+Hello [Unit Name] students,
+
+You're invited to an optional on-campus AI lab session (45-60 mins) exploring how to get better results from AI tools. You'll complete a short, course-relevant task using a university-provided AI chat interface (no personal accounts needed). Afterwards, there's a brief exit survey.
+
+- **Voluntary:** Not assessed; won't affect your grades.
+- **When/where:** [Dates, location]. Multiple times offered.
+- **Privacy:** We don't collect your name/student ID. Conversations are tagged only with a session code.
+- **Consent:** Read the PIS and complete the digital consent form: [Insert Link].
+
+Questions? Contact [PI email].

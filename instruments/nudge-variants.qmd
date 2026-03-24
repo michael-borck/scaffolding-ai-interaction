@@ -1,0 +1,57 @@
+---
+title: "Nudge Variants"
+subtitle: "Version 1.0, March 2026"
+---
+
+To reduce habituation (students ignoring a repeated prompt), the nudge is not a single fixed line. Instead, one variant is randomly selected from the pool below and appended to each AI response in the nudge condition. All variants are designed to the same specification.
+
+## Design Principles
+
+Every variant must:
+
+1. **Invite pushback, not confirmation** - the prompt should make it easier to disagree, not harder
+2. **Be domain-agnostic** - work equally across Information Systems, Supply Chain, and Marketing
+3. **Assume no prior AI experience** - a first-time AI user should understand the prompt
+4. **Make the conversational path easier, not mandatory** - a suggestion, not an instruction
+5. **Be short** - one sentence, scannable in under 3 seconds
+
+## Variant Pool
+
+| # | Variant |
+|---|---------|
+| 1 | Does that match what you expected? If something seems off, tell me what seems wrong. |
+| 2 | Before you move on - does that actually answer your question, or just part of it? |
+| 3 | Is there anything in that response that doesn't quite fit with what you already know? |
+| 4 | What would you challenge in that answer if you were reviewing someone else's work? |
+| 5 | Does that feel complete, or is there a gap worth pushing on? |
+| 6 | If you had to argue the opposite, what would you say? |
+| 7 | Is that specific enough to be useful, or is it still too general? |
+| 8 | What's the weakest part of that response? |
+| 9 | Does that account for the details in your task, or is it a generic answer? |
+| 10 | Would you trust that answer enough to use it without checking? Why or why not? |
+
+## Selection Method
+
+One variant is selected uniformly at random per AI response. The same variant may appear consecutively by chance, but the probability decreases with pool size (1/10 = 10% chance of repeat). The selected variant is logged alongside the displayed response for analysis.
+
+## Analysis Considerations
+
+- The primary analysis treats all nudge variants as equivalent (any nudge vs no nudge)
+- Exploratory analysis may examine whether specific variants are associated with higher challenge rates, though the study is not powered for variant-level comparisons
+- Variant #1 is the original wording described in the grant application and HREC documents
+
+## Adding Variants
+
+New variants can be added to the pool if they meet all five design principles above. Variants should be piloted with 2-3 students before being added to the live pool. The variant pool is defined in the application backend (`keep-asking-app`) and can be updated without changing the study design.
+
+---
+
+## Document History
+
+| Version | Date | Changes |
+|---------|------|---------|
+| 1.0 | March 2026 | Initial pool of 10 variants |
+
+---
+
+*keep-asking project - github.com/michael-borck/keep-asking*

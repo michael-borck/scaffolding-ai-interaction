@@ -1,0 +1,40 @@
+---
+title: "Task Brief - Information Systems"
+subtitle: "ISYS6020"
+---
+
+You are an IT consultant advising a mid-sized Australian retail company (250 employees, 12 stores, one warehouse). The company currently uses a legacy point-of-sale system and spreadsheets for inventory. The CEO has asked you to recommend whether the company should adopt an AI-powered demand forecasting system to reduce stockouts and overstock.
+
+## Your Task
+
+Using the AI tool provided, develop a recommendation memo (300-500 words) that addresses:
+
+1. **Feasibility:** Is an AI demand forecasting system appropriate for a company of this size and maturity? What data would they need, and do they likely have it?
+2. **Risks:** What are the main risks of adopting this system? Consider data quality, staff capability, vendor lock-in, and cost.
+3. **Alternative:** If AI forecasting is not the right first step, what should the company do instead?
+
+## Instructions
+
+- You have **45 minutes** to develop your recommendation using the AI chat tool.
+- Do not simply ask the AI to write the memo for you. Use the AI to explore the problem, test your reasoning, and refine your thinking.
+- Challenge the AI if something seems wrong or oversimplified. The AI may give plausible but incorrect or generic responses - it is your job to catch those.
+- Your final memo should reflect your own judgement informed by the conversation, not a copy of the AI's output.
+
+## What Makes a Good Response
+
+- Shows evidence of critical evaluation (not just accepting the AI's first answer)
+- Considers the specific context (mid-sized Australian retail) rather than generic advice
+- Acknowledges trade-offs and limitations
+- Demonstrates iterative thinking - the recommendation evolved through conversation
+
+---
+
+## Sample Interaction Tasks (Alternative Scenarios)
+
+### Task 2: Cloud Migration Risk Assessment
+
+A university department is considering migrating its student records system from on-premises servers to a cloud-based SaaS platform. Using the AI tool, develop a risk assessment that evaluates data sovereignty (Australian data must stay onshore), integration with existing systems, and the transition plan. Identify at least two risks the AI might understate or miss.
+
+### Task 3: AI Ethics Policy Review
+
+A financial services company has drafted a one-page AI ethics policy. The policy states: "All AI decisions will be fair, transparent, and accountable." Using the AI tool, critically evaluate this policy. Identify what is missing, what is unenforceable, and draft three specific, actionable clauses that would make the policy meaningful. Push back if the AI suggests vague improvements.

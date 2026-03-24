@@ -1,0 +1,86 @@
+---
+title: "Literature Review"
+subtitle: "Working Document - Initial Review"
+---
+
+::: {.callout-note}
+This is a working document. Sections marked [TO EXPAND] contain placeholder structure for additional literature. The existing references are drawn from the grant application; the review will be expanded during the writing phase (September-October 2026).
+:::
+
+## AI in Higher Education Assessment
+
+The integration of AI tools in higher education assessment is accelerating, but the pedagogical implications are unevenly understood. Kasneci et al. (2023) provide a broad survey of opportunities and challenges, identifying the tension between AI's potential to support learning and its potential to undermine it when students disengage from the cognitive work that assessment is designed to elicit.
+
+Stojanov, Gronbaek, and Kulahci (2024) move beyond the general framing to identify distinct student AI use patterns empirically. Their comparative study identifies a substantial subgroup of "assignment delegators" - students who use AI primarily to generate output rather than to support thinking. This is not a hypothetical risk; it is a measurable, persistent behaviour type. The delegator pattern is the specific problem the nudge intervention targets.
+
+Mollick and Mollick (2023) approach the same problem from a design perspective, identifying seven approaches for integrating AI into student work. Their central argument - that the pedagogical challenge is keeping students as the active "human in the loop" - directly informs the Conversation, Not Delegation framework and the design of the nudge intervention.
+
+[TO EXPAND: Additional sources on AI-integrated assessment design, student AI adoption patterns, and institutional policy responses.]
+
+## The Delegation Problem
+
+Passive delegation to AI carries a risk more serious than simply producing shallow work. When a student accepts a plausible but incorrect AI response without challenge, they have not just missed a learning opportunity - they have incorporated misinformation into their understanding with a degree of confidence they would not have from simply not knowing. In this sense, uncritical AI delegation may produce worse outcomes than no AI use at all.
+
+This is the misinformation friction effect: the nudge is designed to create the friction that surfaces errors before they are accepted and acted upon. The argument is strongest in disciplines where factual accuracy, procedural correctness, or evidence-based reasoning are directly assessed.
+
+[TO EXPAND: Literature on overreliance on AI, automation bias in decision-making, and the Dunning-Kruger intersection with AI-assisted work.]
+
+## Scaffolding and Conversational Learning
+
+Vygotsky's (1978) scaffolding framework argues that structured support within a learner's zone of proximal development enables capability development that does not occur without it. The nudge is a minimal scaffold: it does not provide the answer or direct the student's response, but it makes the conversational path structurally easier to take.
+
+Laurillard's (2002) conversational framework extends scaffolding specifically to iterative dialogue as the mechanism of learning. The framework positions learning as a conversation between teacher and student (or, in this case, between student and AI) where meaning is constructed through successive cycles of articulation, re-articulation, and reflection. The nudge intervention targets the transition point in this cycle - the moment where a student decides whether to continue the conversation or accept and move on.
+
+[TO EXPAND: Recent applications of Laurillard's framework to AI-mediated learning. Scaffolding research in technology-enhanced learning environments.]
+
+## Nudge Theory in Education
+
+Thaler and Sunstein (2008) define a nudge as any aspect of choice architecture that alters people's behaviour in a predictable way without forbidding any options or significantly changing their economic incentives. The conversational nudge applies this principle at the interface level: it does not require the student to push back, but it makes the pushback path cognitively cheaper by providing an explicit next action.
+
+The application of nudge theory to educational contexts is well-established in areas such as enrolment, attendance, and financial aid uptake. Its application to in-task learning behaviour during AI interaction is less explored and represents a contribution of this study.
+
+[TO EXPAND: Nudge interventions in higher education. Choice architecture in digital learning environments. Behavioural economics approaches to student engagement.]
+
+## Guided vs Unguided AI Use
+
+Recent empirical work confirms that structured engagement with AI consistently outperforms unstructured use. A study published in Frontiers in Psychology (2025) finds effects on task quality and academic engagement most pronounced when scaffolding is built into the task design rather than left to student initiative. This finding directly supports the design choice of embedding the nudge in the interface rather than relying on students to self-scaffold.
+
+[TO EXPAND: Experimental studies comparing prompted vs unprompted AI interaction. Metacognitive scaffolding in AI-assisted learning.]
+
+## Equity and Digital Literacy
+
+The equity argument in this project is structural, not deficit-based. The evidence does not support the assumption that low SES or first-in-family students are inherently less capable of productive AI interaction. What the evidence does support is that students with fewer informal support networks outside the classroom have fewer opportunities to develop, or correct, their AI interaction habits through channels other than structured teaching.
+
+A student who arrives with well-developed conversational AI habits has multiple pathways to refine those habits outside the classroom. A student without those networks is more dependent on the classroom being the place where scaffolding occurs. The nudge makes the classroom that place for every student; the equity analysis asks whether the benefit is differential.
+
+[TO EXPAND: Literature on SES and digital literacy gaps. First-in-family student experiences with technology-enhanced learning. Structural vs deficit-based equity frameworks in higher education.]
+
+## The Conversation, Not Delegation Framework
+
+The Conversation, Not Delegation framework (Borck, 2026) names and operationalises the distinction between productive and unproductive AI interaction for the higher education teaching context. Conversation treats AI as a thinking partner: the student directs, challenges, and refines through iterative dialogue. Delegation treats AI as an answer machine: the student submits, accepts, and moves on.
+
+The framework argues that the difference is not about tool choice or model quality - a student engaging conversationally with a less capable model may produce better learning outcomes than a student delegating passively to a frontier model. This observation motivates the planned follow-on study examining whether conversation quality can compensate for model quality.
+
+---
+
+## References
+
+Borck, M. (2026). *Conversation, Not Delegation.* KDP. ISBN 979-8252824550.
+
+Frontiers in Psychology. (2025). Optimizing academic engagement and mental health through AI: An experimental study on LLM integration in higher education. *Frontiers in Psychology, 16.* <https://doi.org/10.3389/fpsyg.2025.1641212>
+
+Kasneci, E., Sessler, K., Kuchemann, S., Bannert, M., Dementieva, D., Fischer, F., ... and Kasneci, G. (2023). ChatGPT for good? On opportunities and challenges of large language models for education. *Learning and Individual Differences, 103,* 102274. <https://doi.org/10.1016/j.lindif.2023.102274>
+
+Laurillard, D. (2002). *Rethinking University Teaching: A Conversational Framework for the Effective Use of Learning Technologies* (2nd ed.). RoutledgeFalmer.
+
+Mollick, E. R., and Mollick, L. (2023). Assigning AI: Seven approaches for students, with prompts. *The Wharton School Research Paper.* <https://ssrn.com/abstract=4475995>
+
+National Health and Medical Research Council. (2023). *National Statement on Ethical Conduct in Human Research* (2023 update). Australian Government.
+
+Stojanov, A., Gronbaek, N., and Kulahci, M. (2024). Can we delegate learning to automation? A comparative study of LLM chatbots, search engines, and books. *arXiv preprint.* <https://arxiv.org/abs/2410.01396>
+
+Thaler, R. H., and Sunstein, C. R. (2008). *Nudge: Improving Decisions About Health, Wealth, and Happiness.* Yale University Press.
+
+Vygotsky, L. S. (1978). *Mind in Society: The Development of Higher Psychological Processes.* Harvard University Press.
+
+[TO EXPAND: Additional references to be added during the writing phase.]

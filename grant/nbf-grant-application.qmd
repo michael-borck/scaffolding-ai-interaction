@@ -1,0 +1,318 @@
+---
+title: "NBF Grant Application 2026"
+subtitle: "Application Draft - Version 6.0, March 2026"
+---
+
+| Field | Detail |
+|-------|--------|
+| **Project Title** | Closing the AI Literacy Gap: Scaffolding Equitable Participation in AI-Integrated Assessment |
+| **Lead Applicant** | Michael Borck, Lecturer, School of Marketing and Management (SoMM) |
+| **Co-Investigators** | Dr Marcela Moraes, Lecturer, School of Marketing and Management (SoMM) [contribution TBC - pending confirmation] |
+| | Dr Torsten Reiners, Senior Lecturer in Supply Chain Management, SoMM [contribution TBC - pending confirmation] |
+| | [Additional colleague - TBC] |
+| **Faculty / School** | Faculty of Business and Law / School of Marketing and Management |
+| **Participating Units** | ISYS6020 AI to Drive Business Innovation (IS, lead unit) |
+| | [Torsten's unit - Supply Chain Management discipline, SoMM, TBC] |
+| | [Marcela's unit - School of Marketing, TBC] |
+| | [Additional unit - TBC] |
+| **Amount Requested** | AUD $20,000 |
+| **Project Period** | Semester 1 2026 - December 2026 |
+| **Reporting Deadline** | First half of 2027 |
+| **Ethics Status** | HREC application submitted [INSERT DATE] - low-risk review pathway. Student numbers collected for equity linkage only; destroyed after de-identification. |
+| **NBF Equity Cohorts** | Low SES students; first-in-family students |
+
+> **Applicant note:** Items in [brackets] must be confirmed before submission. Aboriginal and/or Torres Strait Islander cohort inclusion: add only if recruitment data supports a meaningful claim. Do not remove placeholder silently - make an active decision.
+
+---
+
+## 1. Project Overview
+
+> *Suggested length: 200-300 words.*
+
+Australian universities are embedding AI tools in assessment at pace, but the skills required to use those tools effectively are not equally distributed. Students from low socioeconomic backgrounds and those who are first in their family to attend university are significantly less likely to have access to the informal support networks - peers, family, tutors, prior professional exposure - that help students develop productive AI interaction habits before they arrive. Without structured scaffolding in the curriculum, this access gap becomes a participation and attainment gap.
+
+This project implements and evaluates a low-cost, scalable intervention designed to close that gap for every student. Across structured lab sessions embedded in three or more collaborating units spanning multiple disciplines, students complete a discipline-relevant task using a supplied AI tool. Half receive a conversational nudge appended to every AI response; half do not. All students benefit from the scaffolded environment. The equity analysis asks whether the benefit is uniform or differential - whether students who had fewer prior scaffolding opportunities gain more from the in-class intervention than those who had more. The data answers that question; the study design does not assume it in advance.
+
+The intervention is grounded in the Conversation, Not Delegation framework (Borck, 2026): the quality of AI-assisted work depends on whether the student is directing the AI through active conversation or passively accepting its output. Passive delegation to AI is not a neutral choice - when a student accepts a plausible but incorrect AI response without challenge, the result is worse than no AI assistance at all. The nudge makes the conversational path structurally easier, reducing the risk of uncritical acceptance at the point where it matters most.
+
+NBF funding supports session delivery, evaluation, cross-disciplinary scaling, and production of open-access resources.
+
+---
+
+## 2. Alignment with NBF Eligibility Criteria
+
+> *Suggested length: 300-400 words.*
+
+### 2.1 Universal Intervention, Equity-Focused Evaluation
+
+This project delivers its intervention to all students in participating lab sessions, regardless of equity cohort status. This is a deliberate design choice, not a limitation. The existing evidence base does not support the assumption that low SES or first-in-family students are inherently less capable of productive AI interaction. What the evidence does support is that students with fewer informal support networks outside the classroom have fewer opportunities to develop, or correct, their AI interaction habits through channels other than structured teaching (Stojanov et al., 2024; Kasneci et al., 2023).
+
+The equity argument is structural, not deficit-based. A student who arrives with well-developed conversational AI habits has multiple pathways to refine those habits outside the classroom. A student without those networks is more dependent on the classroom being the place where scaffolding occurs. When it is not, the gap compounds at every AI-integrated assessment task - and the consequences of passive AI use are not simply suboptimal outputs, but potentially misleading ones.
+
+This project makes the classroom that place, for every student. The evaluation then asks: does the intervention close a pre-existing gap, or does it raise all boats equally? Both findings are valuable and both are reported against equity cohort flags.
+
+### 2.2 Low SES Students
+
+[INSERT: Approximately X% of domestic students across the participating units are classified as low SES under the standard HEIMS measure.] Equity cohort identification will be applied analytically at the reporting stage using de-identified Curtin student data matched to session records. Purposive recruitment will actively encourage participation from low SES students through unit co-investigators.
+
+### 2.3 First-in-Family Students
+
+[INSERT: Approximately X% of domestic students in the participating units are first in their family to attend university.] The same analytical approach applies: cohort flags are used for disaggregated reporting, not for differential treatment within the intervention itself.
+
+### 2.4 Aboriginal and/or Torres Strait Islander Students
+
+[APPLICANT NOTE: Include this section only if cohort recruitment data supports it. Remove rather than make a thin claim.]
+
+### 2.5 Participation and Attainment Outcomes
+
+The project measures both participation quality (depth and criticality of AI interaction as evidenced in conversation transcripts) and attainment outcomes (task completion quality scored against pre-specified rubrics). Equity-disaggregated reporting will directly support Curtin's NBF reporting obligations from 2027 onward.
+
+---
+
+## 3. Background and Rationale
+
+> *Suggested length: 400-600 words.*
+
+The integration of AI tools in higher education assessment creates a new form of structural disadvantage. When students submit AI-assisted work, the quality of that work depends substantially on the quality of their AI interaction - whether they engage conversationally and critically, or accept the first plausible response without pushback. Research consistently shows that passive AI use, while producing apparently coherent outputs, produces weaker learning and lower task quality than active engagement (Kasneci et al., 2023). Empirical analysis of student AI use patterns identifies a substantial subgroup of "assignment delegators" - students who use AI primarily to generate output rather than to support thinking - as a distinct and measurable behaviour type that persists across contexts (Stojanov et al., 2024). Mollick and Mollick (2023) identify the same pattern and argue that the central pedagogical challenge is keeping students as the active "human in the loop" rather than passive recipients of AI-generated content.
+
+Passive delegation carries a risk that is more serious than simply producing shallow work. A student who accepts a plausible but incorrect AI response without challenge has not just missed a learning opportunity - they have incorporated misinformation into their understanding and their output with a degree of confidence they would not have from simply not knowing. In this sense, uncritical AI delegation may produce worse outcomes than no AI use at all. This is particularly consequential in disciplines where factual accuracy, procedural correctness, or evidence-based reasoning are directly assessed. The nudge intervention is designed to create the friction that surfaces these errors before they are accepted and acted upon.
+
+The Conversation, Not Delegation framework (Borck, 2026) names and operationalises this distinction for the higher education teaching context. Conversation treats AI as a thinking partner: the student directs, challenges, and refines through iterative dialogue. Delegation treats AI as an answer machine: the student submits, accepts, and moves on. The difference is not about tool choice or model quality - a student engaging conversationally with a less capable model may produce better learning outcomes than a student delegating passively to a frontier model.
+
+Prior work on guided versus unguided LLM use confirms that structured engagement consistently outperforms unstructured use, with effects on task quality and academic engagement most pronounced when scaffolding is built into the task design rather than left to student initiative (Frontiers in Psychology, 2025). The theoretical foundation is well-established: Vygotsky's (1978) scaffolding framework argues that structured support within a learner's zone of proximal development enables capability development that does not occur without it; Laurillard's (2002) conversational framework extends this specifically to iterative dialogue as the mechanism of learning. The nudge intervention applies both principles at the interface level - a minimal structural scaffold that makes the conversational path easier to take, without mandating it (Thaler and Sunstein, 2008).
+
+The current project builds on infrastructure already in place. The CloudCore Networks environment - a locally-hosted AI simulation used in ISYS6020 - provides a proven model for AI-mediated task design with automatic transcript logging. The keep-asking project (github.com/michael-borck/keep-asking) documents the full experimental design and HREC pathway. The present grant extends this work to a cross-disciplinary, controlled lab session design chosen to produce cleaner causal evidence within the project timeline.
+
+---
+
+## 4. Project Description
+
+> *Suggested length: 500-700 words.*
+
+### 4.1 The Intervention
+
+The project delivers one to two structured AI lab sessions within each of three or more collaborating units across multiple disciplines. Each session follows a consistent format:
+
+- Students complete a discipline-relevant task using a supplied AI chat interface
+- The task is designed to require iterative AI interaction, not a single query
+- Students are randomly assigned within each session to nudge or control condition
+- Conversations are logged automatically throughout the session
+- A 10-minute exit survey is administered on completion
+
+The AI interface is provided and configured by the research team. Students use lab computers; no personal account or device is required. The environment is zero-cost to students.
+
+### 4.2 The Conversational Nudge
+
+A short prompt is appended to every AI response in the nudge condition. To reduce habituation (students ignoring a repeated line), the prompt is randomly selected each turn from a pool of 10 variants. All variants follow the same design principles: they invite pushback rather than confirmation, apply equally across disciplines and task types, and do not presuppose any prior AI experience. Example variants include:
+
+> *"Does that match what you expected? If something seems off, tell me what seems wrong."*
+>
+> *"What's the weakest part of that response?"*
+>
+> *"Does that account for the details in your task, or is it a generic answer?"*
+
+The full variant pool is documented in `instruments/nudge_variants.md`. Grounded in behavioural scaffolding principles (Thaler and Sunstein, 2008), each variant reduces the cognitive cost of continuing the conversation by making the next action explicit - without directing or constraining the student's response. The primary analysis treats all variants as equivalent (any nudge vs no nudge).
+
+### 4.3 AI Infrastructure and Model Choice
+
+All sessions use a frontier-class AI model (Claude or GPT-4 class) accessed via API. This is a deliberate design choice: to isolate the effect of the nudge on interaction behaviour and task outcomes, the underlying model must be capable enough that variation in output quality reflects student interaction rather than model limitations. Using a weak or outdated model would confound the primary finding - any difference in output quality could be attributable to model failure rather than interaction pattern.
+
+### 4.4 Measures
+
+| Measure | Method | Timing |
+|---------|--------|--------|
+| Conversation depth | Turn count per session, by condition | Automatic log analysis |
+| Follow-up quality | Behavioural coding: specificity, criticality, challenge | Post-session (RA full coverage; co-investigator calibration sample) |
+| Task completion quality | Rubric score on task output | Post-session (co-investigators, by unit) |
+| Confidence calibration | Self-reported confidence vs. actual performance | Exit survey (Qualtrics) |
+| Equity disaggregation | All measures by SES flag and first-in-family status | Post-session linkage via student number; de-identified before analysis |
+
+**Coding approach.** The RA codes 100% of transcripts (Turn 2 onward; Turn 1 is excluded as it cannot be a follow-up, challenge, or extension) on three behavioural dimensions that do not require disciplinary knowledge: Follow-Up, Challenge, and Extension. Delegation is derived in analysis as the absence of all three. Results are reported using both an unweighted score (FU + CH + EX) and a challenge-weighted score (FU + 2xCH + EX), since the nudge directly targets challenge behaviour. These dimensions are structural and context-independent.
+
+Each co-investigator independently codes a 20-30% calibration sample from their own unit's transcripts, applying the same scheme. Cohen's kappa is calculated per unit between the RA's codes and the co-investigator's codes on that sample. Where they agree, the RA's full coverage is validated. Where they diverge, the lead investigator adjudicates - recognising that some divergences reflect genuine domain knowledge adding interpretive value rather than coding error. Any kappa below 0.70 on the behavioural dimensions triggers coding scheme revision before proceeding to full analysis.
+
+### 4.5 Recruitment
+
+Each co-investigator recruits students from their unit cohort. Recruitment actively encourages participation from students identifying as low SES or first-in-family. Session timing will be varied to accommodate students with work or caring commitments. Participation is voluntary and does not affect unit grades.
+
+Target sample: 20-30 students per session across three or more units, yielding approximately 60-120 participants depending on final unit confirmations. A power analysis will be completed once co-investigator units and cohort sizes are confirmed.
+
+### 4.6 Ethics and Data De-identification
+
+HREC application submitted [INSERT DATE] under Curtin's low-risk review pathway. The study meets the criteria for low-risk classification under the National Statement on Ethical Conduct in Human Research (2023).
+
+**Data flow and de-identification process:**
+
+1. At session login, students enter their student number. The system assigns a random session code and records a temporary linkage (student number to session code).
+2. All research data (conversation transcripts, task outputs, exit survey responses) are tagged with the session code only. The research team works exclusively with session codes during data collection.
+3. After data collection closes, the linkage table is used to match equity flags (low SES, first-in-family status) from Curtin's student information system (SIMS) to session codes.
+4. A de-identification script strips student numbers from the dataset, retaining only session codes and equity flags. The linkage table is then permanently destroyed.
+5. The research team receives and analyses a fully de-identified dataset. The destruction of the linkage table is logged and auditable.
+
+Data is stored on university-controlled infrastructure throughout. The exit survey is administered via Qualtrics (Curtin institutional licence).
+
+---
+
+## 5. Expected Outcomes and Impact
+
+> *Suggested length: 300-400 words.*
+
+By the end of 2026, this project will deliver:
+
+**Primary outcomes**
+
+- Rigorous evaluation evidence on whether conversational nudging improves participation quality and task outcomes across student cohorts, with equity-disaggregated results distinguishing between uniform benefit and differential benefit by SES and first-in-family status. Either finding is actionable: uniform benefit confirms universal scaffolding is sufficient; differential benefit identifies where the in-class intervention makes the greatest difference.
+- A cross-disciplinary implementation tested across at least three units and two discipline areas, demonstrating generalisability of the intervention beyond any single teaching context.
+- An open-access AI scaffolding resource pack - session facilitation guide, nudge variants, task design principles, exit survey instrument - freely available for adoption across Curtin and externally.
+- A peer-reviewed paper submitted to ACIS 2026, positioning Curtin as a contributor to the national conversation on equitable AI-integrated assessment.
+- Equity-disaggregated outcome data suitable for Curtin's NBF reporting requirements from 2027 onward.
+
+**Positioning for future work**
+
+The infrastructure, instruments, ethics framework, and research team established by this project will be in place at the end of 2026, ready for follow-on studies. Potential directions include:
+
+- **Model quality vs conversation quality:** Does scaffolded interaction with a less capable local model produce outcomes comparable to unscaffolded use of a frontier model? If so, the equity implication shifts from access to better models toward access to better interaction habits.
+- **Persistence:** Does the nudge effect carry over into independent AI use after the scaffolded session, or does it require ongoing structural support?
+- **Task framing and hallucination risk:** The current study uses conversational tasks (developing a recommendation through iterative dialogue). A follow-on study could compare these against retrieval-framed tasks - tasks that appear to require factual recall. LLMs do not retrieve facts; they interpolate from training data, making confident but potentially incorrect responses most likely in retrieval contexts. Students are least likely to challenge these responses because they look authoritative. If the nudge is most effective on retrieval-framed tasks, that would identify the specific interaction pattern where scaffolding matters most and where uncritical delegation carries the greatest risk of incorporating misinformation.
+
+**On null results**
+
+If the nudge produces no effect, that finding is equally valuable and equally publishable. It redirects attention toward more structural interventions - explicit AI interaction instruction, assessment redesign, or targeted student support - and prevents the sector from investing in interface-level nudging that does not work. The study is designed to find the truth, not to confirm a hypothesis.
+
+---
+
+## 6. Project Team
+
+> *Suggested length: 100-200 words.*
+
+### Lead Applicant: Michael Borck
+
+Lecturer, School of Marketing and Management, Curtin University. Creator of the CloudCore Networks simulation and keep-asking research project. Convener of ISYS6020. Author of *Conversation, Not Delegation* (Borck, 2026). Responsible for overall project coordination, intervention design, technical infrastructure, session facilitation in IS context, and lead authorship of the ACIS paper.
+
+### Co-Investigator: Dr Marcela Moraes
+
+Lecturer, School of Marketing and Management (SoMM), Curtin University. Research interests in digital and social media marketing, consumer behaviour, and cross-cultural perspectives. [Specific contribution to this project TBC - pending confirmation. Expected: evaluation instrument development, co-facilitation of Marketing unit sessions, calibration coding of own unit transcripts, and co-authorship.]
+
+### Co-Investigator: Dr Torsten Reiners
+
+Senior Lecturer in Supply Chain Management, School of Marketing and Management, Curtin University. Research background in operations management, optimisation, decision-support, and innovative technology in education, including gamification and immersive learning environments. Prior publication record at ASCILITE. [Specific contribution TBC - pending confirmation. Expected: co-facilitation of Supply Chain Management unit sessions, calibration coding of own unit transcripts, disciplinary interpretation of supply chain task outcomes, and co-authorship.]
+
+### Co-Investigator: [TBC]
+
+[Role and School]. [Confirm unit, discipline, and contribution after wave 2 outreach. Same coding and facilitation responsibilities as above.]
+
+### Casual Research Assistant (to be recruited)
+
+Postgraduate student or early-career researcher. Responsible for coding 100% of transcripts on pre-specified behavioural dimensions, processing and anonymising transcript data, administering exit surveys, and running descriptive statistics. The RA's full coverage provides the consistent baseline against which co-investigator calibration samples are compared. To be recruited following HREC approval.
+
+---
+
+## 7. Budget
+
+> *All funds to be spent within 2026 calendar year.*
+
+| Item | Amount (AUD) | Justification |
+|------|-------------|---------------|
+| Casual Research Assistant | $8,000 | ~150 hrs at ~$53/hr (Level A casual). Codes 100% of transcripts on behavioural dimensions, providing consistent full coverage as the analytical baseline. Also handles transcript anonymisation, exit survey administration, and descriptive statistics. Co-investigators independently code a calibration sample from their own unit; the RA's full coverage is validated against those samples via Cohen's kappa. |
+| API access - frontier model | $2,500 | Frontier model API (Claude or GPT-4 class) for lab sessions. Estimated at approximately $0.02 per exchange, 200 students, 40 exchanges per session, with 3x buffer for development, testing, and prompt iteration. Frontier models are required for the primary research question to ensure output quality variation reflects student interaction behaviour, not model limitations. |
+| Evaluation instrument development | $2,500 | Co-investigator time offset for discipline-specific task brief development, exit survey design, and coding rubric validation across three or more unit contexts. |
+| Lab session delivery and facilitation | $2,000 | Session coordination across multiple units and campuses, room preparation, and travel between session locations if required. |
+| Cross-disciplinary scaling and adaptation | $2,000 | Interface configuration per unit context, co-investigator onboarding and briefing, and iterative task brief refinement based on pilot feedback. |
+| ACIS 2026 conference - registration and travel | $1,500 | Conference registration plus travel and accommodation if ACIS 2026 is held interstate. [Check location and adjust if held in Perth.] |
+| Open-access resource production | $1,500 | Facilitation guide, nudge variant library, task design principles, and exit survey instrument. Design and hosting via Curtin repository and The AI Exchange platform. |
+| Contingency | $500 | Ethics costs, minor infrastructure, unanticipated session costs. |
+| **TOTAL** | **$20,000** | |
+
+---
+
+## 8. Timeline
+
+| Period | Phase | Activities |
+|--------|-------|------------|
+| **March 2026** | Foundation | Finalise and submit HREC application. Confirm co-investigators and units. Finalise nudge wording. Configure AI interface per unit. Recruit casual RA. |
+| **April 2026** | Instrument development | Finalise discipline-specific task briefs with co-investigators. Develop and pilot exit survey. Establish coding scheme on existing CloudCore transcripts. Brief and onboard RA. Run power analysis. |
+| **May-June 2026** | Data collection | Deliver 1-2 lab sessions per unit. Monitor transcript logging per condition. Administer exit surveys. |
+| **July-Aug 2026** | Coding and analysis | Run de-identification script; destroy linkage table. RA codes full transcript set on behavioural dimensions. Co-investigators independently code calibration samples from their own units. Inter-rater reliability calculated per unit (Cohen's kappa). Lead investigator adjudicates divergences. Quantitative analysis including equity-disaggregated reporting. |
+| **Sep-Oct 2026** | Writing and dissemination | Draft ACIS 2026 paper. Produce open-access resource pack. Internal SoMM presentation. |
+| **Nov-Dec 2026** | Completion | ACIS submission. Resource pack published. NBF progress report drafted. Scope follow-on study. |
+| **Jan-Jun 2027** | Reporting | NBF final report. Equity outcome reporting. Follow-on study proposal if warranted. |
+
+---
+
+## 9. Relationship to Existing Work and Curtin Strategy
+
+> *Suggested length: 200-300 words.*
+
+This project does not begin from scratch. The keep-asking research project (github.com/michael-borck/keep-asking) provides the full experimental design, HREC pathway, and instrument development plan. The CloudCore Networks environment, already in use in ISYS6020, provides the proven model for AI-mediated task design that informs each discipline-specific lab session. The Conversation, Not Delegation framework (Borck, 2026), developed through prior teaching and research and now published, provides the theoretical grounding and positions this work within a broader research programme targeting ACIS 2026 as the entry point.
+
+The controlled lab session design represents a deliberate methodological evolution, chosen to produce cleaner causal evidence within the project timeline and to extend the intervention across disciplines. A return to in-situ implementation across multiple units is the natural next phase if results warrant it, funded through subsequent grants or institutional investment.
+
+The project aligns with Curtin's Learning and Teaching Strategy commitments to student-centred learning, equity of access, and scholarship of learning and teaching. It supports NBF reporting obligations by generating equity-disaggregated evidence on student outcomes. It contributes to the Assessment 2030 agenda through its emphasis on process-over-product assessment design that is more resistant to passive AI delegation.
+
+Findings will feed into the AI Skills Passport programme and The AI Exchange platform - both live institutional infrastructure for AI professional development at Curtin - ensuring results reach teaching staff across the university, not only the research record.
+
+---
+
+## 10. Evaluation and Reporting
+
+> *Suggested length: 150-250 words.*
+
+The evaluation uses a pre-specified mixed-methods design:
+
+**Quantitative**
+- Linear mixed-effects models with condition (nudge vs control) as fixed effect and unit as random intercept, accounting for the nested structure (students within units). Prior AI experience included as a covariate if groups differ at baseline.
+- Both unweighted and challenge-weighted scoring reported for robustness
+- Effect sizes (Cohen's d for group comparisons; marginal R-squared for mixed models)
+- Equity-disaggregated analysis: condition-by-equity interaction terms to test whether benefit is uniform or differential by SES and first-in-family status
+- Confidence calibration analysis conducted within-unit (task completion scores are not comparable across disciplines)
+
+**Qualitative**
+- Purposive sample of transcripts across conditions to illustrate mechanisms and identify unexpected patterns
+- Particular attention to transcripts where the nudge appears to have caught and corrected a plausible but incorrect AI response - the misinformation friction effect
+
+**Reporting**
+A progress report will be submitted to Curtin's NBF programme in early 2027 covering: session delivery fidelity, participation and attainment outcomes by equity cohort, open-access resource publication status, and ACIS submission outcome. The report will address directly whether outcomes differed between equity and non-equity cohort students, and what the findings imply for future intervention design.
+
+The ACIS 2026 paper submission (August/September 2026) serves as an external peer-review checkpoint on methodology and findings prior to the NBF report.
+
+---
+
+## References
+
+Borck, M. (2026). *Conversation, Not Delegation.* KDP. ISBN 979-8252824550.
+
+Frontiers in Psychology. (2025). Optimizing academic engagement and mental health through AI: An experimental study on LLM integration in higher education. *Frontiers in Psychology, 16.* https://doi.org/10.3389/fpsyg.2025.1641212
+
+Kasneci, E., Sessler, K., Küchemann, S., Bannert, M., Dementieva, D., Fischer, F., ... and Kasneci, G. (2023). ChatGPT for good? On opportunities and challenges of large language models for education. *Learning and Individual Differences, 103,* 102274. https://doi.org/10.1016/j.lindif.2023.102274
+
+Laurillard, D. (2002). *Rethinking University Teaching: A Conversational Framework for the Effective Use of Learning Technologies* (2nd ed.). RoutledgeFalmer.
+
+Mollick, E. R., and Mollick, L. (2023). Assigning AI: Seven approaches for students, with prompts. *The Wharton School Research Paper.* https://ssrn.com/abstract=4475995
+
+National Health and Medical Research Council. (2023). *National Statement on Ethical Conduct in Human Research* (2023 update). Australian Government.
+
+Stojanov, A., Grønbæk, N., and Kulahci, M. (2024). Can we delegate learning to automation? A comparative study of LLM chatbots, search engines, and books. *arXiv preprint.* https://arxiv.org/abs/2410.01396
+
+Thaler, R. H., and Sunstein, C. R. (2008). *Nudge: Improving Decisions About Health, Wealth, and Happiness.* Yale University Press.
+
+Vygotsky, L. S. (1978). *Mind in Society: The Development of Higher Psychological Processes.* Harvard University Press.
+
+---
+
+## Applicant Checklist Before Submission
+
+- [ ] HREC application submitted - insert date in Cover Information and Section 4.6
+- [ ] Equity cohort data confirmed - % low SES and % first-in-family across participating units (from Curtin SIMS)
+- [ ] Marcela confirmed - full name, role, one-sentence contribution
+- [ ] Torsten confirmed - full name, role, school, unit name
+- [ ] Third co-investigator confirmed or removed
+- [ ] Aboriginal and/or Torres Strait Islander section - active decision to include or remove Section 2.4
+- [ ] Power analysis completed once cohort sizes confirmed
+- [ ] Discipline lead informed separately before submission
+- [x] Borck (2026) ISBN inserted (979-8252824550)
+- [ ] ACIS 2026 location confirmed - adjust travel line in budget if held in Perth
+- [ ] Talk to Business and Law RDA (Dr Joanne McEwan) before submission
+
+---
+
+*Draft v6.0, March 2026. keep-asking project: github.com/michael-borck/keep-asking*

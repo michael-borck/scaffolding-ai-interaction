@@ -1,0 +1,39 @@
+---
+title: "Task Brief - Marketing"
+---
+
+You are a marketing consultant advising a small Australian skincare brand ("Banksia & Bloom") that sells direct-to-consumer through its website and Instagram. The brand has 12,000 Instagram followers and an email list of 3,500. Revenue is $400K/year. The founder wants to expand into the retail channel (approaching Mecca or Priceline) and has asked you to assess whether the brand is ready and what the marketing implications would be.
+
+## Your Task
+
+Using the AI tool provided, develop a marketing strategy assessment (300-500 words) that addresses:
+
+1. **Readiness assessment:** Is Banksia & Bloom ready for retail? What does the brand need to have in place (brand positioning, pricing architecture, retail margins, packaging) before approaching a retailer?
+2. **Channel conflict:** How should the brand manage the tension between its existing direct-to-consumer channel and a new retail partnership? What happens to pricing, exclusivity, and brand story?
+3. **Recommendation:** Should they approach Mecca, Priceline, both, or neither right now? Justify with specific reasoning.
+
+## Instructions
+
+- You have **45 minutes** to develop your assessment using the AI chat tool.
+- Do not simply ask the AI to write the assessment for you. Use the AI to explore options, test assumptions, and refine your thinking.
+- The AI may give generic marketing advice that does not account for the Australian retail landscape or the specific constraints of a small brand with limited resources. Challenge it on these points.
+- Your final assessment should reflect your own strategic judgement informed by the conversation.
+
+## What Makes a Good Response
+
+- Shows understanding of the specific Australian retail context (Mecca vs Priceline positioning, margin expectations)
+- Identifies realistic constraints for a small brand (cash flow, production capacity, negotiating power)
+- Demonstrates critical evaluation of the AI's suggestions rather than accepting generic frameworks
+- Shows the thinking developed through iterative conversation
+
+---
+
+## Sample Interaction Tasks (Alternative Scenarios)
+
+### Task 2: Social Media Crisis Response
+
+Banksia & Bloom receives a viral negative review on TikTok (50K views) from an influencer claiming the product caused a skin reaction. The brand has not responded yet (it has been 6 hours). Using the AI tool, develop a response strategy covering: immediate actions (first 24 hours), communication to existing customers, and longer-term brand protection. Push back if the AI suggests overly cautious or overly aggressive approaches.
+
+### Task 3: Cross-Cultural Campaign Adaptation
+
+Banksia & Bloom wants to expand into the Southeast Asian market, starting with Singapore and Malaysia. Using the AI tool, evaluate how the brand's current messaging ("Australian native botanicals, clean beauty, minimalist luxury") would need to adapt for these markets. Consider cultural values, beauty standards, competitive landscape, and regulatory differences. Challenge the AI if it makes broad generalisations about "Asian consumers."

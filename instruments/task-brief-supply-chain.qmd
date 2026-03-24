@@ -1,0 +1,39 @@
+---
+title: "Task Brief - Supply Chain Management"
+---
+
+You are a supply chain analyst for an Australian food manufacturer that produces chilled ready meals. The company sources ingredients from 15 domestic suppliers and 4 international suppliers (New Zealand, Thailand, Italy, USA). Recent disruptions - a shipping delay from Thailand and a drought affecting a key domestic vegetable supplier - have exposed vulnerabilities in the supply chain. Management wants a plan.
+
+## Your Task
+
+Using the AI tool provided, develop a supply chain resilience briefing (300-500 words) that addresses:
+
+1. **Vulnerability assessment:** Which parts of this supply chain are most vulnerable and why? Consider lead times, substitutability, perishability, and geographic concentration.
+2. **Mitigation strategies:** Recommend two to three specific actions the company should take in the next 6 months. Be concrete - "diversify suppliers" is not enough; specify how and at what cost.
+3. **Trade-offs:** What are the costs or downsides of your recommended strategies? Who bears them?
+
+## Instructions
+
+- You have **45 minutes** to develop your briefing using the AI chat tool.
+- Do not simply ask the AI to write the briefing for you. Use the AI to explore the problem, test scenarios, and pressure-test your reasoning.
+- The AI may give textbook answers that do not account for the specific constraints of a chilled food supply chain (perishability, cold chain, regulatory requirements). It is your job to catch these gaps.
+- Your final briefing should reflect your own analysis informed by the conversation.
+
+## What Makes a Good Response
+
+- Demonstrates understanding of supply chain-specific constraints (not generic risk management)
+- Identifies something the AI missed or oversimplified
+- Quantifies or concretises where possible (lead times, costs, timelines)
+- Shows the reasoning evolved through iterative conversation
+
+---
+
+## Sample Interaction Tasks (Alternative Scenarios)
+
+### Task 2: Last-Mile Delivery Optimisation
+
+An Australian e-commerce company delivers to both metropolitan and regional areas. Metropolitan deliveries are profitable; regional deliveries lose money on average. Using the AI tool, analyse the trade-offs between three options: (a) increase regional delivery charges, (b) partner with Australia Post for regional, (c) establish regional micro-fulfilment centres. Challenge the AI on assumptions about Australian geography and logistics costs.
+
+### Task 3: Supplier Selection Under Uncertainty
+
+A manufacturer needs to choose between two suppliers for a critical component. Supplier A is cheaper but based overseas with a 6-week lead time. Supplier B is 20% more expensive but domestic with a 1-week lead time. Annual demand is uncertain (could vary by 30%). Using the AI tool, develop a recommendation that accounts for total cost of ownership, risk, and demand variability. Push back if the AI gives a simple cost comparison.
