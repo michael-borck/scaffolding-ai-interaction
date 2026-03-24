@@ -4,7 +4,7 @@ title: "Participant Information Sheet"
 
 **Project Title:** Closing the AI Literacy Gap: Scaffolding Equitable Participation in AI-Integrated Assessment
 
-**Investigators:** Michael Borck (PI); Marcela Moraes (Co-I); Torsten Reiners (Co-I); [TBC]
+**Investigators:** Michael Borck (PI); Marcela Moraes (Co-I); Torsten Reiners (Co-I)
 
 **Participating Unit:** [Unit Placeholder]
 

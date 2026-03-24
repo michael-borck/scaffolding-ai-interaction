@@ -9,12 +9,10 @@ subtitle: "Application Draft - Version 6.0, March 2026"
 | **Lead Applicant** | Michael Borck, Lecturer, School of Marketing and Management (SoMM) |
 | **Co-Investigators** | Dr Marcela Moraes, Lecturer, School of Marketing and Management (SoMM) [contribution TBC - pending confirmation] |
 | | Dr Torsten Reiners, Senior Lecturer in Supply Chain Management, SoMM [contribution TBC - pending confirmation] |
-| | [Additional colleague - TBC] |
 | **Faculty / School** | Faculty of Business and Law / School of Marketing and Management |
 | **Participating Units** | ISYS6020 AI to Drive Business Innovation (IS, lead unit) |
 | | [Torsten's unit - Supply Chain Management discipline, SoMM, TBC] |
 | | [Marcela's unit - School of Marketing, TBC] |
-| | [Additional unit - TBC] |
 | **Amount Requested** | AUD $20,000 |
 | **Project Period** | Semester 1 2026 - December 2026 |
 | **Reporting Deadline** | First half of 2027 |
@@ -197,10 +195,6 @@ Lecturer, School of Marketing and Management (SoMM), Curtin University. Research
 
 Senior Lecturer in Supply Chain Management, School of Marketing and Management, Curtin University. Research background in operations management, optimisation, decision-support, and innovative technology in education, including gamification and immersive learning environments. Prior publication record at ASCILITE. [Specific contribution TBC - pending confirmation. Expected: co-facilitation of Supply Chain Management unit sessions, calibration coding of own unit transcripts, disciplinary interpretation of supply chain task outcomes, and co-authorship.]
 
-### Co-Investigator: [TBC]
-
-[Role and School]. [Confirm unit, discipline, and contribution after wave 2 outreach. Same coding and facilitation responsibilities as above.]
-
 ### Casual Research Assistant (to be recruited)
 
 Postgraduate student or early-career researcher. Responsible for coding 100% of transcripts on pre-specified behavioural dimensions, processing and anonymising transcript data, administering exit surveys, and running descriptive statistics. The RA's full coverage provides the consistent baseline against which co-investigator calibration samples are compared. To be recruited following HREC approval.
@@ -305,7 +299,7 @@ Vygotsky, L. S. (1978). *Mind in Society: The Development of Higher Psychologica
 - [ ] Equity cohort data confirmed - % low SES and % first-in-family across participating units (from Curtin SIMS)
 - [ ] Marcela confirmed - full name, role, one-sentence contribution
 - [ ] Torsten confirmed - full name, role, school, unit name
-- [ ] Third co-investigator confirmed or removed
+- [x] Third co-investigator removed
 - [ ] Aboriginal and/or Torres Strait Islander section - active decision to include or remove Section 2.4
 - [ ] Power analysis completed once cohort sizes confirmed
 - [ ] Discipline lead informed separately before submission

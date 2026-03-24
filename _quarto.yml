@@ -6,6 +6,7 @@ project:
 
 website:
   title: "Closing the AI Literacy Gap"
+  favicon: favicon.svg
 
   navbar:
     left:

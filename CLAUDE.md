@@ -36,7 +36,7 @@ Quarto website and single source of truth for the **keep-asking** research proje
 - **System prompt** suppresses model engagement hooks to avoid contaminating control condition
 - **Australian English** throughout, no em-dashes
 
-## Co-Investigators (both TBC)
+## Co-Investigators (both TBC, no third co-I)
 
 - Dr Marcela Moraes - Marketing, SoMM
 - Dr Torsten Reiners - Supply Chain Management, SoMM

@@ -9,7 +9,6 @@ subtitle: "Curtin Low-Risk"
 | **Principal Investigator (PI)** | Michael Borck, Lecturer, School of Marketing and Management (SoMM) |
 | **Co-Investigators** | Dr Marcela Moraes, Lecturer, SoMM - TBC (confirmation pending) |
 | | Dr Torsten Reiners, Senior Lecturer, Supply Chain Management, SoMM - TBC (confirmation pending) |
-| | [Additional colleague - TBC] |
 | **Faculty/School** | Faculty of Business and Law / School of Marketing and Management |
 | **Funding** | Curtin NBF Learning & Teaching Grant 2026 - AUD $20,000 (internal) |
 | **Study sites** | Curtin computer labs (Business & Law), plus any additional school labs confirmed with co-investigators |
@@ -253,7 +252,7 @@ Delegation is derived in analysis (FU=0, CH=0, EX=0), not coded separately. Resu
 ## Pre-Submission Checklist
 
 - [ ] Insert HREC submission date and preferred start date
-- [ ] Confirm co-investigator names/roles/units (Marcela, Torsten, plus third if any)
+- [ ] Confirm co-investigator names/roles/units (Marcela, Torsten)
 - [ ] List participating units explicitly (ISYS6020 + [Marketing Unit] + [Supply Chain Unit])
 - [ ] Add Curtin analytics contact for equity flag matching and confirm the de-identification protocol email
 - [ ] Confirm storage location path (e.g., R:\Faculty\ProjectNudge\ or SharePoint site) and access list

@@ -23,7 +23,6 @@ The intervention is grounded in the [Conversation, Not Delegation](https://www.a
 | Lead | Michael Borck | Information Systems | ISYS6020 |
 | Co-I | Dr Marcela Moraes (TBC) | Marketing | [TBC] |
 | Co-I | Dr Torsten Reiners (TBC) | Supply Chain Management | [TBC] |
-| Co-I | [TBC] | [TBC] | [TBC] |
 | RA | To be recruited | - | - |
 
 ## Timeline
