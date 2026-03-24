@@ -1,0 +1,1448 @@
+[
+  {
+    "objectID": "grant/index.html",
+    "href": "grant/index.html",
+    "title": "Grant Application",
+    "section": "",
+    "text": "Field\nDetail\n\n\n\n\nAmount\nAUD $20,000\n\n\nPeriod\nSemester 1 2026 - December 2026\n\n\nReporting\nFirst half of 2027\n\n\nEquity cohorts\nLow SES students; first-in-family students\n\n\n\n\n\n\nNBF Grant Application 2026 - Full application (v6.0)",
+    "crumbs": [
+      "Grant Application"
+    ]
+  },
+  {
+    "objectID": "grant/index.html#nbf-grant-application",
+    "href": "grant/index.html#nbf-grant-application",
+    "title": "Grant Application",
+    "section": "",
+    "text": "Field\nDetail\n\n\n\n\nAmount\nAUD $20,000\n\n\nPeriod\nSemester 1 2026 - December 2026\n\n\nReporting\nFirst half of 2027\n\n\nEquity cohorts\nLow SES students; first-in-family students\n\n\n\n\n\n\nNBF Grant Application 2026 - Full application (v6.0)",
+    "crumbs": [
+      "Grant Application"
+    ]
+  },
+  {
+    "objectID": "methodology.html",
+    "href": "methodology.html",
+    "title": "Research Methodology",
+    "section": "",
+    "text": "Randomised controlled experiment. Individual-level randomisation to nudge vs control condition within structured lab sessions across three or more university units spanning Information Systems, Supply Chain Management, and Marketing.\nAll sessions use a frontier-class AI model (Claude or GPT-4 class) accessed via API. This is a deliberate design choice: to isolate the effect of the nudge, the underlying model must be capable enough that variation in output quality reflects student interaction rather than model limitations.",
+    "crumbs": [
+      "Home",
+      "Research Methodology"
+    ]
+  },
+  {
+    "objectID": "methodology.html#research-design",
+    "href": "methodology.html#research-design",
+    "title": "Research Methodology",
+    "section": "",
+    "text": "Randomised controlled experiment. Individual-level randomisation to nudge vs control condition within structured lab sessions across three or more university units spanning Information Systems, Supply Chain Management, and Marketing.\nAll sessions use a frontier-class AI model (Claude or GPT-4 class) accessed via API. This is a deliberate design choice: to isolate the effect of the nudge, the underlying model must be capable enough that variation in output quality reflects student interaction rather than model limitations.",
+    "crumbs": [
+      "Home",
+      "Research Methodology"
+    ]
+  },
+  {
+    "objectID": "methodology.html#participants-and-recruitment",
+    "href": "methodology.html#participants-and-recruitment",
+    "title": "Research Methodology",
+    "section": "Participants and Recruitment",
+    "text": "Participants and Recruitment\nPopulation: Curtin students enrolled in participating units (ISYS6020 + at least two additional units). Participation is voluntary and does not affect grades.\nTarget sample: ~60-120 participants total (20-30 per session across 3+ units). A power analysis will be finalised once units and cohort sizes are confirmed.\nRecruitment: Via PI and co-investigators with plain-language invitations on LMS and email. Session timing varied to accommodate students with work or caring commitments. Purposive encouragement of participation from low SES and first-in-family students.\nInclusion: Enrolled students in participating units; aged 18+; able to attend scheduled lab sessions.\nExclusion: Students under 18; students who do not consent; students without capacity to consent.",
+    "crumbs": [
+      "Home",
+      "Research Methodology"
+    ]
+  },
+  {
+    "objectID": "methodology.html#the-intervention",
+    "href": "methodology.html#the-intervention",
+    "title": "Research Methodology",
+    "section": "The Intervention",
+    "text": "The Intervention\n\nSession Format\nEach session follows a consistent format (45-60 minutes):\n\nStudent logs in with student number (assigned a random session code)\nStudent is randomly assigned to nudge or control condition\nStudent completes a discipline-relevant task using the AI chat interface\nConversations are logged automatically throughout\n10-minute exit survey via Qualtrics on completion\n\nThe AI interface is provided and configured by the research team. Students use lab computers; no personal account or device is required.\n\n\nThe Conversational Nudge\nIn the nudge condition, a short prompt is appended to every AI response. To reduce habituation, the prompt is randomly selected each turn from a pool of 10 variants. All variants follow the same design principles:\n\nInvite pushback, not confirmation\nDomain-agnostic (work across all disciplines)\nNo prior AI experience assumed\nMake the conversational path easier, not mandatory\n\nExample variants:\n\n“Does that match what you expected? If something seems off, tell me what seems wrong.”\n“What’s the weakest part of that response?”\n“Does that account for the details in your task, or is it a generic answer?”\n\nThe nudge is appended server-side after the AI response. The AI model never sees the nudge text - it is not included in the conversation history sent to the API. This ensures the AI’s behaviour is identical across conditions.\nSee Nudge Variants for the full pool.\n\n\nSystem Prompt\nA system prompt instructs the AI model to answer directly without follow-up suggestions, engagement hooks, or offers to elaborate. This prevents the model’s default behaviour from contaminating the control condition (frontier models are trained to keep users engaged, which would create pseudo-nudges in both conditions).\n\n\nTask Briefs\nEach discipline has a primary conversational task requiring iterative dialogue to develop a recommendation or analysis:\n\nInformation Systems - AI demand forecasting recommendation\nSupply Chain Management - supply chain resilience briefing\nMarketing - retail channel strategy assessment\n\nRetrieval-framed task variants are designed for a planned follow-on study.",
+    "crumbs": [
+      "Home",
+      "Research Methodology"
+    ]
+  },
+  {
+    "objectID": "methodology.html#measures",
+    "href": "methodology.html#measures",
+    "title": "Research Methodology",
+    "section": "Measures",
+    "text": "Measures\n\nAutomated Measures\nComputed directly from transcript logs via script. No human coding required.\n\n\n\n\n\n\n\nMeasure\nDefinition\n\n\n\n\nturns_total\nTotal student turns\n\n\nturns_coded\nTurns coded on behavioural dimensions (Turn 2+)\n\n\nwords_mean_student\nAverage words per student turn\n\n\nquestion_marks_proportion\nProportion of turns with a question mark\n\n\nduration_minutes\nSession duration\n\n\nresponse_latency_mean\nMean time between AI response and student reply\n\n\n\n\n\nHuman-Coded Behavioural Dimensions\nThe RA codes 100% of transcripts from Turn 2 onward (Turn 1 is excluded as it cannot be a follow-up, challenge, or extension). Three binary dimensions per turn:\n\n\n\n\n\n\n\n\nDimension\nCode\nDefinition\n\n\n\n\nFollow-Up (FU)\n0/1\nDid the student ask a question that continues the conversation?\n\n\nChallenge (CH)\n0/1\nDid the student push back on, doubt, or correct the AI?\n\n\nExtension (EX)\n0/1\nDid the student introduce new information or a new angle?\n\n\n\nDelegation is derived in analysis (FU=0, CH=0, EX=0), not coded separately. This eliminates the possibility of contradictory data.\n\n\nTurn-Level Scoring (Dual)\n\n\n\n\n\n\n\n\n\nScore\nFormula\nRange\nRationale\n\n\n\n\nUnweighted\nFU + CH + EX\n0-3\nTreats all dimensions equally\n\n\nChallenge-weighted\nFU + 2xCH + EX\n0-4\nEmphasises Challenge, the dimension most directly targeted by the nudge\n\n\n\nBoth scores are reported. If they converge, the finding is robust to scoring assumptions. If they diverge, it reveals whether the nudge primarily drives challenge behaviour or broader engagement.\n\n\nTask Completion Score\nScored by co-investigators on their own unit’s transcripts. Scale 1-5 (minimal output to comprehensive analysis). Not comparable across units - discipline-specific rubric anchors.\n\n\nExit Survey\nAdministered via Qualtrics. Captures:\n\nConfidence calibration (Q2 vs task score - within-unit only)\nSelf-reported vs observed interaction style (Q5/Q6 vs coded transcript)\nCondition awareness (Q8a - did nudge students notice the nudge?)\nPrior AI experience (Q9/Q10 - baseline covariate)\n\nSee Exit Survey for the full instrument.",
+    "crumbs": [
+      "Home",
+      "Research Methodology"
+    ]
+  },
+  {
+    "objectID": "methodology.html#data-collection-and-de-identification",
+    "href": "methodology.html#data-collection-and-de-identification",
+    "title": "Research Methodology",
+    "section": "Data Collection and De-identification",
+    "text": "Data Collection and De-identification\n\nStudent enters student number at session login. System assigns a random session code and records a temporary linkage.\nAll research data (transcripts, task outputs, survey) tagged with session code only.\nAfter data collection closes, the linkage table is used to match equity flags (low SES, first-in-family) from Curtin SIMS.\nA de-identification script strips student numbers. The linkage table is permanently destroyed. Destruction is logged and auditable.\nThe research team analyses a fully de-identified dataset.",
+    "crumbs": [
+      "Home",
+      "Research Methodology"
+    ]
+  },
+  {
+    "objectID": "methodology.html#analysis-plan",
+    "href": "methodology.html#analysis-plan",
+    "title": "Research Methodology",
+    "section": "Analysis Plan",
+    "text": "Analysis Plan\n\nPrimary Analysis\nLinear mixed-effects model accounting for the nested structure (students within units):\noutcome ~ condition + (1 | unit)\n\noutcome: session-level measure (e.g., mean_turn_score_raw, proportion_challenge)\ncondition: fixed effect (Nudge vs Control)\n(1 | unit): random intercept for unit\n\nWhy mixed-effects: Students are not independent across units. Each unit has a different task, discipline, and facilitator. Simple ANOVA ignores this nesting and underestimates standard errors.\nCovariate: Prior AI experience (Q10) included as a fixed effect if groups differ at baseline.\n\n\nEquity-Disaggregated Analysis\noutcome ~ condition * equity_flag + (1 | unit)\nA significant interaction indicates the nudge effect differs by equity cohort (differential benefit). A non-significant interaction with a significant main effect indicates uniform benefit. Both findings are reported.\n\n\nConfidence Calibration\nConducted within unit only (task scores not comparable across disciplines):\n\nSpearman correlation between self-reported confidence and task score\nComparison of the confidence-performance gap between conditions\nIdentification of the “overconfident delegator” pattern\n\n\n\nInter-Rater Reliability\n\nRA codes 100% of transcripts on FU, CH, EX\nEach co-investigator independently codes a 20-30% stratified sample from their unit\nCohen’s kappa calculated per unit\nKappa &lt; 0.70 triggers scheme revision before full analysis\n\nSee Coding Scheme for the complete specification.\n\n\nReporting\nAll analyses reported with:\n\nEffect sizes (Cohen’s d; marginal R-squared for mixed models)\n95% confidence intervals\nBoth unweighted and weighted scoring results\nEquity-disaggregated results regardless of significance\n\nImplementation: R with lme4, or Python with statsmodels.",
+    "crumbs": [
+      "Home",
+      "Research Methodology"
+    ]
+  },
+  {
+    "objectID": "methodology.html#ethical-considerations",
+    "href": "methodology.html#ethical-considerations",
+    "title": "Research Methodology",
+    "section": "Ethical Considerations",
+    "text": "Ethical Considerations\nHREC application submitted under Curtin’s low-risk review pathway. See the Ethics Package for the full application and supporting documents.\nKey protections:\n\nStudent numbers collected at login for equity linkage only; destroyed after de-identification\nAll research data uses session codes (no names, no student IDs)\nParticipation voluntary, does not affect grades\nNo-penalty alternative activity available\nWithdrawal possible until de-identification\nNudge transparently described in PIS (no deception)",
+    "crumbs": [
+      "Home",
+      "Research Methodology"
+    ]
+  },
+  {
+    "objectID": "ethics/dmp-summary.html",
+    "href": "ethics/dmp-summary.html",
+    "title": "Data Management Plan",
+    "section": "",
+    "text": "Data types: AI chat transcripts (session ID), task outputs, exit survey responses, and equity flags (low SES; first-in-family) added by Curtin analytics and delivered de-identified. No PII collected by research team.\nStorage: Curtin SharePoint/Network drive (restricted access, encryption at rest). Access limited to PI, named co-Is, and RA.\nProcessing: RA codes 100% of transcripts; co-Is code 20-30% calibration per unit; Cohen’s kappa computed; kappa &lt; 0.70 triggers scheme refinement.\nSharing: De-identified aggregates and anonymised excerpts only; no raw transcripts externalised.\nRetention and destruction: Retain 5 years post-publication; then secure deletion. Backups per Curtin IT policy.",
+    "crumbs": [
+      "Data Management Plan"
+    ]
+  },
+  {
+    "objectID": "ethics/recruitment-materials.html",
+    "href": "ethics/recruitment-materials.html",
+    "title": "Recruitment Materials",
+    "section": "",
+    "text": "Subject: Optional AI Lab Session for [Unit Code]\nHello [Unit Name] students,\nYou’re invited to an optional on-campus AI lab session (45-60 mins) exploring how to get better results from AI tools. You’ll complete a short, course-relevant task using a university-provided AI chat interface (no personal accounts needed). Afterwards, there’s a brief exit survey.\n\nVoluntary: Not assessed; won’t affect your grades.\nWhen/where: [Dates, location]. Multiple times offered.\nPrivacy: We don’t collect your name/student ID. Conversations are tagged only with a session code.\nConsent: Read the PIS and complete the digital consent form: [Insert Link].\n\nQuestions? Contact [PI email].",
+    "crumbs": [
+      "Recruitment Materials"
+    ]
+  },
+  {
+    "objectID": "ethics/hrec-narrative.html",
+    "href": "ethics/hrec-narrative.html",
+    "title": "HREC Narrative",
+    "section": "",
+    "text": "Project Title: Closing the AI Literacy Gap: Scaffolding Equitable Participation in AI-Integrated Assessment\nPrincipal Investigator: Michael Borck, Lecturer, School of Marketing and Management (SoMM)\nCo-Investigators:\nParticipating Units:",
+    "crumbs": [
+      "HREC Narrative"
+    ]
+  },
+  {
+    "objectID": "ethics/hrec-narrative.html#plain-language-summary",
+    "href": "ethics/hrec-narrative.html#plain-language-summary",
+    "title": "HREC Narrative",
+    "section": "Plain Language Summary",
+    "text": "Plain Language Summary\nThis study evaluates whether a simple conversational nudge improves how students interact with AI during structured lab sessions. Students complete a short, discipline-relevant task using a supplied AI chat tool. Half of students (randomised) see a one-line reminder appended to the AI’s replies: “Does that match what you expected? If something seems off, tell me what seems wrong.” The other half do not. We compare interaction quality, task outcomes, and confidence. Student numbers are collected at session login for equity flag linkage only; a de-identification script removes them after matching, and the linkage table is permanently destroyed. The research team analyses only de-identified data (session codes and equity flags). Participation is voluntary, does not affect grades, and students may withdraw at any time before data aggregation. Findings will support equitable AI-integrated assessment at Curtin.",
+    "crumbs": [
+      "HREC Narrative"
+    ]
+  },
+  {
+    "objectID": "ethics/hrec-narrative.html#aims-and-significance",
+    "href": "ethics/hrec-narrative.html#aims-and-significance",
+    "title": "HREC Narrative",
+    "section": "Aims and Significance",
+    "text": "Aims and Significance\n\nDetermine whether a minimal conversational nudge increases critical, iterative AI interaction.\nExamine whether benefits are uniform or differential for low SES and first-in-family students using de-identified matched data.\n\nSignificance: Provides low-cost, scalable in-class scaffolding to address structural disparities in AI literacy and supports Curtin’s NBF reporting.",
+    "crumbs": [
+      "HREC Narrative"
+    ]
+  },
+  {
+    "objectID": "ethics/hrec-narrative.html#methods",
+    "href": "ethics/hrec-narrative.html#methods",
+    "title": "HREC Narrative",
+    "section": "Methods",
+    "text": "Methods\nDesign: Randomised controlled lab sessions within 3 or more units; assignment to Nudge vs Control. All sessions use a frontier-class AI model via API.\nSetting and Procedure: 45-60 minute on-campus sessions using Curtin lab computers; iterative AI task; automatic transcript logging (session IDs); 10-minute digital exit survey.\nRecruitment: LMS/email invitations with plain-language PIS; participation voluntary; alternative activity available; no effect on grades.\nParticipants: Enrolled students (18+) in participating units; exclude under-18s and non-consenting students.\nSample: ~60-120 students total; power analysis to be finalised post unit confirmations.\nData: Student numbers collected at login for equity linkage only (destroyed after de-identification). AI transcripts (session code), task outputs, Qualtrics exit survey responses. Equity flags matched via temporary linkage table, then de-identified.\nAnalysis: Linear mixed-effects models (condition as fixed effect, unit as random intercept); effect sizes; equity-disaggregated subgroup analysis with interaction terms; confidence calibration within-unit only. RA codes 100% of transcripts (Turn 2 onward); co-Is code 20-30% per unit; Cohen’s kappa with kappa &lt; 0.70 triggering refinement.",
+    "crumbs": [
+      "HREC Narrative"
+    ]
+  },
+  {
+    "objectID": "ethics/hrec-narrative.html#risks-and-mitigation-low-risk-justification",
+    "href": "ethics/hrec-narrative.html#risks-and-mitigation-low-risk-justification",
+    "title": "HREC Narrative",
+    "section": "Risks and Mitigation (Low-Risk Justification)",
+    "text": "Risks and Mitigation (Low-Risk Justification)\nPhysical risks: none. Psychological discomfort: minimal; mitigations include voluntariness, option to pause/withdraw, supportive facilitation. Power dynamics: neutral recruitment, alternatives to participation. Privacy: student numbers collected at login for equity linkage only; stored in a restricted temporary linkage table; destroyed after de-identification script runs. Research data uses session codes only. Data stored on Curtin systems with restricted access.",
+    "crumbs": [
+      "HREC Narrative"
+    ]
+  },
+  {
+    "objectID": "ethics/hrec-narrative.html#consent-digital-only",
+    "href": "ethics/hrec-narrative.html#consent-digital-only",
+    "title": "HREC Narrative",
+    "section": "Consent (Digital Only)",
+    "text": "Consent (Digital Only)\nDigital consent via Qualtrics (Curtin institutional licence) prior to sessions. No deception. Withdrawal permitted any time before data aggregation using session codes.",
+    "crumbs": [
+      "HREC Narrative"
+    ]
+  },
+  {
+    "objectID": "ethics/hrec-narrative.html#privacy-confidentiality-and-data-security",
+    "href": "ethics/hrec-narrative.html#privacy-confidentiality-and-data-security",
+    "title": "HREC Narrative",
+    "section": "Privacy, Confidentiality and Data Security",
+    "text": "Privacy, Confidentiality and Data Security\nStudent numbers held in temporary linkage table only; destroyed after equity flag matching. All research data uses session codes. Storage on Curtin network/SharePoint with role-based access and encryption at rest. Retention: 5 years post-publication; secure deletion thereafter. No raw transcripts shared externally.",
+    "crumbs": [
+      "HREC Narrative"
+    ]
+  },
+  {
+    "objectID": "ethics/hrec-narrative.html#use-of-ai-external-services",
+    "href": "ethics/hrec-narrative.html#use-of-ai-external-services",
+    "title": "HREC Narrative",
+    "section": "Use of AI / External Services",
+    "text": "Use of AI / External Services\nFrontier model via API: prompts/responses transmitted without PII (session codes only); provider training opt-out enabled where available.",
+    "crumbs": [
+      "HREC Narrative"
+    ]
+  },
+  {
+    "objectID": "ethics/hrec-narrative.html#funding-conflicts-monitoring-and-timeline",
+    "href": "ethics/hrec-narrative.html#funding-conflicts-monitoring-and-timeline",
+    "title": "HREC Narrative",
+    "section": "Funding, Conflicts, Monitoring and Timeline",
+    "text": "Funding, Conflicts, Monitoring and Timeline\nFunding: NBF Learning & Teaching Grant 2026 (AUD $20,000). No conflicts declared. Monitoring: PI reviews logs after sessions; adverse events reported to HREC. Timeline: Apr-Dec 2026 data collection and dissemination; reporting in 2027.",
+    "crumbs": [
+      "HREC Narrative"
+    ]
+  },
+  {
+    "objectID": "ethics/consent-digital.html",
+    "href": "ethics/consent-digital.html",
+    "title": "Digital Consent Form",
+    "section": "",
+    "text": "Project: Closing the AI Literacy Gap: Scaffolding Equitable Participation in AI-Integrated Assessment\nPlease confirm the following:\n\nI have read and understood the Participant Information Sheet.\nI understand participation is voluntary and will not affect my grades.\nI understand that my student number is collected at session login for the sole purpose of linking equity indicators (e.g., low SES, first-in-family status) to my session data. My student number will be permanently deleted after this linkage is complete. The research team will only analyse de-identified data.\nI consent to logging of my AI conversation (tagged with a session code, not my name or student number) and to completing a brief exit survey via Qualtrics.\nI consent to the use of de-identified data in publications and teaching resources.\nI understand I may withdraw at any time before data de-identification by contacting the research team and quoting my session code.\n\nType your full name: __________\nDate: (auto-captured)",
+    "crumbs": [
+      "Digital Consent Form"
+    ]
+  },
+  {
+    "objectID": "ethics/pis-digital.html",
+    "href": "ethics/pis-digital.html",
+    "title": "Participant Information Sheet",
+    "section": "",
+    "text": "Project Title: Closing the AI Literacy Gap: Scaffolding Equitable Participation in AI-Integrated Assessment\nInvestigators: Michael Borck (PI); Marcela Moraes (Co-I); Torsten Reiners (Co-I); [TBC]\nParticipating Unit: [Unit Placeholder]",
+    "crumbs": [
+      "Participant Information Sheet"
+    ]
+  },
+  {
+    "objectID": "ethics/pis-digital.html#what-is-this-study-about",
+    "href": "ethics/pis-digital.html#what-is-this-study-about",
+    "title": "Participant Information Sheet",
+    "section": "What is this study about?",
+    "text": "What is this study about?\nWe are studying how students interact with AI during short tasks and whether a one-line reminder increases critical engagement.",
+    "crumbs": [
+      "Participant Information Sheet"
+    ]
+  },
+  {
+    "objectID": "ethics/pis-digital.html#what-will-i-be-asked-to-do",
+    "href": "ethics/pis-digital.html#what-will-i-be-asked-to-do",
+    "title": "Participant Information Sheet",
+    "section": "What will I be asked to do?",
+    "text": "What will I be asked to do?\n\nAttend a 45-60 minute lab session in a Curtin computer lab.\nComplete a short, course-relevant task using a university-provided AI tool (no personal accounts).\nYou may see a one-line reminder appended to the AI’s replies.\nComplete a brief digital exit survey (approximately 10 minutes).",
+    "crumbs": [
+      "Participant Information Sheet"
+    ]
+  },
+  {
+    "objectID": "ethics/pis-digital.html#are-there-any-risks",
+    "href": "ethics/pis-digital.html#are-there-any-risks",
+    "title": "Participant Information Sheet",
+    "section": "Are there any risks?",
+    "text": "Are there any risks?\nRisks are minimal (e.g., mild performance pressure). You may skip questions or stop at any time. Participation does not affect grades.",
+    "crumbs": [
+      "Participant Information Sheet"
+    ]
+  },
+  {
+    "objectID": "ethics/pis-digital.html#are-there-any-benefits",
+    "href": "ethics/pis-digital.html#are-there-any-benefits",
+    "title": "Participant Information Sheet",
+    "section": "Are there any benefits?",
+    "text": "Are there any benefits?\nYou may improve your AI interaction skills; findings will inform fair AI-integrated assessment at Curtin.",
+    "crumbs": [
+      "Participant Information Sheet"
+    ]
+  },
+  {
+    "objectID": "ethics/pis-digital.html#privacy-and-confidentiality",
+    "href": "ethics/pis-digital.html#privacy-and-confidentiality",
+    "title": "Participant Information Sheet",
+    "section": "Privacy and confidentiality",
+    "text": "Privacy and confidentiality\nYour student number is collected when you log into the session. This is used only to link equity indicators (such as low SES or first-in-family status) to your session data. Your student number is then permanently deleted. Your conversation, task output, and survey responses are tagged with a random session code only - your name and student number do not appear in the research data. The research team analyses only the de-identified dataset.",
+    "crumbs": [
+      "Participant Information Sheet"
+    ]
+  },
+  {
+    "objectID": "ethics/pis-digital.html#voluntary-participation-and-withdrawal",
+    "href": "ethics/pis-digital.html#voluntary-participation-and-withdrawal",
+    "title": "Participant Information Sheet",
+    "section": "Voluntary participation and withdrawal",
+    "text": "Voluntary participation and withdrawal\nParticipation is voluntary and will not affect your studies. You may withdraw at any time before data de-identification by contacting the research team and quoting your session code. Once the de-identification process has been completed and the linkage between student numbers and session codes has been destroyed, withdrawal is no longer possible as individual records cannot be identified.",
+    "crumbs": [
+      "Participant Information Sheet"
+    ]
+  },
+  {
+    "objectID": "ethics/pis-digital.html#contacts",
+    "href": "ethics/pis-digital.html#contacts",
+    "title": "Participant Information Sheet",
+    "section": "Contacts",
+    "text": "Contacts\n\nFor study questions: [PI email/phone]\nFor ethics concerns: [Curtin HREC email/phone]",
+    "crumbs": [
+      "Participant Information Sheet"
+    ]
+  },
+  {
+    "objectID": "instruments/task-brief-information-systems.html",
+    "href": "instruments/task-brief-information-systems.html",
+    "title": "Task Brief - Information Systems",
+    "section": "",
+    "text": "You are an IT consultant advising a mid-sized Australian retail company (250 employees, 12 stores, one warehouse). The company currently uses a legacy point-of-sale system and spreadsheets for inventory. The CEO has asked you to recommend whether the company should adopt an AI-powered demand forecasting system to reduce stockouts and overstock.",
+    "crumbs": [
+      "Task Brief - Information Systems"
+    ]
+  },
+  {
+    "objectID": "instruments/task-brief-information-systems.html#your-task",
+    "href": "instruments/task-brief-information-systems.html#your-task",
+    "title": "Task Brief - Information Systems",
+    "section": "Your Task",
+    "text": "Your Task\nUsing the AI tool provided, develop a recommendation memo (300-500 words) that addresses:\n\nFeasibility: Is an AI demand forecasting system appropriate for a company of this size and maturity? What data would they need, and do they likely have it?\nRisks: What are the main risks of adopting this system? Consider data quality, staff capability, vendor lock-in, and cost.\nAlternative: If AI forecasting is not the right first step, what should the company do instead?",
+    "crumbs": [
+      "Task Brief - Information Systems"
+    ]
+  },
+  {
+    "objectID": "instruments/task-brief-information-systems.html#instructions",
+    "href": "instruments/task-brief-information-systems.html#instructions",
+    "title": "Task Brief - Information Systems",
+    "section": "Instructions",
+    "text": "Instructions\n\nYou have 45 minutes to develop your recommendation using the AI chat tool.\nDo not simply ask the AI to write the memo for you. Use the AI to explore the problem, test your reasoning, and refine your thinking.\nChallenge the AI if something seems wrong or oversimplified. The AI may give plausible but incorrect or generic responses - it is your job to catch those.\nYour final memo should reflect your own judgement informed by the conversation, not a copy of the AI’s output.",
+    "crumbs": [
+      "Task Brief - Information Systems"
+    ]
+  },
+  {
+    "objectID": "instruments/task-brief-information-systems.html#what-makes-a-good-response",
+    "href": "instruments/task-brief-information-systems.html#what-makes-a-good-response",
+    "title": "Task Brief - Information Systems",
+    "section": "What Makes a Good Response",
+    "text": "What Makes a Good Response\n\nShows evidence of critical evaluation (not just accepting the AI’s first answer)\nConsiders the specific context (mid-sized Australian retail) rather than generic advice\nAcknowledges trade-offs and limitations\nDemonstrates iterative thinking - the recommendation evolved through conversation",
+    "crumbs": [
+      "Task Brief - Information Systems"
+    ]
+  },
+  {
+    "objectID": "instruments/task-brief-information-systems.html#sample-interaction-tasks-alternative-scenarios",
+    "href": "instruments/task-brief-information-systems.html#sample-interaction-tasks-alternative-scenarios",
+    "title": "Task Brief - Information Systems",
+    "section": "Sample Interaction Tasks (Alternative Scenarios)",
+    "text": "Sample Interaction Tasks (Alternative Scenarios)\n\nTask 2: Cloud Migration Risk Assessment\nA university department is considering migrating its student records system from on-premises servers to a cloud-based SaaS platform. Using the AI tool, develop a risk assessment that evaluates data sovereignty (Australian data must stay onshore), integration with existing systems, and the transition plan. Identify at least two risks the AI might understate or miss.\n\n\nTask 3: AI Ethics Policy Review\nA financial services company has drafted a one-page AI ethics policy. The policy states: “All AI decisions will be fair, transparent, and accountable.” Using the AI tool, critically evaluate this policy. Identify what is missing, what is unenforceable, and draft three specific, actionable clauses that would make the policy meaningful. Push back if the AI suggests vague improvements.",
+    "crumbs": [
+      "Task Brief - Information Systems"
+    ]
+  },
+  {
+    "objectID": "instruments/exit-survey.html",
+    "href": "instruments/exit-survey.html",
+    "title": "Exit Survey",
+    "section": "",
+    "text": "The exit survey is administered at the end of each lab session via Qualtrics (Curtin institutional licence). Estimated completion time: 8-10 minutes.",
+    "crumbs": [
+      "Exit Survey"
+    ]
+  },
+  {
+    "objectID": "instruments/exit-survey.html#why-the-exit-survey-is-needed",
+    "href": "instruments/exit-survey.html#why-the-exit-survey-is-needed",
+    "title": "Exit Survey",
+    "section": "Why the Exit Survey is Needed",
+    "text": "Why the Exit Survey is Needed\nThe transcript data tells us what students did. The exit survey tells us three things transcripts cannot:\n\nConfidence calibration - Do students who delegated to the AI believe their output is good? Comparing self-reported confidence (Q2) against task completion scores tests whether passive delegation produces unwarranted confidence in incorrect outputs. This is central to the misinformation risk argument: the harm of delegation is not just weaker output, but weaker output the student believes is strong.\nSelf-report vs observed behaviour gap - Do students know how they interacted? Comparing self-reported interaction style (Q5, Q6) against coded transcript behaviour reveals metacognitive awareness gaps. A student who reports “I challenged the AI throughout” but whose transcript shows predominantly delegation turns lacks awareness of their own AI interaction patterns. This gap is a finding in itself and an argument for structured scaffolding.\nBaseline covariates - Prior AI experience (Q9, Q10) and formal AI instruction (Q11) provide covariates for the primary analysis. If random assignment produces groups that differ on prior experience, these allow statistical adjustment.\nCondition awareness - Did nudge-group students notice the nudge (Q8a)? This distinguishes between automatic behavioural cueing and conscious reflection as the mechanism of action.\n\nWithout the survey, the study can show the nudge changed behaviour but cannot explain why or test whether the behavioural change was accompanied by appropriate confidence calibration.",
+    "crumbs": [
+      "Exit Survey"
+    ]
+  },
+  {
+    "objectID": "instruments/exit-survey.html#administration",
+    "href": "instruments/exit-survey.html#administration",
+    "title": "Exit Survey",
+    "section": "Administration",
+    "text": "Administration\n\nFacilitator displays the Qualtrics link on the main screen at the end of the task\nStudents complete the survey independently and silently on the lab computer\nFacilitator confirms all students have submitted before dismissing the session\nRA downloads responses after each session and links to transcript data via session code",
+    "crumbs": [
+      "Exit Survey"
+    ]
+  },
+  {
+    "objectID": "instruments/exit-survey.html#survey-instrument",
+    "href": "instruments/exit-survey.html#survey-instrument",
+    "title": "Exit Survey",
+    "section": "Survey Instrument",
+    "text": "Survey Instrument\n\n\nSection 1: Your Session Code\nQ1. Please enter the session code shown on your screen.\n[Text field]\nThis code links your survey responses to your conversation transcript. It does not identify you personally.\n\n\n\nSection 2: Your Task\nQ2. How confident are you that your final task output today was accurate and well-reasoned?\n1 - Not confident at all 2 - Slightly confident 3 - Moderately confident 4 - Quite confident 5 - Very confident\n\nQ3. How satisfied are you with the quality of your final task output?\n1 - Very unsatisfied 2 - Unsatisfied 3 - Neutral 4 - Satisfied 5 - Very satisfied\n\nQ4. At any point during the session, did something the AI said seem wrong, incomplete, or surprising to you?\nYes No Not sure\nQ4a. (Shown only if Q4 = Yes) Briefly describe what seemed wrong or surprising.\n[Text field - optional]\n\n\n\nSection 3: How You Worked with the AI\nQ5. Which of the following best describes how you worked with the AI tool today?\nI mostly accepted what the AI said and used it to build my response I sometimes pushed back or asked follow-up questions, but mostly accepted the responses I regularly pushed back, questioned, or extended the AI responses I treated the AI as a thinking partner throughout - challenging it and building on its responses\n\nQ6. How much did you feel like you were directing the conversation with the AI, versus following where it led?\n1 - The AI mostly led, I followed 2 - The AI led more than I did 3 - About equal 4 - I led more than the AI 5 - I directed the conversation throughout\n\nQ7. Did you feel the AI tool was helpful for completing the task today?\n1 - Not helpful at all 2 - Slightly helpful 3 - Moderately helpful 4 - Quite helpful 5 - Extremely helpful\n\nQ8. Did anything about the AI tool’s responses make you want to ask a follow-up question or push back?\nYes, frequently Yes, occasionally No, the responses seemed complete and I accepted them No, I was unsure how to push back even if I wanted to\n\nQ8a. Did you notice anything unusual or different about the way the AI responded today (for example, any extra text or prompts in the responses)?\nYes No Not sure\nQ8b. (Shown only if Q8a = Yes) Briefly describe what you noticed.\n[Text field - optional]\n\n\n\nSection 4: Your Prior AI Experience\nThese questions help us understand the range of prior experience in the study. There are no right or wrong answers.\nQ9. How often do you use AI tools (such as ChatGPT, Claude, Gemini, or similar) for study or work?\nNever Occasionally (a few times a month) Regularly (a few times a week) Daily\n\nQ10. Before today, how would you describe your typical approach when using an AI tool for a task?\nI usually accept the first response and use it directly I sometimes ask follow-up questions but mostly accept responses I regularly ask follow-up questions and push back on responses I treat AI as a thinking partner - I always challenge and refine its responses\n\nQ11. Have you received any formal instruction on how to use AI tools effectively (for example, in a class, workshop, or training session)?\nYes No Not sure\n\n\n\nSection 5: About You\nThese questions are used only for statistical purposes to describe the study sample. Responses cannot be linked to your identity.\nQ12. What is your current year of study?\nFirst year Second year Third year Fourth year or above Postgraduate coursework Postgraduate research\n\nQ13. What is your primary discipline or field of study?\n[Dropdown: list of Curtin discipline areas]\n\nQ14. Is there anything else you would like to tell us about your experience today?\n[Text field - optional]",
+    "crumbs": [
+      "Exit Survey"
+    ]
+  },
+  {
+    "objectID": "instruments/exit-survey.html#analytic-notes",
+    "href": "instruments/exit-survey.html#analytic-notes",
+    "title": "Exit Survey",
+    "section": "Analytic Notes",
+    "text": "Analytic Notes\nConfidence calibration analysis (within-unit only)\nQ2 (confidence) is compared against the task completion score for the same student, within each unit separately. Task completion scores require discipline-specific judgement and are not comparable across units (a score of 4 in IS does not equal a score of 4 in Marketing). Within each unit: Spearman correlation between Q2 and task score; comparison of the confidence-performance gap between nudge and control groups; identification of the “overconfident delegator” pattern (high confidence + low task score + high proportion_delegation from transcript coding).\nSelf-reported versus observed interaction style\nQ5 and Q6 (self-reported interaction style) are compared against the RA-coded behavioural dimensions for the same conversation. Divergences between self-report and observed behaviour are analytically interesting - a student who reports directing the conversation but whose transcript shows predominantly delegation turns may lack metacognitive awareness of their own AI interaction patterns.\nQ4 (noticing errors) and the nudge effect\nQ4 is the most direct self-report measure of whether the nudge is producing the intended friction. Nudge group students who report noticing something wrong and correcting it are exhibiting exactly the behaviour the intervention is designed to produce. This question should be analysed first when reviewing preliminary results.\nQ8a (condition awareness) and mechanism interpretation\nQ8a checks whether students in the nudge group consciously noticed the appended text. If nudged students show improved interaction behaviour without reporting awareness of the nudge, this supports an automatic behavioural cueing mechanism. If they noticed it and report it changed their behaviour, the mechanism is conscious reflection. Both are interesting; the distinction matters for generalisability and for designing future nudge variants.\nQ10 as a baseline covariate\nQ10 (prior AI approach) is included as a covariate in the mixed-effects model if nudge and control groups differ on this baseline measure. See coding_scheme.md Part 7 for the full model specification.",
+    "crumbs": [
+      "Exit Survey"
+    ]
+  },
+  {
+    "objectID": "instruments/exit-survey.html#document-history",
+    "href": "instruments/exit-survey.html#document-history",
+    "title": "Exit Survey",
+    "section": "Document History",
+    "text": "Document History\n\n\n\n\n\n\n\n\nVersion\nDate\nChanges\n\n\n\n\n1.0\nMarch 2026\nInitial draft\n\n\n1.1\nMarch 2026\nAdded Q8a/Q8b condition-awareness check\n\n\n2.0\nMarch 2026\nAdded rationale for why survey is needed. Updated confidence calibration to within-unit only. Aligned covariate notes with mixed-effects model in coding scheme. Specified Qualtrics.\n\n\n\n\nkeep-asking project - github.com/michael-borck/keep-asking",
+    "crumbs": [
+      "Exit Survey"
+    ]
+  },
+  {
+    "objectID": "instruments/index.html",
+    "href": "instruments/index.html",
+    "title": "Research Instruments",
+    "section": "",
+    "text": "Document\nDescription\n\n\n\n\nCoding Scheme\nTranscript coding scheme (v2.0) - FU, CH, EX dimensions, dual scoring, mixed-effects analysis spec\n\n\nExit Survey\nQualtrics exit survey (v2.0) - confidence calibration, self-reported interaction style, prior AI experience\n\n\nNudge Variants\nPool of 10 nudge variants randomly selected per turn",
+    "crumbs": [
+      "Research Instruments"
+    ]
+  },
+  {
+    "objectID": "instruments/index.html#measurement-instruments",
+    "href": "instruments/index.html#measurement-instruments",
+    "title": "Research Instruments",
+    "section": "",
+    "text": "Document\nDescription\n\n\n\n\nCoding Scheme\nTranscript coding scheme (v2.0) - FU, CH, EX dimensions, dual scoring, mixed-effects analysis spec\n\n\nExit Survey\nQualtrics exit survey (v2.0) - confidence calibration, self-reported interaction style, prior AI experience\n\n\nNudge Variants\nPool of 10 nudge variants randomly selected per turn",
+    "crumbs": [
+      "Research Instruments"
+    ]
+  },
+  {
+    "objectID": "instruments/index.html#task-briefs---conversational-primary",
+    "href": "instruments/index.html#task-briefs---conversational-primary",
+    "title": "Research Instruments",
+    "section": "Task Briefs - Conversational (Primary)",
+    "text": "Task Briefs - Conversational (Primary)\nThese tasks require iterative dialogue to develop a recommendation. No single right answer.\n\n\n\nDocument\nDiscipline\nCo-I\n\n\n\n\nInformation Systems\nIS\nMichael Borck\n\n\nSupply Chain Management\nSCM\nTorsten Reiners (TBC)\n\n\nMarketing\nMarketing\nMarcela Moraes (TBC)",
+    "crumbs": [
+      "Research Instruments"
+    ]
+  },
+  {
+    "objectID": "instruments/index.html#task-briefs---retrieval-framed-follow-on",
+    "href": "instruments/index.html#task-briefs---retrieval-framed-follow-on",
+    "title": "Research Instruments",
+    "section": "Task Briefs - Retrieval-Framed (Follow-on)",
+    "text": "Task Briefs - Retrieval-Framed (Follow-on)\nThese tasks appear to require factual retrieval, where AI responses are most likely to be confidently wrong. Designed for a planned follow-on study.\n\n\n\nDocument\nDescription\n\n\n\n\nRetrieval-Framed Variants\nOne variant per discipline - privacy compliance, shipping regulations, advertising law",
+    "crumbs": [
+      "Research Instruments"
+    ]
+  },
+  {
+    "objectID": "instruments/task-brief-marketing.html",
+    "href": "instruments/task-brief-marketing.html",
+    "title": "Task Brief - Marketing",
+    "section": "",
+    "text": "You are a marketing consultant advising a small Australian skincare brand (“Banksia & Bloom”) that sells direct-to-consumer through its website and Instagram. The brand has 12,000 Instagram followers and an email list of 3,500. Revenue is $400K/year. The founder wants to expand into the retail channel (approaching Mecca or Priceline) and has asked you to assess whether the brand is ready and what the marketing implications would be.",
+    "crumbs": [
+      "Task Brief - Marketing"
+    ]
+  },
+  {
+    "objectID": "instruments/task-brief-marketing.html#your-task",
+    "href": "instruments/task-brief-marketing.html#your-task",
+    "title": "Task Brief - Marketing",
+    "section": "Your Task",
+    "text": "Your Task\nUsing the AI tool provided, develop a marketing strategy assessment (300-500 words) that addresses:\n\nReadiness assessment: Is Banksia & Bloom ready for retail? What does the brand need to have in place (brand positioning, pricing architecture, retail margins, packaging) before approaching a retailer?\nChannel conflict: How should the brand manage the tension between its existing direct-to-consumer channel and a new retail partnership? What happens to pricing, exclusivity, and brand story?\nRecommendation: Should they approach Mecca, Priceline, both, or neither right now? Justify with specific reasoning.",
+    "crumbs": [
+      "Task Brief - Marketing"
+    ]
+  },
+  {
+    "objectID": "instruments/task-brief-marketing.html#instructions",
+    "href": "instruments/task-brief-marketing.html#instructions",
+    "title": "Task Brief - Marketing",
+    "section": "Instructions",
+    "text": "Instructions\n\nYou have 45 minutes to develop your assessment using the AI chat tool.\nDo not simply ask the AI to write the assessment for you. Use the AI to explore options, test assumptions, and refine your thinking.\nThe AI may give generic marketing advice that does not account for the Australian retail landscape or the specific constraints of a small brand with limited resources. Challenge it on these points.\nYour final assessment should reflect your own strategic judgement informed by the conversation.",
+    "crumbs": [
+      "Task Brief - Marketing"
+    ]
+  },
+  {
+    "objectID": "instruments/task-brief-marketing.html#what-makes-a-good-response",
+    "href": "instruments/task-brief-marketing.html#what-makes-a-good-response",
+    "title": "Task Brief - Marketing",
+    "section": "What Makes a Good Response",
+    "text": "What Makes a Good Response\n\nShows understanding of the specific Australian retail context (Mecca vs Priceline positioning, margin expectations)\nIdentifies realistic constraints for a small brand (cash flow, production capacity, negotiating power)\nDemonstrates critical evaluation of the AI’s suggestions rather than accepting generic frameworks\nShows the thinking developed through iterative conversation",
+    "crumbs": [
+      "Task Brief - Marketing"
+    ]
+  },
+  {
+    "objectID": "instruments/task-brief-marketing.html#sample-interaction-tasks-alternative-scenarios",
+    "href": "instruments/task-brief-marketing.html#sample-interaction-tasks-alternative-scenarios",
+    "title": "Task Brief - Marketing",
+    "section": "Sample Interaction Tasks (Alternative Scenarios)",
+    "text": "Sample Interaction Tasks (Alternative Scenarios)\n\nTask 2: Social Media Crisis Response\nBanksia & Bloom receives a viral negative review on TikTok (50K views) from an influencer claiming the product caused a skin reaction. The brand has not responded yet (it has been 6 hours). Using the AI tool, develop a response strategy covering: immediate actions (first 24 hours), communication to existing customers, and longer-term brand protection. Push back if the AI suggests overly cautious or overly aggressive approaches.\n\n\nTask 3: Cross-Cultural Campaign Adaptation\nBanksia & Bloom wants to expand into the Southeast Asian market, starting with Singapore and Malaysia. Using the AI tool, evaluate how the brand’s current messaging (“Australian native botanicals, clean beauty, minimalist luxury”) would need to adapt for these markets. Consider cultural values, beauty standards, competitive landscape, and regulatory differences. Challenge the AI if it makes broad generalisations about “Asian consumers.”",
+    "crumbs": [
+      "Task Brief - Marketing"
+    ]
+  },
+  {
+    "objectID": "literature-review.html",
+    "href": "literature-review.html",
+    "title": "Literature Review",
+    "section": "",
+    "text": "Note\n\n\n\nThis is a working document. Sections marked [TO EXPAND] contain placeholder structure for additional literature. The existing references are drawn from the grant application; the review will be expanded during the writing phase (September-October 2026).",
+    "crumbs": [
+      "Home",
+      "Literature Review"
+    ]
+  },
+  {
+    "objectID": "literature-review.html#ai-in-higher-education-assessment",
+    "href": "literature-review.html#ai-in-higher-education-assessment",
+    "title": "Literature Review",
+    "section": "AI in Higher Education Assessment",
+    "text": "AI in Higher Education Assessment\nThe integration of AI tools in higher education assessment is accelerating, but the pedagogical implications are unevenly understood. Kasneci et al. (2023) provide a broad survey of opportunities and challenges, identifying the tension between AI’s potential to support learning and its potential to undermine it when students disengage from the cognitive work that assessment is designed to elicit.\nStojanov, Gronbaek, and Kulahci (2024) move beyond the general framing to identify distinct student AI use patterns empirically. Their comparative study identifies a substantial subgroup of “assignment delegators” - students who use AI primarily to generate output rather than to support thinking. This is not a hypothetical risk; it is a measurable, persistent behaviour type. The delegator pattern is the specific problem the nudge intervention targets.\nMollick and Mollick (2023) approach the same problem from a design perspective, identifying seven approaches for integrating AI into student work. Their central argument - that the pedagogical challenge is keeping students as the active “human in the loop” - directly informs the Conversation, Not Delegation framework and the design of the nudge intervention.\n[TO EXPAND: Additional sources on AI-integrated assessment design, student AI adoption patterns, and institutional policy responses.]",
+    "crumbs": [
+      "Home",
+      "Literature Review"
+    ]
+  },
+  {
+    "objectID": "literature-review.html#the-delegation-problem",
+    "href": "literature-review.html#the-delegation-problem",
+    "title": "Literature Review",
+    "section": "The Delegation Problem",
+    "text": "The Delegation Problem\nPassive delegation to AI carries a risk more serious than simply producing shallow work. When a student accepts a plausible but incorrect AI response without challenge, they have not just missed a learning opportunity - they have incorporated misinformation into their understanding with a degree of confidence they would not have from simply not knowing. In this sense, uncritical AI delegation may produce worse outcomes than no AI use at all.\nThis is the misinformation friction effect: the nudge is designed to create the friction that surfaces errors before they are accepted and acted upon. The argument is strongest in disciplines where factual accuracy, procedural correctness, or evidence-based reasoning are directly assessed.\n[TO EXPAND: Literature on overreliance on AI, automation bias in decision-making, and the Dunning-Kruger intersection with AI-assisted work.]",
+    "crumbs": [
+      "Home",
+      "Literature Review"
+    ]
+  },
+  {
+    "objectID": "literature-review.html#scaffolding-and-conversational-learning",
+    "href": "literature-review.html#scaffolding-and-conversational-learning",
+    "title": "Literature Review",
+    "section": "Scaffolding and Conversational Learning",
+    "text": "Scaffolding and Conversational Learning\nVygotsky’s (1978) scaffolding framework argues that structured support within a learner’s zone of proximal development enables capability development that does not occur without it. The nudge is a minimal scaffold: it does not provide the answer or direct the student’s response, but it makes the conversational path structurally easier to take.\nLaurillard’s (2002) conversational framework extends scaffolding specifically to iterative dialogue as the mechanism of learning. The framework positions learning as a conversation between teacher and student (or, in this case, between student and AI) where meaning is constructed through successive cycles of articulation, re-articulation, and reflection. The nudge intervention targets the transition point in this cycle - the moment where a student decides whether to continue the conversation or accept and move on.\n[TO EXPAND: Recent applications of Laurillard’s framework to AI-mediated learning. Scaffolding research in technology-enhanced learning environments.]",
+    "crumbs": [
+      "Home",
+      "Literature Review"
+    ]
+  },
+  {
+    "objectID": "literature-review.html#nudge-theory-in-education",
+    "href": "literature-review.html#nudge-theory-in-education",
+    "title": "Literature Review",
+    "section": "Nudge Theory in Education",
+    "text": "Nudge Theory in Education\nThaler and Sunstein (2008) define a nudge as any aspect of choice architecture that alters people’s behaviour in a predictable way without forbidding any options or significantly changing their economic incentives. The conversational nudge applies this principle at the interface level: it does not require the student to push back, but it makes the pushback path cognitively cheaper by providing an explicit next action.\nThe application of nudge theory to educational contexts is well-established in areas such as enrolment, attendance, and financial aid uptake. Its application to in-task learning behaviour during AI interaction is less explored and represents a contribution of this study.\n[TO EXPAND: Nudge interventions in higher education. Choice architecture in digital learning environments. Behavioural economics approaches to student engagement.]",
+    "crumbs": [
+      "Home",
+      "Literature Review"
+    ]
+  },
+  {
+    "objectID": "literature-review.html#guided-vs-unguided-ai-use",
+    "href": "literature-review.html#guided-vs-unguided-ai-use",
+    "title": "Literature Review",
+    "section": "Guided vs Unguided AI Use",
+    "text": "Guided vs Unguided AI Use\nRecent empirical work confirms that structured engagement with AI consistently outperforms unstructured use. A study published in Frontiers in Psychology (2025) finds effects on task quality and academic engagement most pronounced when scaffolding is built into the task design rather than left to student initiative. This finding directly supports the design choice of embedding the nudge in the interface rather than relying on students to self-scaffold.\n[TO EXPAND: Experimental studies comparing prompted vs unprompted AI interaction. Metacognitive scaffolding in AI-assisted learning.]",
+    "crumbs": [
+      "Home",
+      "Literature Review"
+    ]
+  },
+  {
+    "objectID": "literature-review.html#equity-and-digital-literacy",
+    "href": "literature-review.html#equity-and-digital-literacy",
+    "title": "Literature Review",
+    "section": "Equity and Digital Literacy",
+    "text": "Equity and Digital Literacy\nThe equity argument in this project is structural, not deficit-based. The evidence does not support the assumption that low SES or first-in-family students are inherently less capable of productive AI interaction. What the evidence does support is that students with fewer informal support networks outside the classroom have fewer opportunities to develop, or correct, their AI interaction habits through channels other than structured teaching.\nA student who arrives with well-developed conversational AI habits has multiple pathways to refine those habits outside the classroom. A student without those networks is more dependent on the classroom being the place where scaffolding occurs. The nudge makes the classroom that place for every student; the equity analysis asks whether the benefit is differential.\n[TO EXPAND: Literature on SES and digital literacy gaps. First-in-family student experiences with technology-enhanced learning. Structural vs deficit-based equity frameworks in higher education.]",
+    "crumbs": [
+      "Home",
+      "Literature Review"
+    ]
+  },
+  {
+    "objectID": "literature-review.html#the-conversation-not-delegation-framework",
+    "href": "literature-review.html#the-conversation-not-delegation-framework",
+    "title": "Literature Review",
+    "section": "The Conversation, Not Delegation Framework",
+    "text": "The Conversation, Not Delegation Framework\nThe Conversation, Not Delegation framework (Borck, 2026) names and operationalises the distinction between productive and unproductive AI interaction for the higher education teaching context. Conversation treats AI as a thinking partner: the student directs, challenges, and refines through iterative dialogue. Delegation treats AI as an answer machine: the student submits, accepts, and moves on.\nThe framework argues that the difference is not about tool choice or model quality - a student engaging conversationally with a less capable model may produce better learning outcomes than a student delegating passively to a frontier model. This observation motivates the planned follow-on study examining whether conversation quality can compensate for model quality.",
+    "crumbs": [
+      "Home",
+      "Literature Review"
+    ]
+  },
+  {
+    "objectID": "literature-review.html#references",
+    "href": "literature-review.html#references",
+    "title": "Literature Review",
+    "section": "References",
+    "text": "References\nBorck, M. (2026). Conversation, Not Delegation. KDP. ISBN 979-8252824550.\nFrontiers in Psychology. (2025). Optimizing academic engagement and mental health through AI: An experimental study on LLM integration in higher education. Frontiers in Psychology, 16. https://doi.org/10.3389/fpsyg.2025.1641212\nKasneci, E., Sessler, K., Kuchemann, S., Bannert, M., Dementieva, D., Fischer, F., … and Kasneci, G. (2023). ChatGPT for good? On opportunities and challenges of large language models for education. Learning and Individual Differences, 103, 102274. https://doi.org/10.1016/j.lindif.2023.102274\nLaurillard, D. (2002). Rethinking University Teaching: A Conversational Framework for the Effective Use of Learning Technologies (2nd ed.). RoutledgeFalmer.\nMollick, E. R., and Mollick, L. (2023). Assigning AI: Seven approaches for students, with prompts. The Wharton School Research Paper. https://ssrn.com/abstract=4475995\nNational Health and Medical Research Council. (2023). National Statement on Ethical Conduct in Human Research (2023 update). Australian Government.\nStojanov, A., Gronbaek, N., and Kulahci, M. (2024). Can we delegate learning to automation? A comparative study of LLM chatbots, search engines, and books. arXiv preprint. https://arxiv.org/abs/2410.01396\nThaler, R. H., and Sunstein, C. R. (2008). Nudge: Improving Decisions About Health, Wealth, and Happiness. Yale University Press.\nVygotsky, L. S. (1978). Mind in Society: The Development of Higher Psychological Processes. Harvard University Press.\n[TO EXPAND: Additional references to be added during the writing phase.]",
+    "crumbs": [
+      "Home",
+      "Literature Review"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Closing the AI Literacy Gap",
+    "section": "",
+    "text": "Australian universities are embedding AI tools in assessment, but the skills required to use those tools effectively are not equally distributed. Students from low socioeconomic backgrounds and those who are first in their family to attend university have fewer informal support networks to develop productive AI interaction habits before they arrive. Without structured scaffolding, this access gap becomes a participation and attainment gap.\nThis project implements and evaluates a low-cost, scalable intervention: a conversational nudge appended to AI responses during structured lab sessions. The nudge makes the conversational path structurally easier, reducing the risk of uncritical acceptance at the point where it matters most. The equity analysis asks whether the benefit is uniform or differential - whether students who had fewer prior scaffolding opportunities gain more from the intervention.\nThe intervention is grounded in the Conversation, Not Delegation framework (Borck, 2026): the quality of AI-assisted work depends on whether the student is directing the AI through active conversation or passively accepting its output.\nFunding: Curtin NBF Learning & Teaching Grant 2026 - AUD $20,000",
+    "crumbs": [
+      "Home",
+      "Closing the AI Literacy Gap"
+    ]
+  },
+  {
+    "objectID": "index.html#project-overview",
+    "href": "index.html#project-overview",
+    "title": "Closing the AI Literacy Gap",
+    "section": "",
+    "text": "Australian universities are embedding AI tools in assessment, but the skills required to use those tools effectively are not equally distributed. Students from low socioeconomic backgrounds and those who are first in their family to attend university have fewer informal support networks to develop productive AI interaction habits before they arrive. Without structured scaffolding, this access gap becomes a participation and attainment gap.\nThis project implements and evaluates a low-cost, scalable intervention: a conversational nudge appended to AI responses during structured lab sessions. The nudge makes the conversational path structurally easier, reducing the risk of uncritical acceptance at the point where it matters most. The equity analysis asks whether the benefit is uniform or differential - whether students who had fewer prior scaffolding opportunities gain more from the intervention.\nThe intervention is grounded in the Conversation, Not Delegation framework (Borck, 2026): the quality of AI-assisted work depends on whether the student is directing the AI through active conversation or passively accepting its output.\nFunding: Curtin NBF Learning & Teaching Grant 2026 - AUD $20,000",
+    "crumbs": [
+      "Home",
+      "Closing the AI Literacy Gap"
+    ]
+  },
+  {
+    "objectID": "index.html#project-team",
+    "href": "index.html#project-team",
+    "title": "Closing the AI Literacy Gap",
+    "section": "Project Team",
+    "text": "Project Team\n\n\n\nRole\nName\nDiscipline\nUnit\n\n\n\n\nLead\nMichael Borck\nInformation Systems\nISYS6020\n\n\nCo-I\nDr Marcela Moraes (TBC)\nMarketing\n[TBC]\n\n\nCo-I\nDr Torsten Reiners (TBC)\nSupply Chain Management\n[TBC]\n\n\nCo-I\n[TBC]\n[TBC]\n[TBC]\n\n\nRA\nTo be recruited\n-\n-",
+    "crumbs": [
+      "Home",
+      "Closing the AI Literacy Gap"
+    ]
+  },
+  {
+    "objectID": "index.html#timeline",
+    "href": "index.html#timeline",
+    "title": "Closing the AI Literacy Gap",
+    "section": "Timeline",
+    "text": "Timeline\n\n\n\n\n\n\n\n\nPeriod\nPhase\nStatus\n\n\n\n\nMarch 2026\nFoundation: HREC, confirm co-Is, configure interface\nCurrent\n\n\nApril 2026\nInstrument development, pilot, power analysis\n\n\n\nMay-June 2026\nData collection: lab sessions across 3+ units\n\n\n\nJuly-Aug 2026\nCoding, reliability checks, analysis\n\n\n\nSep-Oct 2026\nACIS 2026 paper draft, resource pack\n\n\n\nNov-Dec 2026\nSubmission, reporting, scope follow-on study",
+    "crumbs": [
+      "Home",
+      "Closing the AI Literacy Gap"
+    ]
+  },
+  {
+    "objectID": "index.html#quick-links",
+    "href": "index.html#quick-links",
+    "title": "Closing the AI Literacy Gap",
+    "section": "Quick Links",
+    "text": "Quick Links\nStudy Design\n\nMethodology - research design, measures, analysis plan\nPaper Outline - ACIS 2026 target structure\nLiterature Review - thematic review, working document\n\nDocuments\n\nGrant Application - NBF grant (v6.0)\nEthics Package - HREC application and supporting documents\nResearch Instruments - coding scheme, survey, task briefs, nudge variants\n\nTools\n\nChat Interface - lab session AI chat tool\nkeep-asking - research programme\nkeep-asking-app - chat tool source\n\n\n\n\n\n\n\nWarningItems requiring confirmation before submission\n\n\n\n\nCo-investigator units and contributions (Marcela, Torsten)\nHREC submission date\nEquity cohort percentages from Curtin SIMS (% low SES, % first-in-family)\nPower analysis (pending cohort sizes)\nACIS 2026 deadline and location\nAboriginal and Torres Strait Islander section - active decision to include or remove\nTalk to Business and Law RDA (Dr Joanne McEwan)",
+    "crumbs": [
+      "Home",
+      "Closing the AI Literacy Gap"
+    ]
+  },
+  {
+    "objectID": "instruments/nudge-variants.html",
+    "href": "instruments/nudge-variants.html",
+    "title": "Nudge Variants",
+    "section": "",
+    "text": "To reduce habituation (students ignoring a repeated prompt), the nudge is not a single fixed line. Instead, one variant is randomly selected from the pool below and appended to each AI response in the nudge condition. All variants are designed to the same specification.",
+    "crumbs": [
+      "Nudge Variants"
+    ]
+  },
+  {
+    "objectID": "instruments/nudge-variants.html#design-principles",
+    "href": "instruments/nudge-variants.html#design-principles",
+    "title": "Nudge Variants",
+    "section": "Design Principles",
+    "text": "Design Principles\nEvery variant must:\n\nInvite pushback, not confirmation - the prompt should make it easier to disagree, not harder\nBe domain-agnostic - work equally across Information Systems, Supply Chain, and Marketing\nAssume no prior AI experience - a first-time AI user should understand the prompt\nMake the conversational path easier, not mandatory - a suggestion, not an instruction\nBe short - one sentence, scannable in under 3 seconds",
+    "crumbs": [
+      "Nudge Variants"
+    ]
+  },
+  {
+    "objectID": "instruments/nudge-variants.html#variant-pool",
+    "href": "instruments/nudge-variants.html#variant-pool",
+    "title": "Nudge Variants",
+    "section": "Variant Pool",
+    "text": "Variant Pool\n\n\n\n\n\n\n\n#\nVariant\n\n\n\n\n1\nDoes that match what you expected? If something seems off, tell me what seems wrong.\n\n\n2\nBefore you move on - does that actually answer your question, or just part of it?\n\n\n3\nIs there anything in that response that doesn’t quite fit with what you already know?\n\n\n4\nWhat would you challenge in that answer if you were reviewing someone else’s work?\n\n\n5\nDoes that feel complete, or is there a gap worth pushing on?\n\n\n6\nIf you had to argue the opposite, what would you say?\n\n\n7\nIs that specific enough to be useful, or is it still too general?\n\n\n8\nWhat’s the weakest part of that response?\n\n\n9\nDoes that account for the details in your task, or is it a generic answer?\n\n\n10\nWould you trust that answer enough to use it without checking? Why or why not?",
+    "crumbs": [
+      "Nudge Variants"
+    ]
+  },
+  {
+    "objectID": "instruments/nudge-variants.html#selection-method",
+    "href": "instruments/nudge-variants.html#selection-method",
+    "title": "Nudge Variants",
+    "section": "Selection Method",
+    "text": "Selection Method\nOne variant is selected uniformly at random per AI response. The same variant may appear consecutively by chance, but the probability decreases with pool size (1/10 = 10% chance of repeat). The selected variant is logged alongside the displayed response for analysis.",
+    "crumbs": [
+      "Nudge Variants"
+    ]
+  },
+  {
+    "objectID": "instruments/nudge-variants.html#analysis-considerations",
+    "href": "instruments/nudge-variants.html#analysis-considerations",
+    "title": "Nudge Variants",
+    "section": "Analysis Considerations",
+    "text": "Analysis Considerations\n\nThe primary analysis treats all nudge variants as equivalent (any nudge vs no nudge)\nExploratory analysis may examine whether specific variants are associated with higher challenge rates, though the study is not powered for variant-level comparisons\nVariant #1 is the original wording described in the grant application and HREC documents",
+    "crumbs": [
+      "Nudge Variants"
+    ]
+  },
+  {
+    "objectID": "instruments/nudge-variants.html#adding-variants",
+    "href": "instruments/nudge-variants.html#adding-variants",
+    "title": "Nudge Variants",
+    "section": "Adding Variants",
+    "text": "Adding Variants\nNew variants can be added to the pool if they meet all five design principles above. Variants should be piloted with 2-3 students before being added to the live pool. The variant pool is defined in the application backend (keep-asking-app) and can be updated without changing the study design.",
+    "crumbs": [
+      "Nudge Variants"
+    ]
+  },
+  {
+    "objectID": "instruments/nudge-variants.html#document-history",
+    "href": "instruments/nudge-variants.html#document-history",
+    "title": "Nudge Variants",
+    "section": "Document History",
+    "text": "Document History\n\n\n\nVersion\nDate\nChanges\n\n\n\n\n1.0\nMarch 2026\nInitial pool of 10 variants\n\n\n\n\nkeep-asking project - github.com/michael-borck/keep-asking",
+    "crumbs": [
+      "Nudge Variants"
+    ]
+  },
+  {
+    "objectID": "instruments/coding-scheme.html",
+    "href": "instruments/coding-scheme.html",
+    "title": "Coding Scheme",
+    "section": "",
+    "text": "This document defines the coding scheme for student-AI conversation transcripts collected during lab sessions. The scheme operates at two levels: automated measures computed directly from transcript logs, and human-coded behavioural measures applied by a trained Research Assistant (RA) and calibrated by co-investigators.\nThe scheme codes how students interact with the AI, not what they say about the topic. All behavioural dimensions are domain-agnostic and can be applied without disciplinary knowledge of Information Systems, Supply Chain Management, or Marketing.",
+    "crumbs": [
+      "Coding Scheme"
+    ]
+  },
+  {
+    "objectID": "instruments/coding-scheme.html#unit-of-analysis",
+    "href": "instruments/coding-scheme.html#unit-of-analysis",
+    "title": "Coding Scheme",
+    "section": "Unit of Analysis",
+    "text": "Unit of Analysis\nThe primary unit of analysis is the individual student turn - a single message sent by the student to the AI.\nTurn 1 exclusion: The student’s first turn (the opening query) is excluded from behavioural coding. Turn 1 cannot be a follow-up, challenge, or extension because there is no prior AI response to react to. Including it would systematically inflate delegation rates and deflate engagement scores, especially for shorter conversations. Turn 1 is still counted in automated measures (turn count, word count) but is not coded on behavioural dimensions.\nCoding begins at Turn 2 (the student’s first response after receiving an AI reply). Session-level behavioural measures are computed from Turn 2 onward.",
+    "crumbs": [
+      "Coding Scheme"
+    ]
+  },
+  {
+    "objectID": "instruments/coding-scheme.html#part-1-automated-measures",
+    "href": "instruments/coding-scheme.html#part-1-automated-measures",
+    "title": "Coding Scheme",
+    "section": "Part 1: Automated Measures",
+    "text": "Part 1: Automated Measures\nThese measures are computed directly from the transcript log using scripts. No human coding is required.\n\n\n\n\n\n\n\n\nMeasure\nDefinition\nNotes\n\n\n\n\nturns_total\nTotal number of student turns in the conversation\nDirect count from log (includes Turn 1)\n\n\nturns_coded\nNumber of turns coded on behavioural dimensions\nturns_total - 1 (excludes Turn 1)\n\n\nwords_total_student\nTotal words across all student turns\nComputed from transcript text\n\n\nwords_mean_student\nAverage words per student turn\nwords_total_student / turns_total\n\n\nwords_mean_ai\nAverage words per AI response\nComputed from transcript text\n\n\nflesch_score_student\nFlesch reading ease score across all student turns\nHigher score = simpler language; lower = more complex\n\n\nquestion_marks_total\nTotal question marks across all student turns\nCrude proxy for follow-up questioning\n\n\nquestion_marks_proportion\nProportion of turns containing at least one question mark\nturns_with_question / turns_total\n\n\nduration_minutes\nTotal session duration in minutes\nFrom first to last timestamp if captured\n\n\nresponse_latency_mean\nMean time between AI response and student reply in seconds\nRequires timestamp logging; proxy for reflection time\n\n\n\nScript location: scripts/compute_auto_measures.py",
+    "crumbs": [
+      "Coding Scheme"
+    ]
+  },
+  {
+    "objectID": "instruments/coding-scheme.html#part-2-human-coded-behavioural-dimensions",
+    "href": "instruments/coding-scheme.html#part-2-human-coded-behavioural-dimensions",
+    "title": "Coding Scheme",
+    "section": "Part 2: Human-Coded Behavioural Dimensions",
+    "text": "Part 2: Human-Coded Behavioural Dimensions\n\nCoded by: Research Assistant (RA)\n\n\nCoverage: 100% of transcripts, Turn 2 onward\nThe RA applies three binary codes to every student turn from Turn 2 onward. Each code is Yes (1) or No (0).\n\n\n\nDimension 1: Follow-Up (FU)\nDefinition: Did the student ask a question or request that continues the conversation rather than ending it?\nCode Yes (1) if: - The turn contains an explicit question directed at the AI - The turn requests clarification, elaboration, or more detail - The turn asks the AI to reconsider or try again\nCode No (0) if: - The turn is a simple acknowledgement (“Thanks”, “Got it”, “Okay”) - The turn submits a new unrelated query without building on the previous response - The turn is the final message in the conversation with no question\nExamples:\n\n\n\n\n\n\n\n\nTurn\nCode\nReason\n\n\n\n\n“Can you explain why that approach would work better than the alternative?”\n1\nExplicit follow-up question\n\n\n“What are the risks of that strategy?”\n1\nContinues the conversation\n\n\n“Thanks, that is helpful.”\n0\nAcknowledgement, no follow-up\n\n\n“Okay write me a summary of that.”\n0\nNew directive, not a follow-up\n\n\n\n\n\n\nDimension 2: Challenge (CH)\nDefinition: Did the student explicitly push back on, express doubt about, or correct the AI response?\nCode Yes (1) if: - The turn expresses disagreement with the AI’s response - The turn flags something as incorrect, incomplete, or implausible - The turn asks the AI to justify or defend its response - The turn notes a contradiction between the AI response and prior information\nCode No (0) if: - The turn accepts the AI response without question - The turn asks for more information without expressing doubt - The turn rephrases the question without pushing back\nExamples:\n\n\n\n\n\n\n\n\nTurn\nCode\nReason\n\n\n\n\n“I don’t think that’s right - the case study said the timeline was six months, not three.”\n1\nExplicit correction\n\n\n“That seems too simple. What are you not accounting for?”\n1\nExpresses doubt\n\n\n“Can you tell me more about that?”\n0\nRequest for more, no pushback\n\n\n“Interesting, and what about the cost side?”\n0\nExtension without challenge\n\n\n\n\n\n\nDimension 3: Extension (EX)\nDefinition: Did the student introduce new information, a new constraint, or a new angle not already present in the AI response?\nCode Yes (1) if: - The turn introduces a fact, constraint, or consideration not mentioned by the AI - The turn reframes the problem from a different perspective - The turn connects the AI response to an external concept or context - The turn adds a specific detail from the task brief that the AI did not reference\nCode No (0) if: - The turn only references information already in the AI response - The turn asks for elaboration on something the AI already said - The turn is purely a follow-up with no new content\nExamples:\n\n\n\n\n\n\n\n\nTurn\nCode\nReason\n\n\n\n\n“What if the supplier is also a key customer - how does that change the analysis?”\n1\nNew angle not in AI response\n\n\n“The case said there is a 90-day lead time. Does that affect your recommendation?”\n1\nIntroduces specific detail from task brief\n\n\n“Can you expand on the second point?”\n0\nElaboration only, no new content\n\n\n“What are the advantages of option A?”\n0\nReferences AI content, no new information\n\n\n\n\n\n\nDelegation (Derived in Analysis)\nDelegation is not coded by the RA. It is derived automatically during analysis:\nA turn is a delegation turn if: FU = 0 AND CH = 0 AND EX = 0\nThis derivation is deterministic and requires no judgement calls. Deriving it rather than coding it eliminates the possibility of contradictory data (e.g., a turn coded as delegation but also coded as having a follow-up). The RA’s task is simpler and the data is cleaner.\nThe delegation flag and all delegation-based session measures (proportion_delegation, delegation_streak_max) are computed by the analysis script from the three coded dimensions.\n\n\n\nTurn-Level Scoring\nTwo scoring approaches are applied to each coded turn. Both are reported.\nUnweighted score (equal dimensions):\nturn_score_raw = FU + CH + EX\n\n\n\n\n\n\n\nScore\nInterpretation\n\n\n\n\n0\nDelegation - student accepted response without engagement\n\n\n1\nMinimal engagement - one dimension present\n\n\n2\nModerate engagement - two dimensions present\n\n\n3\nFull engagement - follow-up, challenge, and extension all present\n\n\n\nWeighted score (challenge-emphasised):\nturn_score_weighted = FU + (2 x CH) + EX\n\n\n\nScore\nInterpretation\n\n\n\n\n0\nDelegation\n\n\n1\nFollow-up or extension only\n\n\n2\nChallenge alone, or follow-up + extension\n\n\n3\nChallenge + one other dimension\n\n\n4\nAll three dimensions present\n\n\n\nRationale for dual scoring: The nudge explicitly invites pushback (“If something seems off, tell me what seems wrong”), making Challenge the dimension most directly targeted by the intervention. The weighted score tests whether the nudge effect is stronger when Challenge is given greater analytical weight. If the unweighted and weighted analyses converge, this confirms the finding is robust to scoring assumptions. If they diverge, it reveals whether the nudge primarily drives challenge behaviour (weighted effect larger) or broader engagement (similar effect sizes). Both outcomes are informative and both are reported.",
+    "crumbs": [
+      "Coding Scheme"
+    ]
+  },
+  {
+    "objectID": "instruments/coding-scheme.html#part-3-session-level-rollup",
+    "href": "instruments/coding-scheme.html#part-3-session-level-rollup",
+    "title": "Coding Scheme",
+    "section": "Part 3: Session-Level Rollup",
+    "text": "Part 3: Session-Level Rollup\nComputed from turn-level codes after RA coding is complete. All behavioural measures exclude Turn 1.\n\n\n\n\n\n\n\n\nMeasure\nDefinition\nFormula\n\n\n\n\nmean_turn_score_raw\nAverage unweighted turn score\nMean of turn_score_raw (Turn 2+)\n\n\nmean_turn_score_weighted\nAverage weighted turn score\nMean of turn_score_weighted (Turn 2+)\n\n\nproportion_delegation\nProportion of coded turns that are delegation\nDerived: turns where FU=0, CH=0, EX=0 / turns_coded\n\n\nproportion_followup\nProportion of coded turns with follow-up\nFU_turns / turns_coded\n\n\nproportion_challenge\nProportion of coded turns with challenge\nCH_turns / turns_coded\n\n\nproportion_extension\nProportion of coded turns with extension\nEX_turns / turns_coded\n\n\npeak_turn_score_raw\nHighest unweighted score in the session\nMax of turn_score_raw\n\n\ndelegation_streak_max\nLongest consecutive run of delegation turns\nSequence analysis on derived delegation flag (Turn 2+)\n\n\n\nThe proportion_challenge measure is expected to be the most sensitive indicator of the nudge effect, since the nudge explicitly invites pushback.",
+    "crumbs": [
+      "Coding Scheme"
+    ]
+  },
+  {
+    "objectID": "instruments/coding-scheme.html#part-4-task-completion-score",
+    "href": "instruments/coding-scheme.html#part-4-task-completion-score",
+    "title": "Coding Scheme",
+    "section": "Part 4: Task Completion Score",
+    "text": "Part 4: Task Completion Score\n\nCoded by: Co-investigators (own unit transcripts only)\n\n\nCoverage: 100% of transcripts within each co-investigator’s unit\nThis score requires disciplinary knowledge and is not coded by the RA.\nScale: 1 to 5\n\n\n\n\n\n\n\nScore\nAnchor\n\n\n\n\n1\nStudent produced minimal output. Little evidence of engagement with the task requirements. Output largely repeats AI responses verbatim.\n\n\n2\nStudent identified some relevant issues but analysis is incomplete or superficial. Limited evidence of independent reasoning beyond AI output.\n\n\n3\nStudent addressed the main task requirements. Some evidence of critical evaluation. Output goes somewhat beyond AI responses but key gaps remain.\n\n\n4\nStudent produced solid analysis addressing most task requirements. Clear evidence of critical thinking. Output integrates AI responses with student reasoning.\n\n\n5\nStudent produced comprehensive, well-reasoned analysis. Strong evidence of critical evaluation and independent judgment. AI responses clearly interrogated and contextualised rather than accepted wholesale.\n\n\n\nImportant: Task completion scores are not comparable across units. A score of 4 in Information Systems does not represent the same absolute quality as a score of 4 in Marketing. The confidence calibration analysis (comparing self-reported confidence against task score) must be conducted within unit, not pooled across units. Cross-unit comparisons use the behavioural dimensions (FU, CH, EX) which are domain-agnostic.\nNote: Each co-investigator should add 2-3 discipline-specific examples at each score level before coding their unit’s transcripts. These examples form the local calibration standard and should be documented in instruments/task_brief_[discipline].md.",
+    "crumbs": [
+      "Coding Scheme"
+    ]
+  },
+  {
+    "objectID": "instruments/coding-scheme.html#part-5-inter-rater-reliability",
+    "href": "instruments/coding-scheme.html#part-5-inter-rater-reliability",
+    "title": "Coding Scheme",
+    "section": "Part 5: Inter-Rater Reliability",
+    "text": "Part 5: Inter-Rater Reliability\n\nProcess\n\nRA codes 100% of transcripts on dimensions FU, CH, and EX (Turn 2 onward)\nEach co-investigator independently codes a 20-30% stratified sample from their own unit on the same dimensions\nCohen’s kappa is calculated per unit between RA codes and co-investigator codes\nLead investigator reviews all divergences\nDivergences on behavioural dimensions below 0.70 kappa trigger scheme revision and recalibration\nDivergences on contextual grounds (domain knowledge explaining the difference) are documented and reported as a finding rather than an error\n\n\n\nKappa Thresholds\n\n\n\nKappa\nInterpretation\nAction\n\n\n\n\n&lt; 0.50\nPoor agreement\nStop, revise scheme, recode\n\n\n0.50-0.69\nModerate agreement\nReview divergences, minor revision\n\n\n0.70-0.79\nAcceptable agreement\nProceed, note limitations\n\n\n0.80-0.89\nGood agreement\nProceed\n\n\n&gt;= 0.90\nExcellent agreement\nProceed\n\n\n\n\n\nCalibration Sample Selection\nThe calibration sample should be stratified to include: - Equal proportions from nudge and control conditions - A spread across early, mid, and late sessions - Examples of both short (under 5 turns) and longer (over 15 turns) conversations",
+    "crumbs": [
+      "Coding Scheme"
+    ]
+  },
+  {
+    "objectID": "instruments/coding-scheme.html#part-6-coding-procedure",
+    "href": "instruments/coding-scheme.html#part-6-coding-procedure",
+    "title": "Coding Scheme",
+    "section": "Part 6: Coding Procedure",
+    "text": "Part 6: Coding Procedure\n\nBefore coding begins\n\nRA attends a 1-hour briefing session with lead investigator\nRA independently codes 10 practice transcripts from existing CloudCore data (Turn 2 onward only)\nLead investigator reviews practice codes and clarifies any ambiguous cases\nRA codes a further 10 practice transcripts independently\nAgreement check: if kappa on practice set is below 0.70, further calibration before proceeding to live data\n\n\n\nDuring coding\n\nRA skips Turn 1 and begins coding at Turn 2\nRA codes each turn in order, top to bottom\nRA does not revise earlier codes after reading later turns (each turn is coded in isolation)\nRA flags any turn that is genuinely ambiguous using a comment field\nFlagged turns are reviewed by lead investigator before final dataset is locked\n\n\n\nAfter coding\n\nLead investigator checks flagged turns\nAnalysis script derives delegation flags and computes both unweighted and weighted scores\nCo-investigators complete calibration sample coding\nKappa calculated and documented\nFinal coded dataset locked and version-controlled in data/processed/",
+    "crumbs": [
+      "Coding Scheme"
+    ]
+  },
+  {
+    "objectID": "instruments/coding-scheme.html#part-7-statistical-analysis",
+    "href": "instruments/coding-scheme.html#part-7-statistical-analysis",
+    "title": "Coding Scheme",
+    "section": "Part 7: Statistical Analysis",
+    "text": "Part 7: Statistical Analysis\n\nPrimary analysis\nThe primary analysis uses a linear mixed-effects model to account for the nested structure of the data (students nested within units):\noutcome ~ condition + (1 | unit)\nWhere: - outcome is the session-level measure (e.g., mean_turn_score_raw, proportion_challenge) - condition is the fixed effect (Nudge vs Control) - (1 | unit) is a random intercept for unit, accounting for the fact that students within the same unit share a task, a co-investigator, a discipline context, and potentially similar baseline characteristics\nWhy mixed-effects rather than simple ANOVA: Students are not independent across units. A student in Information Systems completes a different task, in a different discipline, with a different facilitator than a student in Marketing. Simple ANOVA treats all students as exchangeable and underestimates standard errors, inflating the risk of a false positive. The mixed-effects model partitions the variance: the fixed effect of condition (nudge vs control) is estimated after accounting for between-unit differences.\nCovariates: Prior AI experience (Q10 from exit survey) is included as a fixed-effect covariate if nudge and control groups differ on this baseline measure:\noutcome ~ condition + prior_ai_experience + (1 | unit)\n\n\nEquity-disaggregated analysis\nThe equity analysis adds SES flag and first-in-family status as fixed effects and tests interactions:\noutcome ~ condition * equity_flag + (1 | unit)\nA significant interaction indicates the nudge effect differs between equity and non-equity cohorts (differential benefit). A non-significant interaction with a significant main effect indicates uniform benefit. Both findings are reported.\n\n\nConfidence calibration analysis\nThe comparison of self-reported confidence (Q2) against task completion score is conducted within unit only. The task completion rubric requires discipline-specific judgement and scores are not comparable across units. Within each unit:\n\nSpearman correlation between Q2 and task score\nComparison of the confidence-performance gap between nudge and control groups\nIdentification of the “overconfident delegator” pattern: high confidence + low task score + high proportion_delegation\n\n\n\nReporting\nAll analyses are reported with: - Effect sizes (Cohen’s d for group comparisons; marginal R-squared for mixed models) - 95% confidence intervals - Both unweighted and weighted scoring results - Equity-disaggregated results regardless of significance\nImplementation: Analysis will use R with the lme4 package for mixed-effects models, or Python with statsmodels mixed linear models.",
+    "crumbs": [
+      "Coding Scheme"
+    ]
+  },
+  {
+    "objectID": "instruments/coding-scheme.html#document-history",
+    "href": "instruments/coding-scheme.html#document-history",
+    "title": "Coding Scheme",
+    "section": "Document History",
+    "text": "Document History\n\n\n\n\n\n\n\n\nVersion\nDate\nChanges\n\n\n\n\n1.0\nMarch 2026\nInitial draft\n\n\n2.0\nMarch 2026\nDropped DL as coded dimension (now derived). Added weighted scoring. Excluded Turn 1 from behavioural coding. Added mixed-effects analysis specification. Added within-unit constraint for confidence calibration.\n\n\n\n\nkeep-asking project - github.com/michael-borck/keep-asking",
+    "crumbs": [
+      "Coding Scheme"
+    ]
+  },
+  {
+    "objectID": "instruments/task-brief-retrieval-framed.html",
+    "href": "instruments/task-brief-retrieval-framed.html",
+    "title": "Task Briefs - Retrieval-Framed Variants",
+    "section": "",
+    "text": "These tasks are designed to look like factual retrieval exercises but actually require the student to evaluate AI responses that may contain plausible errors. LLMs do not retrieve facts - they interpolate from training data. Tasks framed as retrieval (“What are the requirements for…?”, “List the key regulations…”) are where AI responses are most likely to be confidently wrong and where students are least likely to push back.\nThese tasks are not part of the primary study design. They are provided for: - Informal piloting during instrument development - A planned follow-on study comparing conversational vs retrieval-framed tasks - Demonstrating the task framing concept to co-investigators",
+    "crumbs": [
+      "Task Briefs - Retrieval-Framed Variants"
+    ]
+  },
+  {
+    "objectID": "instruments/task-brief-retrieval-framed.html#design-rationale",
+    "href": "instruments/task-brief-retrieval-framed.html#design-rationale",
+    "title": "Task Briefs - Retrieval-Framed Variants",
+    "section": "Design Rationale",
+    "text": "Design Rationale\nThe primary study tasks (see task_brief_information_systems.md, task_brief_supply_chain.md, task_brief_marketing.md) are conversational by design - they require iterative dialogue to develop a recommendation. There is no single right answer.\nRetrieval-framed tasks differ in three ways: 1. They appear to have a factual answer - students expect the AI to “know” the answer 2. The AI will respond with high confidence - fluent, structured, authoritative tone 3. The response will likely contain errors - incorrect specifics, outdated information, fabricated details that sound plausible\nThis is where the nudge hypothesis is strongest: the nudge should interrupt the default acceptance pattern precisely when the AI’s confidence is highest and the student’s scepticism is lowest.",
+    "crumbs": [
+      "Task Briefs - Retrieval-Framed Variants"
+    ]
+  },
+  {
+    "objectID": "instruments/task-brief-retrieval-framed.html#information-systems---retrieval-framed",
+    "href": "instruments/task-brief-retrieval-framed.html#information-systems---retrieval-framed",
+    "title": "Task Briefs - Retrieval-Framed Variants",
+    "section": "Information Systems - Retrieval-Framed",
+    "text": "Information Systems - Retrieval-Framed\n\nTask: Australian Data Privacy Compliance Audit\nYou are preparing a compliance checklist for a small Australian fintech company that handles customer financial data. Using the AI tool, identify:\n\nThe specific requirements of the Australian Privacy Act 1988 that apply to a fintech handling customer transaction data. List the Australian Privacy Principles (APPs) most relevant to this business and what each requires in practice.\nThe notification obligations under the Notifiable Data Breaches (NDB) scheme. What are the exact timeframes, who must be notified, and what are the penalties for non-compliance?\nAny additional requirements specific to financial services data (e.g., APRA prudential standards, ASIC requirements).\n\nWhat makes this a retrieval-framed task: Students will expect the AI to accurately cite specific legislation, timeframes, and penalty amounts. The AI will produce confident, structured responses - but may fabricate specific penalty figures, confuse APP numbers with their requirements, cite repealed provisions, or miss recent amendments. The student who accepts this without verification risks producing a compliance checklist that is plausibly structured but factually wrong.\nSession length: 45 minutes.",
+    "crumbs": [
+      "Task Briefs - Retrieval-Framed Variants"
+    ]
+  },
+  {
+    "objectID": "instruments/task-brief-retrieval-framed.html#supply-chain-management---retrieval-framed",
+    "href": "instruments/task-brief-retrieval-framed.html#supply-chain-management---retrieval-framed",
+    "title": "Task Briefs - Retrieval-Framed Variants",
+    "section": "Supply Chain Management - Retrieval-Framed",
+    "text": "Supply Chain Management - Retrieval-Framed\n\nTask: International Shipping Regulation Summary\nA logistics company is planning to export temperature-controlled pharmaceutical products from Australia to three markets: Singapore, the UK, and the USA. Using the AI tool, compile:\n\nThe specific regulatory requirements for pharmaceutical cold chain exports from Australia. What are the TGA export requirements, and what documentation is needed?\nThe import requirements for each destination country. What certifications, inspections, or pre-approvals are required for temperature-sensitive pharmaceuticals entering Singapore (HSA), the UK (MHRA), and the USA (FDA)?\nThe shipping standards that apply. What are the GDP (Good Distribution Practice) requirements, and which specific temperature monitoring standards must be met?\n\nWhat makes this a retrieval-framed task: Students will expect the AI to correctly name specific regulators, cite specific standards (GDP, WHO guidelines), and describe specific documentation requirements. The AI will produce detailed, authoritative-sounding responses - but may confuse TGA export permits with import requirements, cite outdated WHO technical supplements, fabricate specific temperature tolerance ranges, or describe requirements from the wrong regulatory jurisdiction. A student who delegates this task gets a professionally formatted but potentially dangerous compliance document.\nSession length: 45 minutes.",
+    "crumbs": [
+      "Task Briefs - Retrieval-Framed Variants"
+    ]
+  },
+  {
+    "objectID": "instruments/task-brief-retrieval-framed.html#marketing---retrieval-framed",
+    "href": "instruments/task-brief-retrieval-framed.html#marketing---retrieval-framed",
+    "title": "Task Briefs - Retrieval-Framed Variants",
+    "section": "Marketing - Retrieval-Framed",
+    "text": "Marketing - Retrieval-Framed\n\nTask: Australian Consumer Law and Advertising Compliance\nA direct-to-consumer skincare brand is planning a marketing campaign that includes the following claims: “clinically proven to reduce wrinkles by 40%”, “dermatologist recommended”, and “Australia’s #1 natural skincare brand”. Using the AI tool, determine:\n\nWhich of these claims are permissible under Australian Consumer Law (ACL) and the Therapeutic Goods Administration (TGA) advertising requirements? For each claim, identify the specific legal standard that applies and what evidence would be required to substantiate it.\nThe penalties for misleading or deceptive conduct under the ACL. What are the current maximum penalties for corporations and individuals?\nThe complaint process. If a competitor lodges a complaint with Ad Standards or the ACCC, what is the process and what are the possible outcomes?\n\nWhat makes this a retrieval-framed task: Students will expect the AI to correctly cite penalty amounts, name the correct regulatory bodies, and accurately describe the boundary between cosmetic claims (ACL) and therapeutic claims (TGA). The AI will produce confident legal-sounding analysis - but may cite outdated penalty figures, confuse the roles of Ad Standards, the ACCC, and the TGA, misstate the therapeutic/cosmetic boundary, or fabricate case precedents. A student who delegates this task produces advice that sounds legally informed but may be substantively wrong on the specific points that matter most.\nSession length: 45 minutes.",
+    "crumbs": [
+      "Task Briefs - Retrieval-Framed Variants"
+    ]
+  },
+  {
+    "objectID": "instruments/task-brief-retrieval-framed.html#analytic-note",
+    "href": "instruments/task-brief-retrieval-framed.html#analytic-note",
+    "title": "Task Briefs - Retrieval-Framed Variants",
+    "section": "Analytic Note",
+    "text": "Analytic Note\nIf these tasks are used in a follow-on study, the key comparison is:\n\n\n\n\nConversational task\nRetrieval-framed task\n\n\n\n\nNudge\nNudge + conversational\nNudge + retrieval\n\n\nControl\nControl + conversational\nControl + retrieval\n\n\n\nThe hypothesis is that the nudge effect (nudge - control difference) will be larger for retrieval-framed tasks than for conversational tasks, because retrieval-framed tasks produce the highest-confidence AI responses and the lowest baseline student scepticism.",
+    "crumbs": [
+      "Task Briefs - Retrieval-Framed Variants"
+    ]
+  },
+  {
+    "objectID": "instruments/task-brief-retrieval-framed.html#document-history",
+    "href": "instruments/task-brief-retrieval-framed.html#document-history",
+    "title": "Task Briefs - Retrieval-Framed Variants",
+    "section": "Document History",
+    "text": "Document History\n\n\n\nVersion\nDate\nChanges\n\n\n\n\n1.0\nMarch 2026\nInitial draft - three retrieval-framed variants\n\n\n\n\nkeep-asking project - github.com/michael-borck/keep-asking",
+    "crumbs": [
+      "Task Briefs - Retrieval-Framed Variants"
+    ]
+  },
+  {
+    "objectID": "instruments/task-brief-supply-chain.html",
+    "href": "instruments/task-brief-supply-chain.html",
+    "title": "Task Brief - Supply Chain Management",
+    "section": "",
+    "text": "You are a supply chain analyst for an Australian food manufacturer that produces chilled ready meals. The company sources ingredients from 15 domestic suppliers and 4 international suppliers (New Zealand, Thailand, Italy, USA). Recent disruptions - a shipping delay from Thailand and a drought affecting a key domestic vegetable supplier - have exposed vulnerabilities in the supply chain. Management wants a plan.",
+    "crumbs": [
+      "Task Brief - Supply Chain Management"
+    ]
+  },
+  {
+    "objectID": "instruments/task-brief-supply-chain.html#your-task",
+    "href": "instruments/task-brief-supply-chain.html#your-task",
+    "title": "Task Brief - Supply Chain Management",
+    "section": "Your Task",
+    "text": "Your Task\nUsing the AI tool provided, develop a supply chain resilience briefing (300-500 words) that addresses:\n\nVulnerability assessment: Which parts of this supply chain are most vulnerable and why? Consider lead times, substitutability, perishability, and geographic concentration.\nMitigation strategies: Recommend two to three specific actions the company should take in the next 6 months. Be concrete - “diversify suppliers” is not enough; specify how and at what cost.\nTrade-offs: What are the costs or downsides of your recommended strategies? Who bears them?",
+    "crumbs": [
+      "Task Brief - Supply Chain Management"
+    ]
+  },
+  {
+    "objectID": "instruments/task-brief-supply-chain.html#instructions",
+    "href": "instruments/task-brief-supply-chain.html#instructions",
+    "title": "Task Brief - Supply Chain Management",
+    "section": "Instructions",
+    "text": "Instructions\n\nYou have 45 minutes to develop your briefing using the AI chat tool.\nDo not simply ask the AI to write the briefing for you. Use the AI to explore the problem, test scenarios, and pressure-test your reasoning.\nThe AI may give textbook answers that do not account for the specific constraints of a chilled food supply chain (perishability, cold chain, regulatory requirements). It is your job to catch these gaps.\nYour final briefing should reflect your own analysis informed by the conversation.",
+    "crumbs": [
+      "Task Brief - Supply Chain Management"
+    ]
+  },
+  {
+    "objectID": "instruments/task-brief-supply-chain.html#what-makes-a-good-response",
+    "href": "instruments/task-brief-supply-chain.html#what-makes-a-good-response",
+    "title": "Task Brief - Supply Chain Management",
+    "section": "What Makes a Good Response",
+    "text": "What Makes a Good Response\n\nDemonstrates understanding of supply chain-specific constraints (not generic risk management)\nIdentifies something the AI missed or oversimplified\nQuantifies or concretises where possible (lead times, costs, timelines)\nShows the reasoning evolved through iterative conversation",
+    "crumbs": [
+      "Task Brief - Supply Chain Management"
+    ]
+  },
+  {
+    "objectID": "instruments/task-brief-supply-chain.html#sample-interaction-tasks-alternative-scenarios",
+    "href": "instruments/task-brief-supply-chain.html#sample-interaction-tasks-alternative-scenarios",
+    "title": "Task Brief - Supply Chain Management",
+    "section": "Sample Interaction Tasks (Alternative Scenarios)",
+    "text": "Sample Interaction Tasks (Alternative Scenarios)\n\nTask 2: Last-Mile Delivery Optimisation\nAn Australian e-commerce company delivers to both metropolitan and regional areas. Metropolitan deliveries are profitable; regional deliveries lose money on average. Using the AI tool, analyse the trade-offs between three options: (a) increase regional delivery charges, (b) partner with Australia Post for regional, (c) establish regional micro-fulfilment centres. Challenge the AI on assumptions about Australian geography and logistics costs.\n\n\nTask 3: Supplier Selection Under Uncertainty\nA manufacturer needs to choose between two suppliers for a critical component. Supplier A is cheaper but based overseas with a 6-week lead time. Supplier B is 20% more expensive but domestic with a 1-week lead time. Annual demand is uncertain (could vary by 30%). Using the AI tool, develop a recommendation that accounts for total cost of ownership, risk, and demand variability. Push back if the AI gives a simple cost comparison.",
+    "crumbs": [
+      "Task Brief - Supply Chain Management"
+    ]
+  },
+  {
+    "objectID": "ethics/risk-matrix.html",
+    "href": "ethics/risk-matrix.html",
+    "title": "Risk Assessment Matrix",
+    "section": "",
+    "text": "Risk\nLikelihood\nConsequence\nLevel\nMitigation\n\n\n\n\nMild performance anxiety\nPossible\nMinor\nLow\nVoluntary, non-assessed; option to pause/withdraw; supportive facilitation\n\n\nPrivacy breach\nRare\nModerate\nLow\nNo PII; session codes only; secure storage; minimal dataset\n\n\nPerceived coercion\nPossible\nMinor\nLow\nClear messaging; alternative activity; consent outside assessment context\n\n\nDistress due to AI errors\nRare\nMinor\nLow\nFacilitator support; debrief; ability to stop",
+    "crumbs": [
+      "Risk Assessment Matrix"
+    ]
+  },
+  {
+    "objectID": "ethics/index.html",
+    "href": "ethics/index.html",
+    "title": "Ethics Package",
+    "section": "",
+    "text": "This section contains the complete HREC application package for the study. All documents target Curtin’s low-risk review pathway.\n\n\n\nDocument\nDescription\n\n\n\n\nHREC Application\nFull low-risk HREC application form\n\n\nHREC Narrative\nSupporting narrative\n\n\nParticipant Information Sheet\nPIS for participants\n\n\nConsent Form\nDigital consent form\n\n\nRecruitment Materials\nEmail and LMS recruitment text\n\n\nFacilitator Script\nLab session opening script\n\n\nData Management Plan\nDMP summary\n\n\nRisk Matrix\nRisk assessment (low risk)\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nEach document is available as HTML and DOCX. Use the download links on each page.\n\n\n\n\n\n\n\n\nWarningPlaceholders to fill before submission\n\n\n\n\nPI email/phone and Curtin HREC contact details\nParticipating unit codes and names\nHREC submission date\nStorage location path\nRA position description",
+    "crumbs": [
+      "Ethics Package"
+    ]
+  },
+  {
+    "objectID": "ethics/facilitator-script.html",
+    "href": "ethics/facilitator-script.html",
+    "title": "Facilitator Script",
+    "section": "",
+    "text": "Welcome and thanks for joining. Today’s session explores how interacting with AI conversationally might improve results. Participation is voluntary, not assessed, and you can stop at any time. We don’t collect names or student numbers; your session is identified only by a code. Please avoid entering any personal or sensitive information into the chat. At the end there’s a short survey. If anything feels uncomfortable, raise your hand and we’ll pause. Any questions before we begin?",
+    "crumbs": [
+      "Facilitator Script"
+    ]
+  },
+  {
+    "objectID": "ethics/facilitator-script.html#session-flow",
+    "href": "ethics/facilitator-script.html#session-flow",
+    "title": "Facilitator Script",
+    "section": "Session Flow",
+    "text": "Session Flow\n(Then provide task brief; remind Nudge condition students that they may see a line appended to the AI’s replies.)",
+    "crumbs": [
+      "Facilitator Script"
+    ]
+  },
+  {
+    "objectID": "ethics/hrec-application.html",
+    "href": "ethics/hrec-application.html",
+    "title": "HREC Application",
+    "section": "",
+    "text": "Field\nDetail\n\n\n\n\nProject title\nClosing the AI Literacy Gap: Scaffolding Equitable Participation in AI-Integrated Assessment\n\n\nPrincipal Investigator (PI)\nMichael Borck, Lecturer, School of Marketing and Management (SoMM)\n\n\nCo-Investigators\nDr Marcela Moraes, Lecturer, SoMM - TBC (confirmation pending)\n\n\n\nDr Torsten Reiners, Senior Lecturer, Supply Chain Management, SoMM - TBC (confirmation pending)\n\n\n\n[Additional colleague - TBC]\n\n\nFaculty/School\nFaculty of Business and Law / School of Marketing and Management\n\n\nFunding\nCurtin NBF Learning & Teaching Grant 2026 - AUD $20,000 (internal)\n\n\nStudy sites\nCurtin computer labs (Business & Law), plus any additional school labs confirmed with co-investigators\n\n\nProject dates\nStart April 2026 (ethics approval date + onboarding) - December 2026; reporting in 2027 per NBF requirements\n\n\nEthics pathway sought\nLow-risk (no PII collected; minimal risk educational intervention with university students)\n\n\nRelated grant or prior ethics\nThis HREC supports the NBF grant; no prior HREC approvals. CloudCore/keep-asking design precedents available",
+    "crumbs": [
+      "HREC Application"
+    ]
+  },
+  {
+    "objectID": "ethics/hrec-application.html#plain-language-summary-100-200-words",
+    "href": "ethics/hrec-application.html#plain-language-summary-100-200-words",
+    "title": "HREC Application",
+    "section": "1) Plain Language Summary (100-200 words)",
+    "text": "1) Plain Language Summary (100-200 words)\nThis study evaluates a simple interface prompt (“nudge”) that encourages students to challenge and continue the conversation with an AI tool during structured lab sessions. Students from multiple units complete a short, discipline-relevant task using a supplied AI chat interface. Half of students (randomised) will see a one-line nudge appended to each AI reply:\n\n“Does that match what you expected? If something seems off, tell me what seems wrong.”\n\nThe other half will not. We will compare interaction quality (e.g., number and nature of follow-ups) and task outcomes across groups. We will also examine equity-disaggregated outcomes (low SES, first-in-family) using de-identified enrolment data matched to session records by Curtin’s analytics team. No personal identifiers are collected by the research team; participation is voluntary and does not affect grades. Results will inform equitable AI-integrated assessment at Curtin and will be shared as open resources and a peer-reviewed paper.",
+    "crumbs": [
+      "HREC Application"
+    ]
+  },
+  {
+    "objectID": "ethics/hrec-application.html#aims-and-significance",
+    "href": "ethics/hrec-application.html#aims-and-significance",
+    "title": "HREC Application",
+    "section": "2) Aims and Significance",
+    "text": "2) Aims and Significance\nPrimary aim: Test whether a minimal conversational nudge increases critical, iterative student-AI interaction and improves task outcomes in structured lab sessions.\nEquity question: Determine whether benefits are uniform or differential for low SES and first-in-family students.\nSignificance: Addresses structural disadvantage in AI-integrated assessment by providing in-class scaffolding that may substitute for unequal access to informal AI support networks outside class. Produces equity-disaggregated evidence for Curtin’s NBF reporting.",
+    "crumbs": [
+      "HREC Application"
+    ]
+  },
+  {
+    "objectID": "ethics/hrec-application.html#background-and-rationale",
+    "href": "ethics/hrec-application.html#background-and-rationale",
+    "title": "HREC Application",
+    "section": "3) Background and Rationale",
+    "text": "3) Background and Rationale\nThe project is grounded in the Conversation, Not Delegation framework: students who guide and challenge AI through iterative dialogue learn and perform better than those who passively accept plausible but incorrect outputs. Uncritical delegation risks worse outcomes than no AI use at all. The nudge reduces the cognitive cost of continuing the conversation at the exact point a student might otherwise accept a first reply. Prior work and theory support scaffolding and conversational models of learning; this project operationalises those principles in the interface. Infrastructure and prior design experience (CloudCore, LocoLLM, keep-asking) allow controlled session delivery and automatic conversation logging without personal identifiers.",
+    "crumbs": [
+      "HREC Application"
+    ]
+  },
+  {
+    "objectID": "ethics/hrec-application.html#methods",
+    "href": "ethics/hrec-application.html#methods",
+    "title": "HREC Application",
+    "section": "4) Methods",
+    "text": "4) Methods\n\n4.1 Design\nRandomised controlled lab sessions within multiple units; individual randomisation to Nudge vs Control. All students receive the same task and AI model settings (per condition).\nExploratory model comparison: Some sessions use a local small model (Configuration A) vs a frontier model via API (Configuration B). Model comparison is descriptive only.\n\n\n4.2 Setting and Procedure\n1-2 sessions per participating unit (3 or more units across disciplines). Each session uses lab computers provisioned by the team; no personal accounts are required; the environment is zero-cost to students.\nStudents complete a discipline-relevant task that requires iterative AI interaction; conversations are logged automatically. A 10-minute exit survey follows.\nNudge wording (Nudge condition only): “Does that match what you expected? If something seems off, tell me what seems wrong.”\n\n\n4.3 Participants and Recruitment\nPopulation: Curtin students enrolled in participating units (ISYS6020 + at least two additional units in Marketing and Supply Chain; final list TBC). Participation is voluntary and does not affect grades. Sessions are scheduled at varied times to support students with work/caring commitments.\nTarget n: ~60-120 participants total (20-30 per session across 3 or more units). A power analysis will be finalised once units and cohort sizes are confirmed.\nRecruitment via PI and co-investigators with plain-language invitations on LMS and email. We will encourage participation from low SES / first-in-family students (equity disaggregation happens at analysis stage; no differential treatment during sessions).\nInclusion: Currently enrolled students in participating units; aged 18+; able to attend scheduled lab sessions.\nExclusion: Students under 18; students who do not consent or do not attend lab sessions; students without capacity to consent.\n\n\n4.4 Data Collected\n\nStudent number: Collected at session login for equity linkage only. Stored in a temporary linkage table separate from research data. Destroyed after de-identification (see Section 8).\nConversation transcripts: Tagged with session code only (no student number). Logged automatically.\nExit survey responses via Qualtrics (Curtin institutional licence): self-report of confidence, prior AI experience, demographics.\nTask outputs for rubric scoring.\nEquity flags (low SES, first-in-family): matched to session codes via linkage table, then de-identified. The research team analyses only the de-identified dataset.\n\n\n\n4.5 Measures\n\nConversation depth: turn count per session\nFollow-up quality: behavioural coding (specificity, criticality, challenge)\nTask completion quality: rubric scores\nConfidence calibration: self-reported confidence vs performance\n\nAnalyses: Linear mixed-effects models (condition as fixed effect, unit as random intercept) to account for nesting of students within units; effect sizes; equity-disaggregated subgroup analyses with interaction terms. Confidence calibration conducted within-unit only. Inter-rater reliability (Cohen’s kappa) between RA and unit co-investigators on calibration samples; kappa &lt; 0.70 triggers scheme refinement before full analysis.",
+    "crumbs": [
+      "HREC Application"
+    ]
+  },
+  {
+    "objectID": "ethics/hrec-application.html#risks-and-mitigation-low-risk-justification",
+    "href": "ethics/hrec-application.html#risks-and-mitigation-low-risk-justification",
+    "title": "HREC Application",
+    "section": "5) Risks and Mitigation (Low-Risk Justification)",
+    "text": "5) Risks and Mitigation (Low-Risk Justification)\nPhysical risk: None.\nPsychological risk: Minimal; students may feel minor performance anxiety. Mitigation: clear voluntariness, short tasks, supportive facilitation, option to skip any question and withdraw at any time without consequence.\nPrivacy risk: Low; student numbers are collected at login for equity linkage only, stored in a temporary linkage table, and destroyed after de-identification. All research data (transcripts, surveys, task outputs) use session codes only. The research team analyses a fully de-identified dataset.\nAcademic risk / power relationship: Participation does not affect unit grades; sessions are optional; non-teaching facilitators assist where feasible; consent taken outside assessment contexts; a no-penalty alternative is available (e.g., self-paced practice task not logged).\nData security: University infrastructure; controlled folders; role-based access; encryption at rest; retention and destruction schedule below.",
+    "crumbs": [
+      "HREC Application"
+    ]
+  },
+  {
+    "objectID": "ethics/hrec-application.html#benefits",
+    "href": "ethics/hrec-application.html#benefits",
+    "title": "HREC Application",
+    "section": "6) Benefits",
+    "text": "6) Benefits\nDirect to participants: Opportunity to learn effective AI interaction habits and receive structured feedback.\nTo Curtin: Equity-disaggregated evidence to inform AI-integrated assessment policy and NBF reporting. Open-access resource pack and ACIS 2026 dissemination.",
+    "crumbs": [
+      "HREC Application"
+    ]
+  },
+  {
+    "objectID": "ethics/hrec-application.html#consent-digital-only",
+    "href": "ethics/hrec-application.html#consent-digital-only",
+    "title": "HREC Application",
+    "section": "7) Consent (Digital Only)",
+    "text": "7) Consent (Digital Only)\nType: Opt-in written consent (digital tick-box or signed paper).\nProcess: Participants receive a Participant Information Sheet (PIS) at least 48 hours prior (via LMS/email). Consent is captured before the session; students may withdraw anytime before data aggregation by quoting their session code.\nNo deception. No concealment of study aims; the nudge wording is transparently described in PIS.",
+    "crumbs": [
+      "HREC Application"
+    ]
+  },
+  {
+    "objectID": "ethics/hrec-application.html#privacy-confidentiality-and-data-security",
+    "href": "ethics/hrec-application.html#privacy-confidentiality-and-data-security",
+    "title": "HREC Application",
+    "section": "8) Privacy, Confidentiality and Data Security",
+    "text": "8) Privacy, Confidentiality and Data Security\nData flow and de-identification process:\n\nStudent logs into the lab interface using their student number. The system assigns a random session code and records a temporary linkage (student number to session code) in a restricted-access linkage table.\nAll research data (conversation transcripts, task outputs, Qualtrics exit survey responses) are tagged with the session code only. Student numbers do not appear in research data.\nAfter data collection closes, the PI uses the linkage table to match equity flags (low SES, first-in-family status) from Curtin SIMS to session codes.\nA de-identification script strips student numbers from the dataset, retaining only session codes and equity flags. The linkage table is permanently destroyed. Destruction is logged and auditable.\nThe research team receives and analyses a fully de-identified dataset. No pathway exists to re-identify participants after this step.\n\nStorage: Curtin network drive / SharePoint with role-based access for PI, approved co-investigators, and RA; versioning; backups per university policy.\nRetention and destruction: 5 years post-publication (or per Curtin RDM policy for L&T research), then secure deletion (cryptographic erase) of raw datasets and transcripts; anonymised analysis scripts can be retained in a public repository with no raw transcripts.",
+    "crumbs": [
+      "HREC Application"
+    ]
+  },
+  {
+    "objectID": "ethics/hrec-application.html#use-of-ai-external-services",
+    "href": "ethics/hrec-application.html#use-of-ai-external-services",
+    "title": "HREC Application",
+    "section": "9) Use of AI / External Services",
+    "text": "9) Use of AI / External Services\nFrontier model via API: The team funds API use from the internal grant; the interface does not store personal data; prompts and responses are session-coded only.\nContent filtering: The interface prevents entering personal health/financial information and reminds students not to include PII.\nData residency: No PII; content pertains to course tasks; API calls are limited to session content and excluded from provider training where setting is available.",
+    "crumbs": [
+      "HREC Application"
+    ]
+  },
+  {
+    "objectID": "ethics/hrec-application.html#incentives",
+    "href": "ethics/hrec-application.html#incentives",
+    "title": "HREC Application",
+    "section": "10) Incentives",
+    "text": "10) Incentives\nNone offered. Sessions are designed to be short and scheduled at varied times to maximise accessibility.",
+    "crumbs": [
+      "HREC Application"
+    ]
+  },
+  {
+    "objectID": "ethics/hrec-application.html#funding-conflicts-monitoring-and-timeline",
+    "href": "ethics/hrec-application.html#funding-conflicts-monitoring-and-timeline",
+    "title": "HREC Application",
+    "section": "11) Funding, Conflicts, Monitoring and Timeline",
+    "text": "11) Funding, Conflicts, Monitoring and Timeline\nFunding: Curtin NBF Learning & Teaching Grant 2026 (internal). Budget supports RA, API costs, instrument development, session delivery, resource production, and ACIS 2026 dissemination.\nCOIs: None declared. The PI’s authorship of Conversation, Not Delegation is disclosed as scholarly background; no commercial interest.\nMonitoring: PI reviews session logs for anomalies weekly during data collection; any adverse incidents (e.g., distress) trigger immediate pause and referral to student support services.\nComplaints: PIS lists Curtin HREC contact for participants to lodge concerns independent of the research team.\nProtocol deviations: Documented and reported with corrective actions to HREC if materially affecting risk.\n\nTimeline\n\n\n\n\n\n\n\nPeriod\nActivity\n\n\n\n\nMarch-April 2026\nHREC approval, confirm units/co-Is, finalise instruments, recruit RA\n\n\nMay-June 2026\nLab sessions and data collection\n\n\nJuly-August 2026\nCoding, reliability checks, analysis\n\n\nSep-Dec 2026\nWriting, open resources, ACIS submission; progress report drafting\n\n\n2027\nNBF final report",
+    "crumbs": [
+      "HREC Application"
+    ]
+  },
+  {
+    "objectID": "ethics/hrec-application.html#dissemination",
+    "href": "ethics/hrec-application.html#dissemination",
+    "title": "HREC Application",
+    "section": "12) Dissemination",
+    "text": "12) Dissemination\nOpen-access resource pack (facilitation guide, nudge variants, task design principles, exit survey instrument) on Curtin repository and The AI Exchange. ACIS 2026 paper submission. Equity-disaggregated findings included in NBF reporting.",
+    "crumbs": [
+      "HREC Application"
+    ]
+  },
+  {
+    "objectID": "ethics/hrec-application.html#vulnerable-populations",
+    "href": "ethics/hrec-application.html#vulnerable-populations",
+    "title": "HREC Application",
+    "section": "13) Vulnerable Populations",
+    "text": "13) Vulnerable Populations\nThe study involves adult university students. Power imbalances are mitigated via voluntariness, non-assessment, neutral facilitation, and alternatives.\nEquity cohorts (low SES; first-in-family) are not treated differently in sessions; equity analysis occurs post hoc using de-identified cohort flags to examine whether benefits are uniform or differential.",
+    "crumbs": [
+      "HREC Application"
+    ]
+  },
+  {
+    "objectID": "ethics/hrec-application.html#publications",
+    "href": "ethics/hrec-application.html#publications",
+    "title": "HREC Application",
+    "section": "14) Publications",
+    "text": "14) Publications\nPeer-reviewed: Targeting ACIS 2026; anonymised transcript excerpts only; no identifiers.\nOpen resources: Facilitation guide, nudge variants, task design principles, exit survey instrument (no raw data).",
+    "crumbs": [
+      "HREC Application"
+    ]
+  },
+  {
+    "objectID": "ethics/hrec-application.html#appendix-embedded-drafts",
+    "href": "ethics/hrec-application.html#appendix-embedded-drafts",
+    "title": "HREC Application",
+    "section": "Appendix: Embedded Drafts",
+    "text": "Appendix: Embedded Drafts\n\nA. Participant Information Sheet\n(See separate file: ethics/pis_digital.md)\n\n\nB. Consent Form\n(See separate file: ethics/consent_digital.md)\n\n\nC. Recruitment Materials\n(See separate file: ethics/recruitment_materials.md)\n\n\nD. Facilitator Script\n(See separate file: ethics/facilitator_script.md)\n\n\nE. Data Management Plan\n(See separate file: ethics/dmp_summary.md)\n\n\nF. Risk Matrix\n(See separate file: ethics/risk_matrix.md)\n\n\nG. Exit Survey\n(See separate file: instruments/exit_survey.md)\nAdministered via Qualtrics. Captures confidence calibration (self-reported confidence vs task performance, analysed within-unit), self-reported interaction style (compared against coded transcript data), prior AI experience (covariate), and condition awareness (whether nudge-group students noticed the nudge).\n\n\nH. Coding Scheme (Summary)\n(See separate file: instruments/coding_scheme.md)\nThree coded dimensions (binary, Turn 2 onward):\n\nFollow-Up (FU): did the student ask a follow-up question?\nChallenge (CH): did the student push back on or correct the AI?\nExtension (EX): did the student introduce new information or a new angle?\n\nDelegation is derived in analysis (FU=0, CH=0, EX=0), not coded separately. Results reported using both unweighted (FU+CH+EX) and challenge-weighted (FU+2xCH+EX) scoring.\nReliability: RA codes 100%; each co-I codes 20-30% from their unit; Cohen’s kappa per unit; kappa &lt; 0.70 triggers scheme refinement.",
+    "crumbs": [
+      "HREC Application"
+    ]
+  },
+  {
+    "objectID": "ethics/hrec-application.html#pre-submission-checklist",
+    "href": "ethics/hrec-application.html#pre-submission-checklist",
+    "title": "HREC Application",
+    "section": "Pre-Submission Checklist",
+    "text": "Pre-Submission Checklist\n\nInsert HREC submission date and preferred start date\nConfirm co-investigator names/roles/units (Marcela, Torsten, plus third if any)\nList participating units explicitly (ISYS6020 + [Marketing Unit] + [Supply Chain Unit])\nAdd Curtin analytics contact for equity flag matching and confirm the de-identification protocol email\nConfirm storage location path (e.g., R: or SharePoint site) and access list\nReplace placeholders in PIS/Consent/Recruitment with dates, rooms, and contact details\nAttach RA position description (brief; includes confidentiality obligations)\nNote any model provider settings (opt-out of training if available) in the AI configuration appendix",
+    "crumbs": [
+      "HREC Application"
+    ]
+  },
+  {
+    "objectID": "paper-outline.html",
+    "href": "paper-outline.html",
+    "title": "ACIS 2026 Paper Outline",
+    "section": "",
+    "text": "Australasian Conference on Information Systems (ACIS) 2026\n\n\n\n\n\n\nWarning\n\n\n\nDeadline and location TBC. Adjust travel budget line if held in Perth.",
+    "crumbs": [
+      "Home",
+      "ACIS 2026 Paper Outline"
+    ]
+  },
+  {
+    "objectID": "paper-outline.html#target-venue",
+    "href": "paper-outline.html#target-venue",
+    "title": "ACIS 2026 Paper Outline",
+    "section": "",
+    "text": "Australasian Conference on Information Systems (ACIS) 2026\n\n\n\n\n\n\nWarning\n\n\n\nDeadline and location TBC. Adjust travel budget line if held in Perth.",
+    "crumbs": [
+      "Home",
+      "ACIS 2026 Paper Outline"
+    ]
+  },
+  {
+    "objectID": "paper-outline.html#working-title",
+    "href": "paper-outline.html#working-title",
+    "title": "ACIS 2026 Paper Outline",
+    "section": "Working Title",
+    "text": "Working Title\n“Does a Conversational Nudge Close the AI Literacy Gap? A Controlled Study of Scaffolded AI Interaction in Higher Education Assessment”",
+    "crumbs": [
+      "Home",
+      "ACIS 2026 Paper Outline"
+    ]
+  },
+  {
+    "objectID": "paper-outline.html#authors",
+    "href": "paper-outline.html#authors",
+    "title": "ACIS 2026 Paper Outline",
+    "section": "Authors",
+    "text": "Authors\nMichael Borck, Marcela Moraes, Torsten Reiners [, additional co-I TBC]",
+    "crumbs": [
+      "Home",
+      "ACIS 2026 Paper Outline"
+    ]
+  },
+  {
+    "objectID": "paper-outline.html#introduction",
+    "href": "paper-outline.html#introduction",
+    "title": "ACIS 2026 Paper Outline",
+    "section": "1. Introduction",
+    "text": "1. Introduction\n\nAI tools in HE assessment are creating a new form of structural disadvantage\nThe skills required to use AI effectively are not equally distributed\nPassive delegation vs active conversation: not the same thing, not the same outcomes\nThe equity dimension: students with fewer informal support networks are more dependent on in-class scaffolding\nResearch questions:\n\nDoes a minimal conversational nudge improve AI interaction quality and task outcomes?\nIs the effect uniform across student cohorts, or differential by SES and first-in-family status?",
+    "crumbs": [
+      "Home",
+      "ACIS 2026 Paper Outline"
+    ]
+  },
+  {
+    "objectID": "paper-outline.html#literature-review",
+    "href": "paper-outline.html#literature-review",
+    "title": "ACIS 2026 Paper Outline",
+    "section": "2. Literature Review",
+    "text": "2. Literature Review\n\nAI in higher education assessment (Kasneci et al., 2023; Stojanov et al., 2024; Mollick & Mollick, 2023)\nThe delegation problem: passive AI use may produce worse outcomes than no AI use\nScaffolding and ZPD (Vygotsky, 1978)\nConversational framework for learning (Laurillard, 2002)\nNudge theory applied to learning environments (Thaler & Sunstein, 2008)\nGuided vs unguided LLM use (Frontiers in Psychology, 2025)\nEquity and digital literacy gaps in higher education\nSee Literature Review for expanded treatment",
+    "crumbs": [
+      "Home",
+      "ACIS 2026 Paper Outline"
+    ]
+  },
+  {
+    "objectID": "paper-outline.html#theoretical-framework",
+    "href": "paper-outline.html#theoretical-framework",
+    "title": "ACIS 2026 Paper Outline",
+    "section": "3. Theoretical Framework",
+    "text": "3. Theoretical Framework\n\nConversation, Not Delegation (Borck, 2026) as the organising framework\nScaffolding theory grounding the nudge mechanism\nNudge theory grounding the interface design choice\nThe misinformation friction effect: the nudge surfaces errors before they are accepted",
+    "crumbs": [
+      "Home",
+      "ACIS 2026 Paper Outline"
+    ]
+  },
+  {
+    "objectID": "paper-outline.html#method",
+    "href": "paper-outline.html#method",
+    "title": "ACIS 2026 Paper Outline",
+    "section": "4. Method",
+    "text": "4. Method\n\nDesign: Randomised controlled lab sessions across 3+ units (IS, Marketing, Supply Chain)\nParticipants: ~60-120 students; equity cohort flags (low SES, first-in-family) via de-identified linkage\nIntervention: 10-variant nudge pool appended to AI responses; randomly selected per turn\nMeasures:\n\nAutomated: turn count, word count, response latency\nHuman-coded: Follow-Up (FU), Challenge (CH), Extension (EX); delegation derived\nTask completion: 1-5 rubric scored by co-investigators within unit\nExit survey: confidence calibration, self-reported interaction style, condition awareness\n\nAnalysis: Linear mixed-effects models (condition as fixed effect, unit as random intercept); both unweighted and challenge-weighted scoring; equity interaction terms\nSee Methodology for full detail",
+    "crumbs": [
+      "Home",
+      "ACIS 2026 Paper Outline"
+    ]
+  },
+  {
+    "objectID": "paper-outline.html#results",
+    "href": "paper-outline.html#results",
+    "title": "ACIS 2026 Paper Outline",
+    "section": "5. Results",
+    "text": "5. Results\n\n\n\n\n\n\nNote\n\n\n\nTo be completed after data collection (July-August 2026).\n\n\nKey results to report:\n\nNudge effect on primary measures (proportion_challenge, mean_turn_score)\nEffect sizes (Cohen’s d, marginal R-squared)\nEquity-disaggregated results (interaction terms)\nConfidence calibration analysis (within-unit)\nCondition awareness (Q8a) and mechanism interpretation\nUnweighted vs weighted scoring comparison",
+    "crumbs": [
+      "Home",
+      "ACIS 2026 Paper Outline"
+    ]
+  },
+  {
+    "objectID": "paper-outline.html#discussion",
+    "href": "paper-outline.html#discussion",
+    "title": "ACIS 2026 Paper Outline",
+    "section": "6. Discussion",
+    "text": "6. Discussion\n\nInterpretation against the Conversation, Not Delegation framework\nEquity implications: uniform benefit vs differential benefit\nMisinformation friction effect (if observed in transcripts)\nConfidence calibration: do delegators overestimate their output quality?\nLimitations:\n\nSample size and power\nSingle-session design (persistence unknown)\nLab setting vs naturalistic AI use\nHawthorne effect (students know they are observed)\n\nNull result scenario: equally valuable, redirects toward more structural interventions",
+    "crumbs": [
+      "Home",
+      "ACIS 2026 Paper Outline"
+    ]
+  },
+  {
+    "objectID": "paper-outline.html#implications-for-practice",
+    "href": "paper-outline.html#implications-for-practice",
+    "title": "ACIS 2026 Paper Outline",
+    "section": "7. Implications for Practice",
+    "text": "7. Implications for Practice\n\nScalable, low-cost intervention for any AI-integrated unit\nOpen-access resource pack (facilitation guide, nudge variants, task design, survey instrument)\nContribution to Curtin’s Assessment 2030 agenda\nEvidence base for NBF equity reporting from 2027",
+    "crumbs": [
+      "Home",
+      "ACIS 2026 Paper Outline"
+    ]
+  },
+  {
+    "objectID": "paper-outline.html#conclusion",
+    "href": "paper-outline.html#conclusion",
+    "title": "ACIS 2026 Paper Outline",
+    "section": "8. Conclusion",
+    "text": "8. Conclusion",
+    "crumbs": [
+      "Home",
+      "ACIS 2026 Paper Outline"
+    ]
+  },
+  {
+    "objectID": "paper-outline.html#paper-timeline",
+    "href": "paper-outline.html#paper-timeline",
+    "title": "ACIS 2026 Paper Outline",
+    "section": "Paper Timeline",
+    "text": "Paper Timeline\n\n\n\nPhase\nPeriod\n\n\n\n\nData collection\nMay-June 2026\n\n\nCoding and analysis\nJuly-August 2026\n\n\nFirst draft\nSeptember 2026\n\n\nCo-author review\nOctober 2026\n\n\nSubmission\nNovember 2026",
+    "crumbs": [
+      "Home",
+      "ACIS 2026 Paper Outline"
+    ]
+  },
+  {
+    "objectID": "paper-outline.html#references",
+    "href": "paper-outline.html#references",
+    "title": "ACIS 2026 Paper Outline",
+    "section": "References",
+    "text": "References\nSee Literature Review for the developing reference list.",
+    "crumbs": [
+      "Home",
+      "ACIS 2026 Paper Outline"
+    ]
+  },
+  {
+    "objectID": "grant/nbf-grant-application.html",
+    "href": "grant/nbf-grant-application.html",
+    "title": "NBF Grant Application 2026",
+    "section": "",
+    "text": "Field\nDetail\n\n\n\n\nProject Title\nClosing the AI Literacy Gap: Scaffolding Equitable Participation in AI-Integrated Assessment\n\n\nLead Applicant\nMichael Borck, Lecturer, School of Marketing and Management (SoMM)\n\n\nCo-Investigators\nDr Marcela Moraes, Lecturer, School of Marketing and Management (SoMM) [contribution TBC - pending confirmation]\n\n\n\nDr Torsten Reiners, Senior Lecturer in Supply Chain Management, SoMM [contribution TBC - pending confirmation]\n\n\n\n[Additional colleague - TBC]\n\n\nFaculty / School\nFaculty of Business and Law / School of Marketing and Management\n\n\nParticipating Units\nISYS6020 AI to Drive Business Innovation (IS, lead unit)\n\n\n\n[Torsten’s unit - Supply Chain Management discipline, SoMM, TBC]\n\n\n\n[Marcela’s unit - School of Marketing, TBC]\n\n\n\n[Additional unit - TBC]\n\n\nAmount Requested\nAUD $20,000\n\n\nProject Period\nSemester 1 2026 - December 2026\n\n\nReporting Deadline\nFirst half of 2027\n\n\nEthics Status\nHREC application submitted [INSERT DATE] - low-risk review pathway. Student numbers collected for equity linkage only; destroyed after de-identification.\n\n\nNBF Equity Cohorts\nLow SES students; first-in-family students",
+    "crumbs": [
+      "NBF Grant Application 2026"
+    ]
+  },
+  {
+    "objectID": "grant/nbf-grant-application.html#project-overview",
+    "href": "grant/nbf-grant-application.html#project-overview",
+    "title": "NBF Grant Application 2026",
+    "section": "1. Project Overview",
+    "text": "1. Project Overview\n\nSuggested length: 200-300 words.\n\nAustralian universities are embedding AI tools in assessment at pace, but the skills required to use those tools effectively are not equally distributed. Students from low socioeconomic backgrounds and those who are first in their family to attend university are significantly less likely to have access to the informal support networks - peers, family, tutors, prior professional exposure - that help students develop productive AI interaction habits before they arrive. Without structured scaffolding in the curriculum, this access gap becomes a participation and attainment gap.\nThis project implements and evaluates a low-cost, scalable intervention designed to close that gap for every student. Across structured lab sessions embedded in three or more collaborating units spanning multiple disciplines, students complete a discipline-relevant task using a supplied AI tool. Half receive a conversational nudge appended to every AI response; half do not. All students benefit from the scaffolded environment. The equity analysis asks whether the benefit is uniform or differential - whether students who had fewer prior scaffolding opportunities gain more from the in-class intervention than those who had more. The data answers that question; the study design does not assume it in advance.\nThe intervention is grounded in the Conversation, Not Delegation framework (Borck, 2026): the quality of AI-assisted work depends on whether the student is directing the AI through active conversation or passively accepting its output. Passive delegation to AI is not a neutral choice - when a student accepts a plausible but incorrect AI response without challenge, the result is worse than no AI assistance at all. The nudge makes the conversational path structurally easier, reducing the risk of uncritical acceptance at the point where it matters most.\nNBF funding supports session delivery, evaluation, cross-disciplinary scaling, and production of open-access resources.",
+    "crumbs": [
+      "NBF Grant Application 2026"
+    ]
+  },
+  {
+    "objectID": "grant/nbf-grant-application.html#alignment-with-nbf-eligibility-criteria",
+    "href": "grant/nbf-grant-application.html#alignment-with-nbf-eligibility-criteria",
+    "title": "NBF Grant Application 2026",
+    "section": "2. Alignment with NBF Eligibility Criteria",
+    "text": "2. Alignment with NBF Eligibility Criteria\n\nSuggested length: 300-400 words.\n\n\n2.1 Universal Intervention, Equity-Focused Evaluation\nThis project delivers its intervention to all students in participating lab sessions, regardless of equity cohort status. This is a deliberate design choice, not a limitation. The existing evidence base does not support the assumption that low SES or first-in-family students are inherently less capable of productive AI interaction. What the evidence does support is that students with fewer informal support networks outside the classroom have fewer opportunities to develop, or correct, their AI interaction habits through channels other than structured teaching (Stojanov et al., 2024; Kasneci et al., 2023).\nThe equity argument is structural, not deficit-based. A student who arrives with well-developed conversational AI habits has multiple pathways to refine those habits outside the classroom. A student without those networks is more dependent on the classroom being the place where scaffolding occurs. When it is not, the gap compounds at every AI-integrated assessment task - and the consequences of passive AI use are not simply suboptimal outputs, but potentially misleading ones.\nThis project makes the classroom that place, for every student. The evaluation then asks: does the intervention close a pre-existing gap, or does it raise all boats equally? Both findings are valuable and both are reported against equity cohort flags.\n\n\n2.2 Low SES Students\n[INSERT: Approximately X% of domestic students across the participating units are classified as low SES under the standard HEIMS measure.] Equity cohort identification will be applied analytically at the reporting stage using de-identified Curtin student data matched to session records. Purposive recruitment will actively encourage participation from low SES students through unit co-investigators.\n\n\n2.3 First-in-Family Students\n[INSERT: Approximately X% of domestic students in the participating units are first in their family to attend university.] The same analytical approach applies: cohort flags are used for disaggregated reporting, not for differential treatment within the intervention itself.\n\n\n2.4 Aboriginal and/or Torres Strait Islander Students\n[APPLICANT NOTE: Include this section only if cohort recruitment data supports it. Remove rather than make a thin claim.]\n\n\n2.5 Participation and Attainment Outcomes\nThe project measures both participation quality (depth and criticality of AI interaction as evidenced in conversation transcripts) and attainment outcomes (task completion quality scored against pre-specified rubrics). Equity-disaggregated reporting will directly support Curtin’s NBF reporting obligations from 2027 onward.",
+    "crumbs": [
+      "NBF Grant Application 2026"
+    ]
+  },
+  {
+    "objectID": "grant/nbf-grant-application.html#background-and-rationale",
+    "href": "grant/nbf-grant-application.html#background-and-rationale",
+    "title": "NBF Grant Application 2026",
+    "section": "3. Background and Rationale",
+    "text": "3. Background and Rationale\n\nSuggested length: 400-600 words.\n\nThe integration of AI tools in higher education assessment creates a new form of structural disadvantage. When students submit AI-assisted work, the quality of that work depends substantially on the quality of their AI interaction - whether they engage conversationally and critically, or accept the first plausible response without pushback. Research consistently shows that passive AI use, while producing apparently coherent outputs, produces weaker learning and lower task quality than active engagement (Kasneci et al., 2023). Empirical analysis of student AI use patterns identifies a substantial subgroup of “assignment delegators” - students who use AI primarily to generate output rather than to support thinking - as a distinct and measurable behaviour type that persists across contexts (Stojanov et al., 2024). Mollick and Mollick (2023) identify the same pattern and argue that the central pedagogical challenge is keeping students as the active “human in the loop” rather than passive recipients of AI-generated content.\nPassive delegation carries a risk that is more serious than simply producing shallow work. A student who accepts a plausible but incorrect AI response without challenge has not just missed a learning opportunity - they have incorporated misinformation into their understanding and their output with a degree of confidence they would not have from simply not knowing. In this sense, uncritical AI delegation may produce worse outcomes than no AI use at all. This is particularly consequential in disciplines where factual accuracy, procedural correctness, or evidence-based reasoning are directly assessed. The nudge intervention is designed to create the friction that surfaces these errors before they are accepted and acted upon.\nThe Conversation, Not Delegation framework (Borck, 2026) names and operationalises this distinction for the higher education teaching context. Conversation treats AI as a thinking partner: the student directs, challenges, and refines through iterative dialogue. Delegation treats AI as an answer machine: the student submits, accepts, and moves on. The difference is not about tool choice or model quality - a student engaging conversationally with a less capable model may produce better learning outcomes than a student delegating passively to a frontier model.\nPrior work on guided versus unguided LLM use confirms that structured engagement consistently outperforms unstructured use, with effects on task quality and academic engagement most pronounced when scaffolding is built into the task design rather than left to student initiative (Frontiers in Psychology, 2025). The theoretical foundation is well-established: Vygotsky’s (1978) scaffolding framework argues that structured support within a learner’s zone of proximal development enables capability development that does not occur without it; Laurillard’s (2002) conversational framework extends this specifically to iterative dialogue as the mechanism of learning. The nudge intervention applies both principles at the interface level - a minimal structural scaffold that makes the conversational path easier to take, without mandating it (Thaler and Sunstein, 2008).\nThe current project builds on infrastructure already in place. The CloudCore Networks environment - a locally-hosted AI simulation used in ISYS6020 - provides a proven model for AI-mediated task design with automatic transcript logging. The keep-asking project (github.com/michael-borck/keep-asking) documents the full experimental design and HREC pathway. The present grant extends this work to a cross-disciplinary, controlled lab session design chosen to produce cleaner causal evidence within the project timeline.",
+    "crumbs": [
+      "NBF Grant Application 2026"
+    ]
+  },
+  {
+    "objectID": "grant/nbf-grant-application.html#project-description",
+    "href": "grant/nbf-grant-application.html#project-description",
+    "title": "NBF Grant Application 2026",
+    "section": "4. Project Description",
+    "text": "4. Project Description\n\nSuggested length: 500-700 words.\n\n\n4.1 The Intervention\nThe project delivers one to two structured AI lab sessions within each of three or more collaborating units across multiple disciplines. Each session follows a consistent format:\n\nStudents complete a discipline-relevant task using a supplied AI chat interface\nThe task is designed to require iterative AI interaction, not a single query\nStudents are randomly assigned within each session to nudge or control condition\nConversations are logged automatically throughout the session\nA 10-minute exit survey is administered on completion\n\nThe AI interface is provided and configured by the research team. Students use lab computers; no personal account or device is required. The environment is zero-cost to students.\n\n\n4.2 The Conversational Nudge\nA short prompt is appended to every AI response in the nudge condition. To reduce habituation (students ignoring a repeated line), the prompt is randomly selected each turn from a pool of 10 variants. All variants follow the same design principles: they invite pushback rather than confirmation, apply equally across disciplines and task types, and do not presuppose any prior AI experience. Example variants include:\n\n“Does that match what you expected? If something seems off, tell me what seems wrong.”\n“What’s the weakest part of that response?”\n“Does that account for the details in your task, or is it a generic answer?”\n\nThe full variant pool is documented in instruments/nudge_variants.md. Grounded in behavioural scaffolding principles (Thaler and Sunstein, 2008), each variant reduces the cognitive cost of continuing the conversation by making the next action explicit - without directing or constraining the student’s response. The primary analysis treats all variants as equivalent (any nudge vs no nudge).\n\n\n4.3 AI Infrastructure and Model Choice\nAll sessions use a frontier-class AI model (Claude or GPT-4 class) accessed via API. This is a deliberate design choice: to isolate the effect of the nudge on interaction behaviour and task outcomes, the underlying model must be capable enough that variation in output quality reflects student interaction rather than model limitations. Using a weak or outdated model would confound the primary finding - any difference in output quality could be attributable to model failure rather than interaction pattern.\n\n\n4.4 Measures\n\n\n\n\n\n\n\n\nMeasure\nMethod\nTiming\n\n\n\n\nConversation depth\nTurn count per session, by condition\nAutomatic log analysis\n\n\nFollow-up quality\nBehavioural coding: specificity, criticality, challenge\nPost-session (RA full coverage; co-investigator calibration sample)\n\n\nTask completion quality\nRubric score on task output\nPost-session (co-investigators, by unit)\n\n\nConfidence calibration\nSelf-reported confidence vs. actual performance\nExit survey (Qualtrics)\n\n\nEquity disaggregation\nAll measures by SES flag and first-in-family status\nPost-session linkage via student number; de-identified before analysis\n\n\n\nCoding approach. The RA codes 100% of transcripts (Turn 2 onward; Turn 1 is excluded as it cannot be a follow-up, challenge, or extension) on three behavioural dimensions that do not require disciplinary knowledge: Follow-Up, Challenge, and Extension. Delegation is derived in analysis as the absence of all three. Results are reported using both an unweighted score (FU + CH + EX) and a challenge-weighted score (FU + 2xCH + EX), since the nudge directly targets challenge behaviour. These dimensions are structural and context-independent.\nEach co-investigator independently codes a 20-30% calibration sample from their own unit’s transcripts, applying the same scheme. Cohen’s kappa is calculated per unit between the RA’s codes and the co-investigator’s codes on that sample. Where they agree, the RA’s full coverage is validated. Where they diverge, the lead investigator adjudicates - recognising that some divergences reflect genuine domain knowledge adding interpretive value rather than coding error. Any kappa below 0.70 on the behavioural dimensions triggers coding scheme revision before proceeding to full analysis.\n\n\n4.5 Recruitment\nEach co-investigator recruits students from their unit cohort. Recruitment actively encourages participation from students identifying as low SES or first-in-family. Session timing will be varied to accommodate students with work or caring commitments. Participation is voluntary and does not affect unit grades.\nTarget sample: 20-30 students per session across three or more units, yielding approximately 60-120 participants depending on final unit confirmations. A power analysis will be completed once co-investigator units and cohort sizes are confirmed.\n\n\n4.6 Ethics and Data De-identification\nHREC application submitted [INSERT DATE] under Curtin’s low-risk review pathway. The study meets the criteria for low-risk classification under the National Statement on Ethical Conduct in Human Research (2023).\nData flow and de-identification process:\n\nAt session login, students enter their student number. The system assigns a random session code and records a temporary linkage (student number to session code).\nAll research data (conversation transcripts, task outputs, exit survey responses) are tagged with the session code only. The research team works exclusively with session codes during data collection.\nAfter data collection closes, the linkage table is used to match equity flags (low SES, first-in-family status) from Curtin’s student information system (SIMS) to session codes.\nA de-identification script strips student numbers from the dataset, retaining only session codes and equity flags. The linkage table is then permanently destroyed.\nThe research team receives and analyses a fully de-identified dataset. The destruction of the linkage table is logged and auditable.\n\nData is stored on university-controlled infrastructure throughout. The exit survey is administered via Qualtrics (Curtin institutional licence).",
+    "crumbs": [
+      "NBF Grant Application 2026"
+    ]
+  },
+  {
+    "objectID": "grant/nbf-grant-application.html#expected-outcomes-and-impact",
+    "href": "grant/nbf-grant-application.html#expected-outcomes-and-impact",
+    "title": "NBF Grant Application 2026",
+    "section": "5. Expected Outcomes and Impact",
+    "text": "5. Expected Outcomes and Impact\n\nSuggested length: 300-400 words.\n\nBy the end of 2026, this project will deliver:\nPrimary outcomes\n\nRigorous evaluation evidence on whether conversational nudging improves participation quality and task outcomes across student cohorts, with equity-disaggregated results distinguishing between uniform benefit and differential benefit by SES and first-in-family status. Either finding is actionable: uniform benefit confirms universal scaffolding is sufficient; differential benefit identifies where the in-class intervention makes the greatest difference.\nA cross-disciplinary implementation tested across at least three units and two discipline areas, demonstrating generalisability of the intervention beyond any single teaching context.\nAn open-access AI scaffolding resource pack - session facilitation guide, nudge variants, task design principles, exit survey instrument - freely available for adoption across Curtin and externally.\nA peer-reviewed paper submitted to ACIS 2026, positioning Curtin as a contributor to the national conversation on equitable AI-integrated assessment.\nEquity-disaggregated outcome data suitable for Curtin’s NBF reporting requirements from 2027 onward.\n\nPositioning for future work\nThe infrastructure, instruments, ethics framework, and research team established by this project will be in place at the end of 2026, ready for follow-on studies. Potential directions include:\n\nModel quality vs conversation quality: Does scaffolded interaction with a less capable local model produce outcomes comparable to unscaffolded use of a frontier model? If so, the equity implication shifts from access to better models toward access to better interaction habits.\nPersistence: Does the nudge effect carry over into independent AI use after the scaffolded session, or does it require ongoing structural support?\nTask framing and hallucination risk: The current study uses conversational tasks (developing a recommendation through iterative dialogue). A follow-on study could compare these against retrieval-framed tasks - tasks that appear to require factual recall. LLMs do not retrieve facts; they interpolate from training data, making confident but potentially incorrect responses most likely in retrieval contexts. Students are least likely to challenge these responses because they look authoritative. If the nudge is most effective on retrieval-framed tasks, that would identify the specific interaction pattern where scaffolding matters most and where uncritical delegation carries the greatest risk of incorporating misinformation.\n\nOn null results\nIf the nudge produces no effect, that finding is equally valuable and equally publishable. It redirects attention toward more structural interventions - explicit AI interaction instruction, assessment redesign, or targeted student support - and prevents the sector from investing in interface-level nudging that does not work. The study is designed to find the truth, not to confirm a hypothesis.",
+    "crumbs": [
+      "NBF Grant Application 2026"
+    ]
+  },
+  {
+    "objectID": "grant/nbf-grant-application.html#project-team",
+    "href": "grant/nbf-grant-application.html#project-team",
+    "title": "NBF Grant Application 2026",
+    "section": "6. Project Team",
+    "text": "6. Project Team\n\nSuggested length: 100-200 words.\n\n\nLead Applicant: Michael Borck\nLecturer, School of Marketing and Management, Curtin University. Creator of the CloudCore Networks simulation and keep-asking research project. Convener of ISYS6020. Author of Conversation, Not Delegation (Borck, 2026). Responsible for overall project coordination, intervention design, technical infrastructure, session facilitation in IS context, and lead authorship of the ACIS paper.\n\n\nCo-Investigator: Dr Marcela Moraes\nLecturer, School of Marketing and Management (SoMM), Curtin University. Research interests in digital and social media marketing, consumer behaviour, and cross-cultural perspectives. [Specific contribution to this project TBC - pending confirmation. Expected: evaluation instrument development, co-facilitation of Marketing unit sessions, calibration coding of own unit transcripts, and co-authorship.]\n\n\nCo-Investigator: Dr Torsten Reiners\nSenior Lecturer in Supply Chain Management, School of Marketing and Management, Curtin University. Research background in operations management, optimisation, decision-support, and innovative technology in education, including gamification and immersive learning environments. Prior publication record at ASCILITE. [Specific contribution TBC - pending confirmation. Expected: co-facilitation of Supply Chain Management unit sessions, calibration coding of own unit transcripts, disciplinary interpretation of supply chain task outcomes, and co-authorship.]\n\n\nCo-Investigator: [TBC]\n[Role and School]. [Confirm unit, discipline, and contribution after wave 2 outreach. Same coding and facilitation responsibilities as above.]\n\n\nCasual Research Assistant (to be recruited)\nPostgraduate student or early-career researcher. Responsible for coding 100% of transcripts on pre-specified behavioural dimensions, processing and anonymising transcript data, administering exit surveys, and running descriptive statistics. The RA’s full coverage provides the consistent baseline against which co-investigator calibration samples are compared. To be recruited following HREC approval.",
+    "crumbs": [
+      "NBF Grant Application 2026"
+    ]
+  },
+  {
+    "objectID": "grant/nbf-grant-application.html#budget",
+    "href": "grant/nbf-grant-application.html#budget",
+    "title": "NBF Grant Application 2026",
+    "section": "7. Budget",
+    "text": "7. Budget\n\nAll funds to be spent within 2026 calendar year.\n\n\n\n\n\n\n\n\n\nItem\nAmount (AUD)\nJustification\n\n\n\n\nCasual Research Assistant\n$8,000\n~150 hrs at ~$53/hr (Level A casual). Codes 100% of transcripts on behavioural dimensions, providing consistent full coverage as the analytical baseline. Also handles transcript anonymisation, exit survey administration, and descriptive statistics. Co-investigators independently code a calibration sample from their own unit; the RA’s full coverage is validated against those samples via Cohen’s kappa.\n\n\nAPI access - frontier model\n$2,500\nFrontier model API (Claude or GPT-4 class) for lab sessions. Estimated at approximately $0.02 per exchange, 200 students, 40 exchanges per session, with 3x buffer for development, testing, and prompt iteration. Frontier models are required for the primary research question to ensure output quality variation reflects student interaction behaviour, not model limitations.\n\n\nEvaluation instrument development\n$2,500\nCo-investigator time offset for discipline-specific task brief development, exit survey design, and coding rubric validation across three or more unit contexts.\n\n\nLab session delivery and facilitation\n$2,000\nSession coordination across multiple units and campuses, room preparation, and travel between session locations if required.\n\n\nCross-disciplinary scaling and adaptation\n$2,000\nInterface configuration per unit context, co-investigator onboarding and briefing, and iterative task brief refinement based on pilot feedback.\n\n\nACIS 2026 conference - registration and travel\n$1,500\nConference registration plus travel and accommodation if ACIS 2026 is held interstate. [Check location and adjust if held in Perth.]\n\n\nOpen-access resource production\n$1,500\nFacilitation guide, nudge variant library, task design principles, and exit survey instrument. Design and hosting via Curtin repository and The AI Exchange platform.\n\n\nContingency\n$500\nEthics costs, minor infrastructure, unanticipated session costs.\n\n\nTOTAL\n$20,000",
+    "crumbs": [
+      "NBF Grant Application 2026"
+    ]
+  },
+  {
+    "objectID": "grant/nbf-grant-application.html#timeline",
+    "href": "grant/nbf-grant-application.html#timeline",
+    "title": "NBF Grant Application 2026",
+    "section": "8. Timeline",
+    "text": "8. Timeline\n\n\n\n\n\n\n\n\nPeriod\nPhase\nActivities\n\n\n\n\nMarch 2026\nFoundation\nFinalise and submit HREC application. Confirm co-investigators and units. Finalise nudge wording. Configure AI interface per unit. Recruit casual RA.\n\n\nApril 2026\nInstrument development\nFinalise discipline-specific task briefs with co-investigators. Develop and pilot exit survey. Establish coding scheme on existing CloudCore transcripts. Brief and onboard RA. Run power analysis.\n\n\nMay-June 2026\nData collection\nDeliver 1-2 lab sessions per unit. Monitor transcript logging per condition. Administer exit surveys.\n\n\nJuly-Aug 2026\nCoding and analysis\nRun de-identification script; destroy linkage table. RA codes full transcript set on behavioural dimensions. Co-investigators independently code calibration samples from their own units. Inter-rater reliability calculated per unit (Cohen’s kappa). Lead investigator adjudicates divergences. Quantitative analysis including equity-disaggregated reporting.\n\n\nSep-Oct 2026\nWriting and dissemination\nDraft ACIS 2026 paper. Produce open-access resource pack. Internal SoMM presentation.\n\n\nNov-Dec 2026\nCompletion\nACIS submission. Resource pack published. NBF progress report drafted. Scope follow-on study.\n\n\nJan-Jun 2027\nReporting\nNBF final report. Equity outcome reporting. Follow-on study proposal if warranted.",
+    "crumbs": [
+      "NBF Grant Application 2026"
+    ]
+  },
+  {
+    "objectID": "grant/nbf-grant-application.html#relationship-to-existing-work-and-curtin-strategy",
+    "href": "grant/nbf-grant-application.html#relationship-to-existing-work-and-curtin-strategy",
+    "title": "NBF Grant Application 2026",
+    "section": "9. Relationship to Existing Work and Curtin Strategy",
+    "text": "9. Relationship to Existing Work and Curtin Strategy\n\nSuggested length: 200-300 words.\n\nThis project does not begin from scratch. The keep-asking research project (github.com/michael-borck/keep-asking) provides the full experimental design, HREC pathway, and instrument development plan. The CloudCore Networks environment, already in use in ISYS6020, provides the proven model for AI-mediated task design that informs each discipline-specific lab session. The Conversation, Not Delegation framework (Borck, 2026), developed through prior teaching and research and now published, provides the theoretical grounding and positions this work within a broader research programme targeting ACIS 2026 as the entry point.\nThe controlled lab session design represents a deliberate methodological evolution, chosen to produce cleaner causal evidence within the project timeline and to extend the intervention across disciplines. A return to in-situ implementation across multiple units is the natural next phase if results warrant it, funded through subsequent grants or institutional investment.\nThe project aligns with Curtin’s Learning and Teaching Strategy commitments to student-centred learning, equity of access, and scholarship of learning and teaching. It supports NBF reporting obligations by generating equity-disaggregated evidence on student outcomes. It contributes to the Assessment 2030 agenda through its emphasis on process-over-product assessment design that is more resistant to passive AI delegation.\nFindings will feed into the AI Skills Passport programme and The AI Exchange platform - both live institutional infrastructure for AI professional development at Curtin - ensuring results reach teaching staff across the university, not only the research record.",
+    "crumbs": [
+      "NBF Grant Application 2026"
+    ]
+  },
+  {
+    "objectID": "grant/nbf-grant-application.html#evaluation-and-reporting",
+    "href": "grant/nbf-grant-application.html#evaluation-and-reporting",
+    "title": "NBF Grant Application 2026",
+    "section": "10. Evaluation and Reporting",
+    "text": "10. Evaluation and Reporting\n\nSuggested length: 150-250 words.\n\nThe evaluation uses a pre-specified mixed-methods design:\nQuantitative - Linear mixed-effects models with condition (nudge vs control) as fixed effect and unit as random intercept, accounting for the nested structure (students within units). Prior AI experience included as a covariate if groups differ at baseline. - Both unweighted and challenge-weighted scoring reported for robustness - Effect sizes (Cohen’s d for group comparisons; marginal R-squared for mixed models) - Equity-disaggregated analysis: condition-by-equity interaction terms to test whether benefit is uniform or differential by SES and first-in-family status - Confidence calibration analysis conducted within-unit (task completion scores are not comparable across disciplines)\nQualitative - Purposive sample of transcripts across conditions to illustrate mechanisms and identify unexpected patterns - Particular attention to transcripts where the nudge appears to have caught and corrected a plausible but incorrect AI response - the misinformation friction effect\nReporting A progress report will be submitted to Curtin’s NBF programme in early 2027 covering: session delivery fidelity, participation and attainment outcomes by equity cohort, open-access resource publication status, and ACIS submission outcome. The report will address directly whether outcomes differed between equity and non-equity cohort students, and what the findings imply for future intervention design.\nThe ACIS 2026 paper submission (August/September 2026) serves as an external peer-review checkpoint on methodology and findings prior to the NBF report.",
+    "crumbs": [
+      "NBF Grant Application 2026"
+    ]
+  },
+  {
+    "objectID": "grant/nbf-grant-application.html#references",
+    "href": "grant/nbf-grant-application.html#references",
+    "title": "NBF Grant Application 2026",
+    "section": "References",
+    "text": "References\nBorck, M. (2026). Conversation, Not Delegation. KDP. ISBN 979-8252824550.\nFrontiers in Psychology. (2025). Optimizing academic engagement and mental health through AI: An experimental study on LLM integration in higher education. Frontiers in Psychology, 16. https://doi.org/10.3389/fpsyg.2025.1641212\nKasneci, E., Sessler, K., Küchemann, S., Bannert, M., Dementieva, D., Fischer, F., … and Kasneci, G. (2023). ChatGPT for good? On opportunities and challenges of large language models for education. Learning and Individual Differences, 103, 102274. https://doi.org/10.1016/j.lindif.2023.102274\nLaurillard, D. (2002). Rethinking University Teaching: A Conversational Framework for the Effective Use of Learning Technologies (2nd ed.). RoutledgeFalmer.\nMollick, E. R., and Mollick, L. (2023). Assigning AI: Seven approaches for students, with prompts. The Wharton School Research Paper. https://ssrn.com/abstract=4475995\nNational Health and Medical Research Council. (2023). National Statement on Ethical Conduct in Human Research (2023 update). Australian Government.\nStojanov, A., Grønbæk, N., and Kulahci, M. (2024). Can we delegate learning to automation? A comparative study of LLM chatbots, search engines, and books. arXiv preprint. https://arxiv.org/abs/2410.01396\nThaler, R. H., and Sunstein, C. R. (2008). Nudge: Improving Decisions About Health, Wealth, and Happiness. Yale University Press.\nVygotsky, L. S. (1978). Mind in Society: The Development of Higher Psychological Processes. Harvard University Press.",
+    "crumbs": [
+      "NBF Grant Application 2026"
+    ]
+  },
+  {
+    "objectID": "grant/nbf-grant-application.html#applicant-checklist-before-submission",
+    "href": "grant/nbf-grant-application.html#applicant-checklist-before-submission",
+    "title": "NBF Grant Application 2026",
+    "section": "Applicant Checklist Before Submission",
+    "text": "Applicant Checklist Before Submission\n\nHREC application submitted - insert date in Cover Information and Section 4.6\nEquity cohort data confirmed - % low SES and % first-in-family across participating units (from Curtin SIMS)\nMarcela confirmed - full name, role, one-sentence contribution\nTorsten confirmed - full name, role, school, unit name\nThird co-investigator confirmed or removed\nAboriginal and/or Torres Strait Islander section - active decision to include or remove Section 2.4\nPower analysis completed once cohort sizes confirmed\nDiscipline lead informed separately before submission\nBorck (2026) ISBN inserted (979-8252824550)\nACIS 2026 location confirmed - adjust travel line in budget if held in Perth\nTalk to Business and Law RDA (Dr Joanne McEwan) before submission\n\n\nDraft v6.0, March 2026. keep-asking project: github.com/michael-borck/keep-asking",
+    "crumbs": [
+      "NBF Grant Application 2026"
+    ]
+  }
+]

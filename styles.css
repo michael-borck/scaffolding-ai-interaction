@@ -1,0 +1,16 @@
+/* Minimal custom styles for the project site */
+
+/* Make tables full width */
+.table {
+  width: 100%;
+}
+
+/* Status callout styling */
+.callout-warning {
+  border-left-color: #f59e0b;
+}
+
+/* Team table compact */
+.team-table td, .team-table th {
+  padding: 0.4rem 0.8rem;
+}
