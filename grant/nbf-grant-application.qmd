@@ -7,19 +7,21 @@ subtitle: "Application Draft - Version 6.0, March 2026"
 |-------|--------|
 | **Project Title** | Scaffolding AI Interaction: A Low-Cost Intervention for Equitable Student Engagement |
 | **Lead Applicant** | Michael Borck, Lecturer, School of Marketing and Management (SoMM) |
-| **Co-Investigators** | Dr Marcela Moraes, Lecturer, School of Marketing and Management (SoMM) [contribution TBC - pending confirmation] |
-| | Dr Torsten Reiners, Senior Lecturer in Supply Chain Management, SoMM [contribution TBC - pending confirmation] |
+| **Co-Investigators** | Marcela Moraes, Lecturer, School of Marketing and Management (SoMM) |
+| | Torsten Reiners, Senior Lecturer in Supply Chain Management, SoMM |
+| | Renee Ralph, Lecturer, School of Marketing and Management (SoMM) |
 | **Faculty / School** | Faculty of Business and Law / School of Marketing and Management |
 | **Participating Units** | ISYS6018 Information Security Audit and Control (IS, lead unit, ~50 students) |
 | | MGMT6076 Supply Chain Digitalisation and Innovation (SCM, ~30 students) |
 | | MKTG1000 Discovering Marketing (Marketing, ~220 students) |
+| | MGMT3014 Strategic Rewards and Performance Management (HR/People and Culture, ~800-1000 students) |
 | **Amount Requested** | AUD $20,000 |
 | **Project Period** | Semester 1 2026 - Semester 1 2027 |
 | **Reporting Deadline** | Semester 1 2027 |
 | **Ethics Status** | HREC application submitted [INSERT DATE] - low-risk review pathway. Student numbers collected for equity linkage only; destroyed after de-identification. |
 | **NBF Equity Cohorts** | Low SES students (primary); first-in-family students (supplementary analysis) |
 
-> **Applicant note:** Items in [brackets] must be confirmed before submission. Aboriginal and/or Torres Strait Islander cohort inclusion: add only if recruitment data supports a meaningful claim. Do not remove placeholder silently - make an active decision.
+> **Applicant note:** Items in [brackets] must be confirmed before submission.
 
 ---
 
@@ -55,11 +57,7 @@ The equity evaluation sits on top of this universal intervention. Students from 
 
 [INSERT: Approximately X% of domestic students in the participating units are first in their family to attend university.] First-in-family status is included as a supplementary equity lens. The same structural argument applies: students without family experience of higher education may have fewer informal channels for developing AI interaction skills. Results are reported by first-in-family status alongside the primary low SES analysis.
 
-### 2.4 Aboriginal and/or Torres Strait Islander Students
-
-[APPLICANT NOTE: Include this section only if cohort recruitment data supports it. Remove rather than make a thin claim.]
-
-### 2.5 Student Life Stage: Participation
+### 2.4 Student Life Stage: Participation
 
 This project targets the **Participation** stage of the student life cycle - supporting engagement, progression, and retention during study. The intervention directly improves how students engage with AI-integrated assessment tasks, building productive habits that carry into subsequent units. The project measures both participation quality (depth and criticality of AI interaction) and attainment outcomes (task completion quality). Equity-disaggregated reporting supports Curtin's NBF obligations from 2027 onward.
 
@@ -139,7 +137,7 @@ A casual RA codes all transcripts on three simple behavioural dimensions (follow
 
 Each co-investigator recruits students from their unit cohort. Recruitment actively encourages participation from low SES students. Session timing will be varied to accommodate students with work or caring commitments. Participation is voluntary and does not affect unit grades.
 
-Target sample: Three confirmed units with a combined enrolment of approximately 300 students (ISYS6018 ~50, MGMT6076 ~30, MKTG1000 ~220). Participation is voluntary; estimated 100-200 participants depending on uptake. A power analysis will be completed once co-investigator units and cohort sizes are confirmed.
+Target sample: Four confirmed units with a combined enrolment of over 1,000 students (ISYS6018 ~50, MGMT6076 ~30, MKTG1000 ~220, MGMT3014 ~800-1000). Participation is voluntary; 20-30 students selected per unit, yielding approximately 80-120 participants. A power analysis will be completed once co-investigator units and cohort sizes are confirmed.
 
 ### 4.6 Ethics and Data De-identification
 
@@ -196,13 +194,17 @@ If the nudge produces no effect, that finding is equally valuable. It redirects 
 
 Lecturer, School of Marketing and Management, Curtin University. Creator of the CloudCore Networks simulation and keep-asking research project. Convener of ISYS6018 Information Security Audit and Control. Author of *Conversation, Not Delegation* (Borck, 2026). Responsible for overall project coordination, intervention design, technical infrastructure, session facilitation in IS context, and lead authorship of the ACIS paper.
 
-### Co-Investigator: Dr Marcela Moraes
+### Co-Investigator: Marcela Moraes
 
-Lecturer, School of Marketing and Management (SoMM), Curtin University. Research interests in digital and social media marketing, consumer behaviour, and cross-cultural perspectives. [Specific contribution to this project TBC - pending confirmation. Expected: evaluation instrument development, co-facilitation of Marketing unit sessions, calibration coding of own unit transcripts, and co-authorship.]
+Lecturer, School of Marketing and Management (SoMM), Curtin University. Research interests in digital and social media marketing, consumer behaviour, and cross-cultural perspectives. Contributes evaluation instrument development, co-facilitation of Marketing unit sessions, calibration coding of own unit transcripts, and co-authorship.
 
-### Co-Investigator: Dr Torsten Reiners
+### Co-Investigator: Torsten Reiners
 
-Senior Lecturer in Supply Chain Management, School of Marketing and Management, Curtin University. Research background in operations management, optimisation, decision-support, and innovative technology in education, including gamification and immersive learning environments. Prior publication record at ASCILITE. [Specific contribution TBC - pending confirmation. Expected: co-facilitation of Supply Chain Management unit sessions, calibration coding of own unit transcripts, disciplinary interpretation of supply chain task outcomes, and co-authorship.]
+Senior Lecturer in Supply Chain Management, School of Marketing and Management, Curtin University. Research background in operations management, optimisation, decision-support, and innovative technology in education, including gamification and immersive learning environments. Prior publication record at ASCILITE. Contributes co-facilitation of Supply Chain Management unit sessions, calibration coding of own unit transcripts, disciplinary interpretation of supply chain task outcomes, and co-authorship.
+
+### Co-Investigator: Renee Ralph
+
+Lecturer, School of Marketing and Management (SoMM), Curtin University. [Specific contribution TBC. Expected: co-facilitation of MGMT3014 unit sessions, calibration coding of own unit transcripts, and co-authorship.]
 
 ### Casual Research Assistant (to be recruited)
 
@@ -302,15 +304,15 @@ Vygotsky, L. S. (1978). *Mind in Society: The Development of Higher Psychologica
 
 - [ ] HREC application submitted - insert date in Cover Information and Section 4.6
 - [ ] Equity cohort data confirmed - % low SES and % first-in-family across participating units (from Curtin SIMS)
-- [ ] Marcela confirmed - full name, role, one-sentence contribution
-- [ ] Torsten confirmed - full name, role, school, unit name
-- [ ] Potential fourth co-investigator (People and Culture / HR) - awaiting response
-- [ ] Aboriginal and/or Torres Strait Islander section - active decision to include or remove Section 2.4
+- [x] Marcela confirmed
+- [x] Torsten confirmed
+- [x] Renee Ralph confirmed - Lecturer, SoMM, MGMT3014
+- [x] Aboriginal and/or Torres Strait Islander section - removed (no cohort data to support)
 - [ ] Power analysis completed once cohort sizes confirmed
 - [ ] Discipline lead informed separately before submission
 - [x] Borck (2026) ISBN inserted (979-8252824550)
 - [ ] ACIS 2027 location confirmed - adjust travel line in budget if held in Perth
-- [ ] Talk to Business and Law RDA (Dr Joanne McEwan) before submission
+- [ ] Talk to Business and Law RDA (Joanne McEwan) before submission
 
 ---
 

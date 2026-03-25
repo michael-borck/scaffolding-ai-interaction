@@ -7,8 +7,9 @@ subtitle: "Curtin Low-Risk"
 |-------|--------|
 | **Project title** | Scaffolding AI Interaction: A Low-Cost Intervention for Equitable Student Engagement |
 | **Principal Investigator (PI)** | Michael Borck, Lecturer, School of Marketing and Management (SoMM) |
-| **Co-Investigators** | Dr Marcela Moraes, Lecturer, SoMM - TBC (confirmation pending) |
-| | Dr Torsten Reiners, Senior Lecturer, Supply Chain Management, SoMM - TBC (confirmation pending) |
+| **Co-Investigators** | Marcela Moraes, Lecturer, SoMM |
+| | Torsten Reiners, Senior Lecturer, Supply Chain Management, SoMM |
+| | Renee Ralph, Lecturer, SoMM |
 | **Faculty/School** | Faculty of Business and Law / School of Marketing and Management |
 | **Funding** | Curtin NBF Learning & Teaching Grant 2026 - AUD $20,000 (internal) |
 | **Study sites** | Curtin computer labs (Business & Law), plus any additional school labs confirmed with co-investigators |
@@ -62,9 +63,9 @@ Students complete a discipline-relevant task that requires iterative AI interact
 
 ### 4.3 Participants and Recruitment
 
-**Population:** Curtin students enrolled in participating units: ISYS6018 Information Security Audit and Control (~50 students), MGMT6076 Supply Chain Digitalisation and Innovation (~30 students), and MKTG1000 Discovering Marketing (~220 students). Participation is voluntary and does not affect grades. Sessions are scheduled at varied times to support students with work/caring commitments.
+**Population:** Curtin students enrolled in participating units: ISYS6018 Information Security Audit and Control (~50 students), MGMT6076 Supply Chain Digitalisation and Innovation (~30 students), MKTG1000 Discovering Marketing (~220 students), and MGMT3014 Strategic Rewards and Performance Management (~800-1000 students). Participation is voluntary and does not affect grades. Sessions are scheduled at varied times to support students with work/caring commitments.
 
-**Target n:** Combined enrolment across three units is approximately 300 students. Estimated 100-200 voluntary participants. A power analysis will be finalised once participation rates are confirmed.
+**Target n:** Four units with combined enrolment of over 1,000 students. 20-30 students selected per unit, yielding approximately 80-120 participants. A power analysis will be finalised once participation rates are confirmed.
 
 **Recruitment** via PI and co-investigators with plain-language invitations on LMS and email. We will encourage participation from low SES / first-in-family students (equity disaggregation happens at analysis stage; no differential treatment during sessions).
 

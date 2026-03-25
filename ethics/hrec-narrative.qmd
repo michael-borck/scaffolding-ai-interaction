@@ -8,14 +8,16 @@ title: "HREC Narrative"
 
 **Co-Investigators:**
 
-- Dr Marcela Moraes (SoMM) - confirmation pending
-- Dr Torsten Reiners (SoMM) - confirmation pending
+- Marcela Moraes (SoMM)
+- Torsten Reiners (SoMM)
+- Renee Ralph (SoMM)
 
 **Participating Units:**
 
 - ISYS6018 Information Security Audit and Control (~50 students)
 - MKTG1000 Discovering Marketing (~220 students)
 - MGMT6076 Supply Chain Digitalisation and Innovation (~30 students)
+- MGMT3014 Strategic Rewards and Performance Management (~800-1000 students)
 
 ---
 
@@ -44,7 +46,7 @@ This study evaluates whether a simple conversational nudge improves how students
 
 **Participants:** Enrolled students (18+) in participating units; exclude under-18s and non-consenting students.
 
-**Sample:** Combined enrolment ~300 students across three units; estimated 100-200 voluntary participants. Power analysis to be finalised once participation rates are confirmed.
+**Sample:** Four units with combined enrolment of over 1,000 students; 20-30 students selected per unit, yielding approximately 80-120 participants. Power analysis to be finalised once participation rates are confirmed.
 
 **Data:** Student numbers collected at login for equity linkage only (destroyed after de-identification). AI transcripts (session code), task outputs, Qualtrics exit survey responses. Equity flags matched via temporary linkage table, then de-identified.
 

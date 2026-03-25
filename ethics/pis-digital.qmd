@@ -4,9 +4,9 @@ title: "Participant Information Sheet"
 
 **Project Title:** Scaffolding AI Interaction: A Low-Cost Intervention for Equitable Student Engagement
 
-**Investigators:** Michael Borck (PI); Marcela Moraes (Co-I); Torsten Reiners (Co-I)
+**Investigators:** Michael Borck (PI); Marcela Moraes (Co-I); Torsten Reiners (Co-I); Renee Ralph (Co-I)
 
-**Participating Units:** ISYS6018 Information Security Audit and Control, MGMT6076 Supply Chain Digitalisation and Innovation, MKTG1000 Discovering Marketing
+**Participating Units:** ISYS6018 Information Security Audit and Control, MGMT6076 Supply Chain Digitalisation and Innovation, MKTG1000 Discovering Marketing, MGMT3014 Strategic Rewards and Performance Management
 
 ---
 

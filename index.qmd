@@ -21,8 +21,9 @@ The intervention is grounded in the [Conversation, Not Delegation](https://micha
 | Role | Name | Discipline | Unit |
 |------|------|-----------|------|
 | Lead | Michael Borck | Information Systems | ISYS6018 Information Security Audit and Control (~50 students) |
-| Co-I | Dr Marcela Moraes (TBC) | Marketing | MKTG1000 Discovering Marketing (~220 students) |
-| Co-I | Dr Torsten Reiners (TBC) | Supply Chain Management | MGMT6076 Supply Chain Digitalisation and Innovation (~30 students) |
+| Co-I | Marcela Moraes | Marketing | MKTG1000 Discovering Marketing (~220 students) |
+| Co-I | Torsten Reiners | Supply Chain Management | MGMT6076 Supply Chain Digitalisation and Innovation (~30 students) |
+| Co-I | Renee Ralph | People and Culture | MGMT3014 Strategic Rewards and Performance Management (~800-1000 students) |
 | RA | To be recruited | - | - |
 
 ## Timeline
@@ -59,11 +60,11 @@ The intervention is grounded in the [Conversation, Not Delegation](https://micha
 ::: {.callout-warning}
 ## Items requiring confirmation before submission
 
-- [ ] Co-investigator units and contributions (Marcela, Torsten)
+- [x] Co-investigator units and contributions (Marcela, Torsten, Renee)
 - [ ] HREC submission date
 - [ ] Equity cohort percentages from Curtin SIMS (% low SES, % first-in-family)
 - [ ] Power analysis (pending cohort sizes)
 - [ ] ACIS 2027 deadline and location
-- [ ] Aboriginal and Torres Strait Islander section - active decision to include or remove
+- [x] Aboriginal and Torres Strait Islander section - removed
 - [ ] Talk to Business and Law RDA (Dr Joanne McEwan)
 :::

@@ -37,11 +37,11 @@ Quarto website and single source of truth for the **keep-asking** research proje
 - **System prompt** suppresses model engagement hooks to avoid contaminating control condition
 - **Australian English** throughout, no em-dashes
 
-## Co-Investigators (all TBC)
+## Co-Investigators
 
-- Dr Marcela Moraes - Marketing, SoMM (MKTG1000)
-- Dr Torsten Reiners - Supply Chain Management, SoMM (MGMT6076)
-- Potential 4th: colleague from People and Culture / HR discipline, SoMM (invited, awaiting response)
+- Marcela Moraes - Marketing, SoMM (MKTG1000)
+- Torsten Reiners - Supply Chain Management, SoMM (MGMT6076)
+- Renee Ralph - People and Culture, SoMM (MGMT3014)
 
 ## Content Structure
 
